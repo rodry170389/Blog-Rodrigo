@@ -1,13 +1,17 @@
-body {margin: 0;}
+body {
+  margin:0;
+  font-family: 'Open Sans';
+}
 #FotoPrincipal{
   width: 100%;
   height: auto;
+  display: block;
 }
 ul.sidenav {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 25%;
+  width: 27%;
   background-color: #f1f1f1;
   position: fixed;
   height: 100%;
@@ -32,11 +36,14 @@ ul.sidenav li a:hover:not(.active) {
 }
 
 div.content {
-  margin-left: 25%;
+  margin-left: 27%;
   padding: 1px 16px;
   height: 1000px;
 }
-
+.nombre{
+  /*font-size: 1.3em;*/
+  color: #00acec;
+}
 @media screen and (max-width: 400px) {
   ul.sidenav {
     width: 100%;
