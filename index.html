@@ -12,6 +12,12 @@
 <link rel="stylesheet" href="estilos/simple-mobile-menu.css">
 <link rel="stylesheet" href="estilos/simple-mobile-menu-responsive.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700">
+<!-- scripts -->
+<script src="js/paginaprincipal.js"></script>
+<script src="js/jquery.min.js"></script>
+<!-- uncomment if you need some Bootstrap JS functionality -->
+<!-- <script src="js/bootstrap.min.js"></script> -->
+<script src="js/simple-mobile-menu.js"></script>
 
 </head>
 
@@ -20,15 +26,15 @@
     <div class="smm">
       <div class="container">
         <div class="smm__container js-smm-container">
-          <h1 class="smm__logo-wrapper"><a href="#"><img src="imagenes/logo.svg" alt="Logo" width="120" height="60"></a></h1>
+          <h1 class="smm__logo-wrapper"><a href="#"><img src="imagenes/LogoRODRI.svg" alt="Logo" width="120" height="60"></a></h1>
           <button class="btn btn-default smm__toggle js-smm-toggle visible-xs-block visible-sm-block"><i class="fa fa-bars"></i></button>
           <nav class="smm__collapse">
             <ul class="smm__primary-menu">
-              <li><a href="#"><i class="fa fa-home"></i>Home</a></li>
+              <li><a href="#" onclick="mostrarPrincipal();" id="linkprincipal"><i class="fa fa-home"></i>Home</a></li>
               <li><a href="#"><i class="fa fa-group"></i>Sobre mí</a></li>
               <!--<li><a href="#"><i class="fa fa-gears"></i>Services</a></li>-->
-              <li><a href="#"><i class="fa fa-suitcase"></i>Proyectos</a></li>
-              <li><a href="#"><i class="fa fa-envelope"></i>Contacto</a></li>
+              <li><a href="#" onclick="mostrarProyectos();" id="linkproyecto"><i class="fa fa-suitcase"></i>Proyectos</a></li>
+              <li><a href="#" onclick="mostrarContacto();" id="linkcontacto"><i class="fa fa-envelope"></i>Contacto</a></li>
             </ul>
             <ul class="smm__secondary-menu">
               <!--<li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>-->
@@ -49,8 +55,8 @@
     
     <div class="fila">
       <div class="col-3 col-s-3 menu">
+        <img id = "FotoPrincipal" src="imagenes/FotoP1.jpg" alt="José Rodrigo Fuentes Ramirez">
         <ul>
-          <li id="Lisfoto"><img id = "FotoPrincipal" src="imagenes/FotoP1.jpg" alt="José Rodrigo Fuentes Ramirez"></li>
           <li id="Telefono">Telefono</li>
           <li id="Documento">Documento</li>
           <li id="Correo">Correo</li>
@@ -58,13 +64,24 @@
       </div>
     
       <div class="col-6 col-s-9">
-        <div class="nombre">
-          <h1>JOSE RODRIGO FUENTES RAMIREZ</h1>
-        </div>
-        <h2>Grado en Ingeniería de Sistemas de Comunicaciones</h2>
-        <p>Mi nombre completo es José Rodrigo Fuentes Ramirez y mi objetivo principal en este momento es obtener experiencia en el mundo laboral de las tecnologías de información y comunicación a través de las prácticas empresariales, así como desarrollar una buena labor dentro de ésta. La responsabilidad, el compromiso, la perseverancia, la motivación y el entusiasmo que tengo puede servir de gran ayuda en mi labor dentro de la empresa.</p>
-        <p>Aquí irá todo mi curriculum</p>
-      </div>
+        <div id="principal">
+          <div class="nombre">
+            <h1>JOSE RODRIGO FUENTES RAMIREZ</h1>
+          </div><!--Nombre-->
+          <h2>Grado en Ingeniería de Sistemas de Comunicaciones</h2>
+          <p>Mi nombre completo es José Rodrigo Fuentes Ramirez y mi objetivo principal en este momento es obtener experiencia en el mundo laboral de las tecnologías de información y comunicación a través de las prácticas empresariales, así como desarrollar una buena labor dentro de ésta. La responsabilidad, el compromiso, la perseverancia, la motivación y el entusiasmo que tengo puede servir de gran ayuda en mi labor dentro de la empresa.</p>
+          <p>Aquí irá todo mi curriculum</p>
+        </div><!--Fin Principal-->
+
+        <div id="proyectos">
+          <p>Aquí irá la lista de proyectos que suba a github</p>
+        </div><!--Fin Proyectos-->
+
+        <div id="contacto">
+          <p>Aquí irá el formulario de contacto</p>
+        </div><!--Fin Contacto-->
+
+      </div><!--col-6 col-s-9-->
     
       <!--<div class="col-3 col-s-12">
         <div class="aside">
@@ -82,10 +99,6 @@
       <p>Resize the browser window to see how the content respond to the resizing.</p>
     </div>
   </main>
-<!-- scripts -->
-<script src="js/jquery.min.js"></script>
-<!-- uncomment if you need some Bootstrap JS functionality -->
-<!-- <script src="js/bootstrap.min.js"></script> -->
-<script src="js/simple-mobile-menu.js"></script>
+
 </body>
 </html>
