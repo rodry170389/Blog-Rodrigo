@@ -10,14 +10,14 @@
 
 [class*="col-"] {
   float: left;
-  padding: 15px;
+  /*padding: 15px;*/
 }
 
 html {
   font-family: 'Open Sans';
 }
 
-#FotoPrincipal{
+#FotoPrincipal, #FotoAptitudes{
   width: 100%;
   height: auto;
   display: block;
@@ -33,26 +33,47 @@ html {
   background: #0099dc;
 }
 .fila{
-  margin-left: 10px;
-  margin-right: 10px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
   background-color: white;
 }
 #principal{
-  background-color: tomato;
+  /*background-color: tomato;*/
   display: block;
 }
-#proyectos{
-  background-color:#33b5e5;
+.seccion1, .seccion2,.seccion3, .seccion4{
+  padding: 15px;
+}
+.filainfo h5{
+  font-weight: bold;
+}
+.barra{
+  padding-left: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: #e5e6e7;
+}
+.barra h4{
+  font-weight: bold;
+  margin: 0;
+}
+#universidad{
   display: none;
 }
-#contacto{
-  background-color: rgb(71, 122, 71);
+#proyectos{
+  display: none;
+}
+#documentos{
   display: none;
 }
 .nombre h1{
   margin: 0;
   color: #127cc2;
   font-weight: bold;
+}
+.menu{
+  height: auto;
 }
 .menu ul {
   list-style-type: none;
@@ -69,18 +90,19 @@ html {
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
-.menu li:hover {
+/*.menu li:hover {
   background: #555;
-}
+}*/
 
-/*.aside {
+.aside {
+  display: block;
   background-color: #33b5e5;
   padding: 15px;
   color: #ffffff;
   text-align: center;
   font-size: 14px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-}*/
+}
 
 .footer {
   background-color: #0099cc;
@@ -109,6 +131,9 @@ html {
   .col-s-10 {width: 83.33%;}
   .col-s-11 {width: 91.66%;}
   .col-s-12 {width: 100%;}
+  .aside{
+    display: none;
+  }
 }
 @media only screen and (min-width: 768px) {
   /* For desktop: */
@@ -124,6 +149,9 @@ html {
   .col-10 {width: 83.33%;}
   .col-11 {width: 91.66%;}
   .col-12 {width: 100%;}
+  .aside{
+    display: none;
+  }
 }
 /*body {
   margin:0;

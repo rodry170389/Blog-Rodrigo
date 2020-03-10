@@ -27,6 +27,14 @@
  // Hasta aquí
   //Mio no sirve Rvisarrrrrrrrr
   $(document).ready(function(){
+    $("#linkuniversidad").click(function(){
+      $(".js-smm-toggle").removeClass("smm__toggle--open");
+      $(".js-smm-container").removeClass("smm__container--open");
+    });
+  });
+   // Hasta aquí
+  //Mio no sirve Rvisarrrrrrrrr
+  $(document).ready(function(){
     $("#linkprincipal").click(function(){
       $(".js-smm-toggle").removeClass("smm__toggle--open");
       $(".js-smm-container").removeClass("smm__container--open");
