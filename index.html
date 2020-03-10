@@ -18,11 +18,11 @@
 <!-- uncomment if you need some Bootstrap JS functionality -->
 <!-- <script src="js/bootstrap.min.js"></script> -->
 <script src="js/simple-mobile-menu.js"></script>
-
 </head>
 
-<body>
+<body onload="datospantalla();">
   <header>
+    <a name="marcaprincipal"></a><!--Marca para navegación más cómoda-->
     <div class="smm">
       <div class="container">
         <div class="smm__container js-smm-container">
@@ -30,11 +30,11 @@
           <button class="btn btn-default smm__toggle js-smm-toggle visible-xs-block visible-sm-block"><i class="fa fa-bars"></i></button>
           <nav class="smm__collapse">
             <ul class="smm__primary-menu">
-              <li><a href="#" onclick="mostrarPrincipal();" id="linkprincipal"><i class="fa fa-home"></i>Inicio</a></li>
-              <li><a href="#" onclick="mostrarUniversidad();" id="linkuniversidad"><i class="fa fa-group"></i>Universidad</a></li>
+              <li><a href="#marcaprincipal" onclick="mostrarPrincipal();" id="linkprincipal"><i class="fa fa-home"></i>Inicio</a></li>
+              <li><a href="#marcauniversidad" onclick="mostrarUniversidad();" id="linkuniversidad"><i class="fa fa-group"></i>Universidad</a></li>
               <!--<li><a href="#"><i class="fa fa-gears"></i>Services</a></li>-->
-              <li><a href="#" onclick="mostrarProyectos();" id="linkproyecto"><i class="fa fa-suitcase"></i>Proyectos</a></li>
-              <li><a href="#" onclick="mostrarDocumentos();" id="linkcontacto"><i class="fa fa-envelope"></i>Documentación</a></li>
+              <li><a href="#marcaproyectos" onclick="mostrarProyectos();" id="linkproyecto"><i class="fa fa-suitcase"></i>Proyectos</a></li>
+              <li><a href="#marcadocumentos" onclick="mostrarDocumentos();" id="linkcontacto"><i class="fa fa-envelope"></i>Documentación</a></li>
             </ul>
             <ul class="smm__secondary-menu">
               <!--<li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>-->
@@ -52,16 +52,18 @@
     <!--<div class="header">
       <h1>Chania</h1>
     </div>-->
-    
+
     <div class="fila">
       <div class="col-3 col-s-3 menu">
-        <img id = "FotoPrincipal" src="imagenes/FotoP1.jpg" alt="José Rodrigo Fuentes Ramirez">
-        <ul>
-          <li id="Telefono">Teléfono : 638184398</li>
-          <li id="Documento">Documento : 6481865</li>
-          <li id="Correo"><a href="https://mail.google.com/" target="_blank" style="color: white;">rodry170389@gmail.com</a></li>
-        </ul>
-        <img id = "FotoAptitudes" src="imagenes/Barraizda.png" alt="Aptitudes">
+        <div id="Columnaizda">
+          <img id = "FotoPrincipal" src="imagenes/FotoP1.jpg" alt="José Rodrigo Fuentes Ramirez">
+          <ul>
+            <li id="Telefono">Teléfono : 638184398</li>
+            <li id="Documento">Documento : 6481865</li>
+            <li id="Correo"><a href="https://mail.google.com/" target="_blank" style="color: white;">rodry170389@gmail.com</a></li>
+          </ul>
+          <img id = "FotoAptitudes" src="imagenes/Barraizda.png" alt="Aptitudes">
+       </div><!--Fin Columnaizda-->
       </div>
     
       <div class="col-6 col-s-9">
@@ -118,35 +120,64 @@
             <h4>HOBBIES</h4>
           </div><!--Fin barra-->
           <div class ="seccion4"> 
+            <p>Música, Exploración Espacial, Deportes, Fotografía y Viajar</p>
           </div><!--Fin Seccion4-->
         </div><!--Fin Principal-->
         
         <div id="universidad">
-          <h2>UNIVERSIDAD</h2>
-          <p>Aquí ira la informacion de mi universidad</p>
+          <a id="muniversidad" name="marcauniversidad"></a><!--Marca para navegación más cómoda-->
+          <div class ="barrauni">
+            <h2>UNIVERSIDAD CARLOS III DE MADRID</h2>
+          </div><!--Fin barra-->
+          <div class ="seccion5">
+            <a href="https://www.uc3m.es/Inicio">Universidad Carlos III de Madrid</p>
+            <div class="marcoLiso">
+              <h3>Historia</h3>
+              <p>La Universidad Carlos III de Madrid fue creada por Ley de las <a href="http://www.cortesgenerales.es/">Cortes Generales,</a> de 5 de mayo de 1989,&nbsp; en el marco de la Ley de Reforma Universitaria de 1983. Desde&nbsp;su&nbsp;nacimiento tuvo vocación de ser una universidad pública innovadora, de dimensiones reducidas, de calidad y con una orientación prioritaria hacia la investigación. Su primer Rector fue el profesor <a href="/conocenos/historia-mision/perfil-biografico-gregorio-peces-barba-martinez-rector-fundador-uc3m">D.&nbsp;Gregorio&nbsp;Peces-Barba.</a></p>
+            </div>
+            <div class="marcoLiso">
+              <h3>Misión</h3>
+              <p>La misión de la Universidad Carlos III de Madrid es contribuir a la mejora de la sociedad con una docencia de calidad y una investigación avanzada de acuerdo con exigentes criterios internacionales. La universidad aspira a la excelencia en todas sus actividades, con el objetivo de convertirse en una de las mejores universidades europeas.</p>
+            </div>
+            <div class="marcoLiso">
+              <h3>Valores</h3>
+              <p>La universidad promoverá el desarrollo de las personas que la integran en el marco del servicio público de educación superior. Sus actividades se guiarán por los valores de mérito, capacidad, eficiencia, transparencia, equidad, igualdad y respeto al medio ambiente.</p>
+            </div>
+          </div> 
         </div><!--Fin Universidad-->
         
         <div id="proyectos">
-          <h2>PROYECTOS</h2>
-          <p>Aquí ira la informacion de mi universidad</p>
+          <a name="marcaproyectos"></a><!--Marca para navegación más cómoda-->
+          <div class ="barraproy">
+            <h2>PROYECTOS</h2>
+          </div><!--Fin barra-->
+          <div class ="seccion6">
+            <p>Aquí ira la informacion de los proyectos</p>
+          </div> 
         </div><!--Fin Proyectos-->
 
         <div id="documentos">
-          <h2>DOCUMENTOS</h2>
-          <p>Aquí ira la informacion de mi universidad</p>
+          <a name="marcadocumentos"></a><!--Marca para navegación más cómoda-->
+          <div class ="barradocu">
+            <h2>DOCUMENTACIÓN</h2>
+          </div><!--Fin barra-->
+          <div class ="seccion6">
+            <p>Aquí ira la informacion de los documentos</p>
+          </div> 
         </div><!--Fin documentos-->
-
+        
+        <div class="aside">
+          <h2><a onclick="mostrarUniversidad();" id="linkuniversidad"><i class="fa fa-group"></i>Universidad</a></h2>
+          <p>En este apartado pueden ver todo lo relacionado con mi universidad, la Carlos III de Madrid. También verán un resumen de todo lo que vi en la carrera</p>
+          <h2><a onclick="mostrarProyectos();" id="linkproyecto"><i class="fa fa-suitcase"></i>Proyectos</a></h2>
+          <p>Aquí colgaré poco a poco todos los proyectos que hice y haré en un futuro.</p>
+          <h2><a onclick="mostrarDocumentos();" id="linkcontacto"><i class="fa fa-envelope"></i>Documentación</a></h2>
+          <p>En esta ventana enseñare algunos de mis certificados y diplomas que no contengan mucha información sensible</p>
+        </div><!--Fin aside-->
       </div><!--col-6 col-s-9-->
     
       <div class="col-3 col-s-12">
-        <div class="aside">
-          <h2>What?</h2>
-          <p>Chania is a city on the island of Crete.</p>
-          <h2>Where?</h2>
-          <p>Crete is a Greek island in the Mediterranean Sea.</p>
-          <h2>How?</h2>
-          <p>You can reach Chania airport from all over Europe.</p>
-        </div>
+        <!--Vacio-->
       </div>
     </div>
     
