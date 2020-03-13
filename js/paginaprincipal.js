@@ -7,10 +7,18 @@ function datospantalla(){
         document.getElementById("linkuniversidad").href = "#marcaprincipal";
         document.getElementById("linkproyecto").href = "#marcaprincipal";
         document.getElementById("linkcontacto").href = "#marcaprincipal";
+
+        document.getElementById("linkasideuniversidad").href = "#marcaprincipal";
+        document.getElementById("linkasideproyecto").href = "#marcaprincipal";
+        document.getElementById("linkasidecontacto").href = "#marcaprincipal";
     }else{
-        document.getElementById("linkuniversidad").href = "#marcauniversidad";
-        document.getElementById("linkproyecto").href = "#marcaproyecto";
-        document.getElementById("linkcontacto").href = "#marcadocumentos";
+        document.getElementById("linkuniversidad").href = "#marcafinal";
+        document.getElementById("linkproyecto").href = "#marcafinal";
+        document.getElementById("linkcontacto").href = "#marcafinal";
+
+        document.getElementById("linkasideuniversidad").href = "#marcafinal";
+        document.getElementById("linkasideproyecto").href = "#marcafinal";
+        document.getElementById("linkasidecontacto").href = "#marcafinal";
     }
 }
 window.addEventListener("resize", function(){
@@ -20,10 +28,18 @@ window.addEventListener("resize", function(){
         document.getElementById("linkuniversidad").href = "#marcaprincipal";
         document.getElementById("linkproyecto").href = "#marcaprincipal";
         document.getElementById("linkcontacto").href = "#marcaprincipal"; 
+
+        document.getElementById("linkasideuniversidad").href = "#marcaprincipal";
+        document.getElementById("linkasideproyecto").href = "#marcaprincipal";
+        document.getElementById("linkasidecontacto").href = "#marcaprincipal";
     }else{
-        document.getElementById("linkuniversidad").href = "#marcauniversidad";
-        document.getElementById("linkproyecto").href = "#marcaproyecto";
-        document.getElementById("linkcontacto").href = "#marcadocumentos";
+        document.getElementById("linkuniversidad").href = "#marcafinal";
+        document.getElementById("linkproyecto").href = "#marcafinal";
+        document.getElementById("linkcontacto").href = "#marcafinal";
+
+        document.getElementById("linkasideuniversidad").href = "#marcafinal";
+        document.getElementById("linkasideproyecto").href = "#marcafinal";
+        document.getElementById("linkasidecontacto").href = "#marcafinal";
     }
   });
 

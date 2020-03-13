@@ -10,14 +10,18 @@
 
 [class*="col-"] {
   float: left;
-  /*padding: 15px;*/
 }
 
 html {
   font-family: 'Open Sans';
 }
 
-#FotoPrincipal, #FotoAptitudes{
+#FotoPrincipal{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+#FotoAptitudes{
   width: 100%;
   height: auto;
   display: block;
@@ -39,13 +43,12 @@ html {
   background-color: white;
 }
 #principal{
-  /*background-color: tomato;*/
   display: block;
 }
-.seccion1, .seccion2,.seccion3, .seccion4, .seccion5{
+.seccion1, .seccion2,.seccion3, .seccion4, .seccion5, .seccion6{
   padding: 15px;
 }
-.filainfo h5{
+.marcoLiso h5{
   font-weight: bold;
 }
 .barra{
@@ -54,7 +57,7 @@ html {
   padding-bottom: 8px;
   background-color: #e5e6e7;
 }
-.barra h4{
+.barra h4, .barra h3{
   font-weight: bold;
   margin: 0;
 }
@@ -86,7 +89,9 @@ html {
 }
 .menu{
   height: auto;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  padding-bottom: 80px;
+  margin-bottom: 15px;
+  background-color:#e5e6e7;
 }
 .menu ul {
   list-style-type: none;
@@ -170,4 +175,18 @@ html {
 .seccion5 h3{
   margin-top: 10px;
 }
+/*Tabla Asignaturas Universidad*/
+#tablaasignaturas table {
+  border-collapse: collapse;
+  width: 100%;
+}
 
+#tablaasignaturas td, #tablaasignaturas th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+#tablaasignaturas tr:nth-child(even) {
+  background-color: #dddddd;
+}
