@@ -45,10 +45,16 @@ html {
 #principal{
   display: block;
 }
-.seccion1, .seccion2,.seccion3, .seccion4, .seccion5, .seccion6{
+.seccion1, .seccion2,.seccion3, .seccion4, .seccion5, .seccion6, .seccion7, .seccion8, .seccion9,.seccion10,.seccion11,.seccion12{
   padding: 15px;
 }
-.marcoLiso h5{
+.seccion8,.seccion9,.seccion11,.seccion12 {
+  width: auto;
+}
+.seccion8 .marcoLiso,.seccion9 .marcoLiso,.seccion11 .marcoLiso,.seccion12 .marcoLiso{
+  text-align: center;
+}
+.marcoLiso h5, .marcoLiso h4{
   font-weight: bold;
 }
 .barra{
@@ -189,4 +195,143 @@ html {
 
 #tablaasignaturas tr:nth-child(even) {
   background-color: #dddddd;
+}
+
+/*Imagenes proyecto y documentos*/
+
+
+#myImg, #myImg2, #myImg3, #myImg4 {
+  width: 50%;
+  height: auto;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/*#myImg:hover {opacity: 0.7;}*/
+
+/* The Modal (background) */
+.modala, .modala2, .modala3, .modala4 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content, .modal-content2,.modal-content3,.modal-content4 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 600px;
+}
+
+/* Caption of Modal Image */
+#caption, #caption2, #caption3, #caption4 {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 600px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption, #caption2,.modal-content2, #caption3,.modal-content3, #caption4,.modal-content4 {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close, .close2, .close3, .close4 {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus, .close2:hover, .close2:focus, .close3:hover, .close3:focus, .close4:hover, .close4:focus{
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 600px){
+  .modal-content,.modal-content2,.modal-content3,.modal-content4 {
+    width: 100%;
+  }
+}
+
+/*Estilo Boton descargar*/
+.button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: green;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.button a{
+  color: white;
+}
+.button:hover{
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+  
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
