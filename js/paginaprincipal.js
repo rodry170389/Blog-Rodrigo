@@ -101,8 +101,8 @@ function muestraimagen2(){
 var span = document.getElementsByClassName("close2")[0];
 
 // When the user clicks on <span> (x), close the modal
-function cerrarimagen3() { 
-    document.getElementById('myModal3').style.display = "none";
+function cerrarimagen2() { 
+    document.getElementById('myModal2').style.display = "none";
 }
 
 function muestraimagen3(){
@@ -116,7 +116,7 @@ function muestraimagen3(){
 var span = document.getElementsByClassName("close3")[0];
 
 // When the user clicks on <span> (x), close the modal
-function cerrarimagen2() { 
+function cerrarimagen3() { 
     document.getElementById('myModal3').style.display = "none";
 }
 
