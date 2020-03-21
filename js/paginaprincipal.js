@@ -134,3 +134,18 @@ var span = document.getElementsByClassName("close4")[0];
 function cerrarimagen4() { 
     document.getElementById('myModal4').style.display = "none";
 }
+
+function muestraimagen5(){
+    document.getElementById('myModal5').style.display = "block";
+    document.getElementById("img05").src = document.getElementById('myImg5').src;
+    document.getElementById("img05").alt = document.getElementById('myImg5').alt;
+    document.getElementById("caption5").innerHTML = document.getElementById('myImg5').alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close5")[0];
+
+// When the user clicks on <span> (x), close the modal
+function cerrarimagen5() { 
+    document.getElementById('myModal5').style.display = "none";
+}

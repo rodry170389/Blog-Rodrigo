@@ -45,13 +45,13 @@ html {
 #principal{
   display: block;
 }
-.seccion1, .seccion2,.seccion3, .seccion4, .seccion5, .seccion6, .seccion7, .seccion8, .seccion9,.seccion10,.seccion11,.seccion12{
+.seccion1, .seccion2,.seccion3, .seccion4, .seccion5, .seccion6, .seccion7, .seccion8, .seccion9,.seccion10,.seccion11,.seccion12,.seccion13{
   padding: 15px;
 }
-.seccion8,.seccion9,.seccion11,.seccion12 {
+.seccion8,.seccion9,.seccion11,.seccion12,.seccion13 {
   width: auto;
 }
-.seccion8 .marcoLiso,.seccion9 .marcoLiso,.seccion11 .marcoLiso,.seccion12 .marcoLiso{
+.seccion8 .marcoLiso,.seccion9 .marcoLiso,.seccion11 .marcoLiso,.seccion12 .marcoLiso,.seccion13 .marcoLiso{
   text-align: center;
 }
 .marcoLiso h5, .marcoLiso h4{
@@ -200,7 +200,7 @@ html {
 /*Imagenes proyecto y documentos*/
 
 
-#myImg, #myImg2, #myImg3, #myImg4 {
+#myImg, #myImg2, #myImg3, #myImg4,#myImg5 {
   width: 50%;
   height: auto;
   border-radius: 5px;
@@ -211,7 +211,7 @@ html {
 /*#myImg:hover {opacity: 0.7;}*/
 
 /* The Modal (background) */
-.modala, .modala2, .modala3, .modala4 {
+.modala, .modala2, .modala3, .modala4, .modala5 {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -226,7 +226,7 @@ html {
 }
 
 /* Modal Content (image) */
-.modal-content, .modal-content2,.modal-content3,.modal-content4 {
+.modal-content, .modal-content2,.modal-content3,.modal-content4,.modal-content5 {
   margin: auto;
   display: block;
   width: 80%;
@@ -234,7 +234,7 @@ html {
 }
 
 /* Caption of Modal Image */
-#caption, #caption2, #caption3, #caption4 {
+#caption, #caption2, #caption3, #caption4,#caption5 {
   margin: auto;
   display: block;
   width: 80%;
@@ -246,7 +246,7 @@ html {
 }
 
 /* Add Animation */
-.modal-content, #caption, #caption2,.modal-content2, #caption3,.modal-content3, #caption4,.modal-content4 {  
+.modal-content, #caption, #caption2,.modal-content2, #caption3,.modal-content3, #caption4,.modal-content4,#caption5,.modal-content5{  
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
   animation-name: zoom;
@@ -264,7 +264,7 @@ html {
 }
 
 /* The Close Button */
-.close, .close2, .close3, .close4 {
+.close, .close2, .close3, .close4, .close5 {
   position: absolute;
   top: 15px;
   right: 35px;
@@ -275,7 +275,7 @@ html {
 }
 
 .close:hover,
-.close:focus, .close2:hover, .close2:focus, .close3:hover, .close3:focus, .close4:hover, .close4:focus{
+.close:focus, .close2:hover, .close2:focus, .close3:hover, .close3:focus, .close4:hover, .close4:focus, .close5:hover, .close5:focus{
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
