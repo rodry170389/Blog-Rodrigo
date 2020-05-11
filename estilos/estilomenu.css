@@ -45,13 +45,19 @@ html {
 #principal{
   display: block;
 }
-.seccion1, .seccion2,.seccion3, .seccion4, .seccion5, .seccion6, .seccion7, .seccion8, .seccion9,.seccion10,.seccion11,.seccion12,.seccion13{
+.seccion1, .seccion2,.seccion3, .seccion4, .seccion5, 
+.seccion6, .seccion7, .seccion8, .seccion9,.seccion10,
+.seccion11,.seccion12,.seccion13,.seccion14,.seccion15,
+.seccion16,.seccion17,.seccion18{
   padding: 15px;
 }
 .seccion8,.seccion9,.seccion11,.seccion12,.seccion13 {
   width: auto;
 }
-.seccion8 .marcoLiso,.seccion9 .marcoLiso,.seccion11 .marcoLiso,.seccion12 .marcoLiso,.seccion13 .marcoLiso{
+.seccion8 .marcoLiso,.seccion9 .marcoLiso,.seccion11 .marcoLiso,
+.seccion12 .marcoLiso,.seccion13 .marcoLiso,.seccion14 .marcoLiso,
+.seccion15 .marcoLiso,.seccion16 .marcoLiso,.seccion17 .marcoLiso,
+.seccion18 .marcoLiso{
   text-align: center;
 }
 .marcoLiso h5, .marcoLiso h4{
@@ -200,7 +206,7 @@ html {
 /*Imagenes proyecto y documentos*/
 
 
-#myImg, #myImg2, #myImg3, #myImg4,#myImg5 {
+#myImg, #myImg2, #myImg3, #myImg4,#myImg5, #myImg6,#myImg7,#myImg8,#myImg9 {
   width: 50%;
   height: auto;
   border-radius: 5px;
@@ -208,10 +214,9 @@ html {
   transition: 0.3s;
 }
 
-/*#myImg:hover {opacity: 0.7;}*/
 
 /* The Modal (background) */
-.modala, .modala2, .modala3, .modala4, .modala5 {
+.modala, .modala2, .modala3, .modala4, .modala5, .modala6 , .modala7, .modala8, .modala9 {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -226,7 +231,8 @@ html {
 }
 
 /* Modal Content (image) */
-.modal-content, .modal-content2,.modal-content3,.modal-content4,.modal-content5 {
+.modal-content, .modal-content2,.modal-content3,.modal-content4,.modal-content5,.modal-content6,
+.modal-content7,.modal-content8,.modal-content9 {
   margin: auto;
   display: block;
   width: 80%;
@@ -234,7 +240,7 @@ html {
 }
 
 /* Caption of Modal Image */
-#caption, #caption2, #caption3, #caption4,#caption5 {
+#caption, #caption2, #caption3, #caption4,#caption5,#caption6,#caption7,#caption8,#caption9 {
   margin: auto;
   display: block;
   width: 80%;
@@ -246,7 +252,8 @@ html {
 }
 
 /* Add Animation */
-.modal-content, #caption, #caption2,.modal-content2, #caption3,.modal-content3, #caption4,.modal-content4,#caption5,.modal-content5{  
+.modal-content, #caption, #caption2,.modal-content2, #caption3,.modal-content3, #caption4,.modal-content4,#caption5,.modal-content5,#caption6,.modal-content6
+,#caption7,.modal-content7,#caption8,.modal-content8,#caption9,.modal-content9{  
   -webkit-animation-name: zoom;
   -webkit-animation-duration: 0.6s;
   animation-name: zoom;
@@ -264,7 +271,7 @@ html {
 }
 
 /* The Close Button */
-.close, .close2, .close3, .close4, .close5 {
+.close, .close2, .close3, .close4, .close5, .close6 , .close7, .close8, .close9{
   position: absolute;
   top: 15px;
   right: 35px;
@@ -275,7 +282,8 @@ html {
 }
 
 .close:hover,
-.close:focus, .close2:hover, .close2:focus, .close3:hover, .close3:focus, .close4:hover, .close4:focus, .close5:hover, .close5:focus{
+.close:focus, .close2:hover, .close2:focus, .close3:hover, .close3:focus, .close4:hover, .close4:focus, .close5:hover, .close5:focus, .close6:hover, .close6:focus
+, .close7:hover, .close7:focus, .close8:hover, .close8:focus, .close9:hover, .close9:focus{
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
@@ -283,7 +291,7 @@ html {
 
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 600px){
-  .modal-content,.modal-content2,.modal-content3,.modal-content4 {
+  .modal-content,.modal-content2,.modal-content3,.modal-content4,.modal-content5,.modal-content6,.modal-content7,.modal-content8,.modal-content9{
     width: 100%;
   }
 }
@@ -336,17 +344,3 @@ html {
   right: 0;
 }
 
-/*Video Caporal*/
-.videocaporal{
-    position: relative;
-    padding-bottom: 56.25%;
-    height: 0;
-    overflow: hidden;
-}
-.videocaporal iframe{
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-} 

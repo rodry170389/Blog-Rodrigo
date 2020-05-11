@@ -149,3 +149,64 @@ var span = document.getElementsByClassName("close5")[0];
 function cerrarimagen5() { 
     document.getElementById('myModal5').style.display = "none";
 }
+
+function muestraimagen6(){
+    document.getElementById('myModal6').style.display = "block";
+    document.getElementById("img06").src = document.getElementById('myImg6').src;
+    document.getElementById("img06").alt = document.getElementById('myImg6').alt;
+    document.getElementById("caption6").innerHTML = document.getElementById('myImg6').alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close6")[0];
+
+// When the user clicks on <span> (x), close the modal
+function cerrarimagen6() { 
+    document.getElementById('myModal6').style.display = "none";
+}
+
+function muestraimagen7(){
+    document.getElementById('myModal7').style.display = "block";
+    document.getElementById("img07").src = document.getElementById('myImg7').src;
+    document.getElementById("img07").alt = document.getElementById('myImg7').alt;
+    document.getElementById("caption7").innerHTML = document.getElementById('myImg7').alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close7")[0];
+
+// When the user clicks on <span> (x), close the modal
+function cerrarimagen7() { 
+    document.getElementById('myModal7').style.display = "none";
+}
+
+function muestraimagen8(){
+    document.getElementById('myModal8').style.display = "block";
+    document.getElementById("img08").src = document.getElementById('myImg8').src;
+    document.getElementById("img08").alt = document.getElementById('myImg8').alt;
+    document.getElementById("caption8").innerHTML = document.getElementById('myImg8').alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close8")[0];
+
+// When the user clicks on <span> (x), close the modal
+function cerrarimagen8() { 
+    document.getElementById('myModal8').style.display = "none";
+}
+
+
+function muestraimagen9(){
+    document.getElementById('myModal9').style.display = "block";
+    document.getElementById("img09").src = document.getElementById('myImg9').src;
+    document.getElementById("img09").alt = document.getElementById('myImg9').alt;
+    document.getElementById("caption9").innerHTML = document.getElementById('myImg9').alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close9")[0];
+
+// When the user clicks on <span> (x), close the modal
+function cerrarimagen9() { 
+    document.getElementById('myModal9').style.display = "none";
+}
