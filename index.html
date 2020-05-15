@@ -33,9 +33,9 @@
             <ul class="smm__primary-menu">
               <li><a href="#marcaprincipal" onclick="mostrarPrincipal();" id="linkprincipal"><i class="fa fa-home"></i>Inicio</a></li>
               <li><a href="#marcauniversidad" onclick="mostrarUniversidad();" id="linkuniversidad"><i class="fa fa-group"></i>Universidad</a></li>
-              <!--<li><a href="#"><i class="fa fa-gears"></i>Services</a></li>-->
               <li><a href="#marcaproyectos" onclick="mostrarProyectos();" id="linkproyecto"><i class="fa fa-suitcase"></i>Proyectos</a></li>
-              <li><a href="#marcadocumentos" onclick="mostrarDocumentos();" id="linkcontacto"><i class="fa fa-envelope"></i>Documentación</a></li>
+              <li><a href="#marcadocumentos" onclick="mostrarDocumentos();" id="linkcontacto"><i class="fa fa-envelope"></i>Certificados</a></li>
+              <li><a href="#"><i class="fa fa-gears"></i>Descargar curriculúm PDF</a></li>
             </ul>
             <ul class="smm__secondary-menu">
               <!--<li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>-->
@@ -60,8 +60,8 @@
           <img id = "FotoPrincipal" src="imagenes/FotoP1.png" alt="José Rodrigo Fuentes Ramirez">
           <ul>
             <li id="Telefono"><img id="home" src="imagenes/icono_telefono.png" width="27" height="28">638184398</li>
-            <li id="Documento"><img id="home" src="imagenes/icono_dni.png" width="28" height="27">6481865</li>
-            <li id="Correo"><img id="home" src="imagenes/icono_email.png" width="26" height="27"><a href="https://mail.google.com/" target="_blank" style="color: white;">rodry170389@gmail.com</a></li>
+            <li id="Documento"><img id="home2" src="imagenes/icono_dni.png" width="28" height="27">6481865</li>
+            <li id="Correo"><img id="home3" src="imagenes/icono_email.png" width="26" height="27"><a href="https://mail.google.com/" target="_blank" style="color: white;">rodry170389@gmail.com</a></li>
           </ul>
           <img id = "FotoAptitudes" src="imagenes/Barraizda.png" alt="Aptitudes">
           <a name="marcafinal"></a><!--Marca para navegación más cómoda-->
@@ -81,49 +81,114 @@
             <h3>EDUCACIÓN</h3>
           </div><!--Fin barra-->
           <div class ="seccion2">
-            <div class ="marcoLiso">
-                <h4>Universidad Carlos III de Madrid - GRADO EN INGENIERÍA DE SISTEMAS DE COMUNICACIONES</h4>
-                <h5>(2010 - 2014) - (2017 - 2019)</h5>
-                <p>Graduado en Ingeniería de Sistemas de Comunicaciones en la Universidad Carlos III de Madrid.</p>
-                <h4>Core Networks S.L. - APLICACIONES CON ANDROID Y HTML5</h4>
-                <h5>2020</h5>
-                <p>Acción formativa en aplicaciones con Android y HTML5 en la empresa Core Networks S.L. ubicado en Madrid.</p>
-                <h4>I.E.S Parque Aluche - GRADUADO EN EDUCACIÓN SECUNDARIA Y BACHILLERATO</h4>
-                <h5>2005 - 2008</h5>
-                <p>Estudios finalizados de Educación Secundaria Obligatoria y Bachillerato en el Instituto Parque Aluche, ubicado en la ciudad de Madrid - España.</p>
-                <h4>Colegio Particular San Martín de Porres - EDUCACIÓN SECUNDARIA</h4>
-                <h5>1999-2005</h5>
-                <p>Estudios realizados de Educación Secundaria hasta que vine a residir en España. El colegio se encuentra en la ciudad de Cochabamba - Bolivia.</p>
+            <div class ="marcoLisoEducacion">
+              <div class="row">
+                <div class="col-sm-4">
+                  <h4>Core Networks S.L.</h4>
+                  <h5>2020</h5>
+                </div>
+                <div class="col-sm-8">
+                  <h4>APLICACIONES CON ANDROID Y HTML5</h4>
+                  <p>Acción formativa en aplicaciones con Android y HTML5 en la empresa Core Networks S.L. ubicado en Madrid.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-4">
+                  <h4>Universidad Carlos III de Madrid</h4>
+                  <h5>2017 - 2019</h5>
+                  <h5>2010 - 2014</h5>
+                </div>
+                <div class="col-sm-8">
+                  <h4>GRADO EN INGENIERÍA DE SISTEMAS DE COMUNICACIONES</h4>
+                  <p>Graduado en Ingeniería de Sistemas de Comunicaciones en la Universidad Carlos III de Madrid.</p>
+                </div>
+              </div>
+              
+              <div class="row">
+                <div class="col-sm-4">
+                  <h4>I.E.S Parque Aluche</h4>
+                  <h5>2005 - 2008</h5>
+                </div>
+                <div class="col-sm-8">
+                  <h4>GRADUADO EN EDUCACIÓN SECUNDARIA Y BACHILLERATO</h4>
+                  <p>Estudios finalizados de Educación Secundaria Obligatoria y Bachillerato en el Instituto Parque Aluche, ubicado en la ciudad de Madrid - España.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-4">
+                  <h4>Colegio Particular San Martín de Porres</h4>
+                  <h5>1999-2005</h5>
+                </div>
+                <div class="col-sm-8">
+                  <h4>EDUCACIÓN SECUNDARIA</h4>
+                  <p>Estudios realizados de Educación Secundaria hasta que vine a residir en España. El colegio se encuentra en la ciudad de Cochabamba - Bolivia.</p>
+                </div>
+              </div>    
             </div> <!--Fin filainfo-->
           </div><!--Fin Seccion2-->
           <div class ="barra">
             <h3>EXPERIENCIA LABORAL</h3>
           </div><!--Fin barra-->
           <div class ="seccion3"> 
-            <div class ="marcoLiso">
-              <h4>Diseñador Freelance - DISEÑO DE APLICACIONES ANDROID, WEB, JAVA, ETC.</h4>
-              <h5>2020</h5>
-              <p>Diseño de todo tipo de aplicaciones en diferentes lenguajes de programación.</p>
-              <h4>Diseñador Gráfico - PERSONALIZACIONES KLAM</h4>
-              <h5>2018 - 2019</h5>
-              <p>Diseñador de modelos gráficos para su posterior bordado o estampado en ropa. Programas utilizados: Tajima, Photoshop, Illustrator, etc.</p>
-              <h4>Editor de Vídeo y Fotografía - PRODUCCIONES LANDY</h4>
-              <h5>2014 - 2017</h5>
-              <p>Editor de vídeo y fotografía a nivel profesional, trabajamos en todo tipo de proyectos en el campo de la fotografía y vídeo.</p>
-              <h4>Editor de Vídeo y Fotografía - PRODUCCIONES DESING ARG</h4>
-              <h5>2010-2016</h5>
-              <p>Editor de vídeo y fotografía a nivel profesional, trabajamos en todo tipo de proyectos en el campo de la fotografía y vídeo.</p>
-              <h4>Profesor Particular - CLASES PARTICULARES DE BACHILLERATO</h4>
-              <h5>2010-2017</h5>
-              <p>Durante este período, intermitente, de tiempo he estado impartiendo clases particulares a alumnos de la ESO y Bachillerato.</p>
+            <div class ="marcoLisoExperencia">
+              <div class="row">
+                <div class="col-sm-4">
+                  <h4>Diseñador Freelance</h4>
+                  <h5>2020</h5>
+                </div>
+                <div class="col-sm-8">
+                  <h4>DISEÑO DE APLICACIONES ANDROID, WEB, JAVA, ETC.</h4>
+                  <p>Diseño de todo tipo de aplicaciones en diferentes lenguajes de programación.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-4">
+                  <h4>Diseñador Gráfico</h4>
+                  <h5>2018 - 2019</h5>
+                </div>
+                <div class="col-sm-8">
+                  <h4>PERSONALIZACIONES KLAM</h4>
+                  <p>Diseñador de modelos gráficos para su posterior bordado o estampado en ropa. Programas utilizados: Tajima, Photoshop, Illustrator, etc.</p>
+                </div>
+              </div> 
+              <div class="row">
+                <div class="col-sm-4">
+                  <h4>Editor de Vídeo y Fotografía</h4>
+                  <h5>2014 - 2017</h5>
+                </div>
+                <div class="col-sm-8">
+                  <h4>PRODUCCIONES LANDY</h4>
+                  <p>Editor de vídeo y fotografía a nivel profesional, trabajamos en todo tipo de proyectos en el campo de la fotografía y vídeo.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-4">
+                  <h4>Editor de Vídeo y Fotografía</h4>
+                  <h5>2010-2016</h5>
+                </div>
+                <div class="col-sm-8">
+                  <h4>PRODUCCIONES DESING ARG</h4>
+                  <p>Editor de vídeo y fotografía a nivel profesional, trabajamos en todo tipo de proyectos en el campo de la fotografía y vídeo.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-4">
+                  <h4>Profesor Particular</h4>
+                  <h5>2010-2017</h5>
+                </div>
+                <div class="col-sm-8">
+                  <h4>CLASES PARTICULARES DE BACHILLERATO</h4>
+                  <p>Durante este período, intermitente, de tiempo he estado impartiendo clases particulares a alumnos de la ESO y Bachillerato.</p>
+                </div>
+              </div>
             </div> <!--Fin filainfo-->
           </div><!--Fin Seccion3-->
           <div class ="barra">
             <h3>HOBBIES</h3>
           </div><!--Fin barra-->
           <div class ="seccion4">
-            <div class="marcoLiso">
-              <p>Música, Exploración Espacial, Deportes, Fotografía y Viajar</p>
+            <div class="marcoLisohobbies">
+              <img id = "FotoAficiones" src="imagenes/aficiones.png" alt="Aficiones">
             </div> 
           </div><!--Fin Seccion4-->
         </div><!--Fin Principal-->
@@ -354,53 +419,59 @@
             <h3>ESTUDIO Y APLICACIÓN DEL MÉTODO METROPOLIS-HASTINGS PARA LA INVERSIÓN BAYESIANA</h3>
           </div>
           <div class ="seccion8">
-            <div class="marcoLiso">
-              <div class="imagenesproyedocu">
-                <img id="myImg" src="imagenes/metropolis.png" alt="Proyecto de Fin de Grado: Estudio y Aplicación del método METROPOLIS-HASTINGS para la inversión bayesiana" onclick="muestraimagen();">
-                <!-- The Modal -->
-                <div id="myModal" class="modala">
-                  <span class="close" onclick="cerrarimagen();">&times;</span>
-                  <img class="modal-content" id="img01">
-                  <div id="caption"></div>
+            <div class="marcoLiso8">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <div class="imagenesproyedocu">
+                    <img id="myImg" src="imagenes/metropolis.png" alt="Proyecto de Fin de Grado: Estudio y Aplicación del método METROPOLIS-HASTINGS para la inversión bayesiana" onclick="muestraimagen();">
+                    <!-- The Modal -->
+                    <div id="myModal" class="modala">
+                      <span class="close" onclick="cerrarimagen();">&times;</span>
+                      <img class="modal-content" id="img01">
+                      <div id="caption"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel-body">
+                  <div class="infodocumentos">
+                    <div class="marcoLiso8">
+                      <h3>Resumen</h3>
+                      <p>Hoy el mundo está inmerso en la que probablemente sea la cuarta revolución industrial,
+                        todo esto es gracias a que vivimos en un mundo hiperinformado e hiperconectado, el
+                        progreso tecnológico avanza como nunca antes lo había hecho, el nacimiento de nuevas
+                        tecnologías que recopilan datos en masa o a pequeña escala es gracias en parte al big data,
+                        a la inteligencia artificial y al uso de algoritmos cada vez más eficientes para poder procesarlos,
+                        esto nos lleva a hacer de nuestro mundo un lugar mejor en donde vivir. Gracias a
+                        las nuevas tecnologías y a la inagotable necesidad de aprender de todo lo que le rodea al
+                        ser humano hizo que se originará la teledetección (Remote Sensing).</p>
+                      <p>El fenómeno físico de la radiación electromagnética es la base de la que parte la ciencia
+                        de la teledetección, esta disciplina se encarga de recolectar información a través de
+                        radiación electromagnética de cualquier fenómeno, cuerpo o superficie, y luego utilizar dichos
+                        datos para crear nuevas aplicaciones. El progreso de esta disciplina es tan grande que
+                        ahora podemos encontrar sensores remotos en los satélites espaciales que orbitan alrededor
+                        del planeta. Los datos recibidos de los satélites, a través de ondas electromagnéticas,
+                        exigen ser analizados y procesados para obtener algún beneficio y ampliar la sabiduría
+                        del ser humano. La información es tan grande que se crearon modelos de transferencia
+                        radiativa.</p>
+                      <p>El modelo Prosail es el que más fama tiene y es el que más se utiliza, este modelo deriva
+                        de otros dos modelos que son el Prospect y el Sail. El modelo más famoso y utilizado se
+                        originó y evolucionó con el propósito de llevar a cabo estudios sobre la reconstrucción de
+                        parámetros biológicos de la vegetación, este modelo analiza la reectancia originada por
+                        el dosel de la vegetación, por medio de una cadena de parámetros de entrada.</p>
+                      <p>Para conseguir generar un modelo matemático que se parezca lo mas fielmente posible
+                        a los datos reales, desarrollamos la inversión estadística de la solución y aplicamos el
+                        algoritmo llamado METROPOLIS-HASTINGS, de esta forma, mas adelante se podrían
+                        llevar a cabo simulaciones, fundamentadas en este módelo, creando nuevas aplicaciones
+                        que ayuden a mejorar la situación del planeta tierra, si estas aplicaciones se crean con
+                        éxito podemos evitar catástrofes medio ambientales a los que nos enfrentamos día a día.</p>
+                    </div>
+                  </div>
+                  <div class="botondescargar">
+                    <button class="button" style="vertical-align:middle"><span><a href="https://drive.google.com/file/d/1yFvo_MZ1WV6c55MiMvYCNE43OlwqKW2J/view?usp=sharing" target="_blank">Descargar </a></span></button>
+                  </div>
                 </div>
               </div>
-              <div class="infodocumentos">
-                <div class="marcoLiso">
-                  <h3>Resumen</h3>
-                  <p>Hoy el mundo está inmerso en la que probablemente sea la cuarta revolución industrial,
-                    todo esto es gracias a que vivimos en un mundo hiperinformado e hiperconectado, el
-                    progreso tecnológico avanza como nunca antes lo había hecho, el nacimiento de nuevas
-                    tecnologías que recopilan datos en masa o a pequeña escala es gracias en parte al big data,
-                    a la inteligencia artificial y al uso de algoritmos cada vez más eficientes para poder procesarlos,
-                    esto nos lleva a hacer de nuestro mundo un lugar mejor en donde vivir. Gracias a
-                    las nuevas tecnologías y a la inagotable necesidad de aprender de todo lo que le rodea al
-                    ser humano hizo que se originará la teledetección (Remote Sensing).</p>
-                  <p>El fenómeno físico de la radiación electromagnética es la base de la que parte la ciencia
-                    de la teledetección, esta disciplina se encarga de recolectar información a través de
-                    radiación electromagnética de cualquier fenómeno, cuerpo o superficie, y luego utilizar dichos
-                    datos para crear nuevas aplicaciones. El progreso de esta disciplina es tan grande que
-                    ahora podemos encontrar sensores remotos en los satélites espaciales que orbitan alrededor
-                    del planeta. Los datos recibidos de los satélites, a través de ondas electromagnéticas,
-                    exigen ser analizados y procesados para obtener algún beneficio y ampliar la sabiduría
-                    del ser humano. La información es tan grande que se crearon modelos de transferencia
-                    radiativa.</p>
-                  <p>El modelo Prosail es el que más fama tiene y es el que más se utiliza, este modelo deriva
-                    de otros dos modelos que son el Prospect y el Sail. El modelo más famoso y utilizado se
-                    originó y evolucionó con el propósito de llevar a cabo estudios sobre la reconstrucción de
-                    parámetros biológicos de la vegetación, este modelo analiza la reectancia originada por
-                    el dosel de la vegetación, por medio de una cadena de parámetros de entrada.</p>
-                  <p>Para conseguir generar un modelo matemático que se parezca lo mas fielmente posible
-                    a los datos reales, desarrollamos la inversión estadística de la solución y aplicamos el
-                    algoritmo llamado METROPOLIS-HASTINGS, de esta forma, mas adelante se podrían
-                    llevar a cabo simulaciones, fundamentadas en este módelo, creando nuevas aplicaciones
-                    que ayuden a mejorar la situación del planeta tierra, si estas aplicaciones se crean con
-                    éxito podemos evitar catástrofes medio ambientales a los que nos enfrentamos día a día.</p>
-                </div>
-              </div>
-              <div class="botondescargar">
-                <button class="button" style="vertical-align:middle"><span><a href="https://drive.google.com/file/d/1yFvo_MZ1WV6c55MiMvYCNE43OlwqKW2J/view?usp=sharing" target="_blank">Descargar </a></span></button>
-              </div>
-            </div>
+            </div> 
           </div> 
           <div class ="barra">
             <h3>PROGRAMACIÓN EN JAVASCRIPT, BOOTSTRAP, HTML5 Y CSS3</h3>
@@ -628,22 +699,25 @@
             </div>
           </div>
         </div><!--Fin documentos-->
-        
-        <div class="aside">
-          <h2><a onclick="mostrarUniversidad();" id="linkasideuniversidad"><i class="fa fa-group"></i>Universidad</a></h2>
-          <p>En este apartado pueden ver todo lo relacionado con mi universidad, la Carlos III de Madrid. También verán un resumen de todo lo que vi en la carrera</p>
-          <h2><a onclick="mostrarProyectos();" id="linkabajoproyectos"><i class="fa fa-suitcase"></i>Proyectos</a></h2>
-          <p>Aquí colgaré poco a poco todos los proyectos que hice y haré en un futuro</p>
-          <h2><a onclick="mostrarDocumentos();" id="linkasidecontacto"><i class="fa fa-envelope"></i>Documentación</a></h2>
-          <p>En esta ventana enseñare algunos de mis certificados y diplomas que no contengan mucha información sensible</p>
-        </div><!--Fin aside-->
       </div><!--col-6 col-s-9-->
+        
+        
+      
     
       <div class="col-3 col-s-12">
-        <!--Vacio-->
+        
       </div>
+
+      
     </div>
-    
+    <div class="aside">
+      <h2><a onclick="mostrarUniversidad();" id="linkasideuniversidad"><i class="fa fa-group"></i>Universidad</a></h2>
+      <p>En este apartado pueden ver todo lo relacionado con mi universidad, la Carlos III de Madrid. También verán un resumen de todo lo que vi en la carrera</p>
+      <h2><a onclick="mostrarProyectos();" id="linkabajoproyectos"><i class="fa fa-suitcase"></i>Proyectos</a></h2>
+      <p>Aquí colgaré poco a poco todos los proyectos que hice y haré en un futuro</p>
+      <h2><a onclick="mostrarDocumentos();" id="linkasidecontacto"><i class="fa fa-envelope"></i>Certificados</a></h2>
+      <p>En esta ventana enseñare algunos de mis certificados y diplomas que no contengan mucha información sensible</p>
+    </div><!--Fin aside-->
     <div class="footer">
       <p>Desarrollado y diseñado por José Rodrigo Fuentes Ramirez</p>
     </div>

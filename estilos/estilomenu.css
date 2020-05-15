@@ -26,6 +26,13 @@ html {
   height: auto;
   display: block;
 }
+#FotoAficiones{
+  width: 100%;
+  height: auto;
+  display: block;
+  padding-left: 8px;
+  padding-right: 14px;
+}
 #Lisfoto{
   padding: 0;
 }
@@ -57,7 +64,7 @@ html {
   display: block;
 }
 .seccion1, .seccion2,.seccion3, .seccion4, .seccion5, 
-.seccion6, .seccion7, .seccion8, .seccion9,.seccion10,
+.seccion6, .seccion7, .seccion9,.seccion10,
 .seccion11,.seccion12,.seccion13,.seccion14,.seccion15,
 .seccion16,.seccion17,.seccion18{
   padding: 15px;
@@ -65,13 +72,13 @@ html {
 .seccion8,.seccion9,.seccion11,.seccion12,.seccion13 {
   width: auto;
 }
-.seccion8 .marcoLiso,.seccion9 .marcoLiso,.seccion11 .marcoLiso,
+.seccion8 .marcoLiso8,.seccion9 .marcoLiso,.seccion11 .marcoLiso,
 .seccion12 .marcoLiso,.seccion13 .marcoLiso,.seccion14 .marcoLiso,
 .seccion15 .marcoLiso,.seccion16 .marcoLiso,.seccion17 .marcoLiso,
 .seccion18 .marcoLiso{
   text-align: center;
 }
-.marcoLiso h5, .marcoLiso h4{
+.row  .col-sm-4 h4{
   font-weight: bold;
 }
 .barra{
@@ -139,6 +146,9 @@ html {
 }*/
 
 .aside {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
   display: block;
   background-color: #33b5e5;
   padding: 15px;
@@ -147,9 +157,24 @@ html {
   font-size: 14px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
+.aside h2{
+  margin-top: 5px;
+  margin-left: 0px;
+}
+.aside p{
+  margin-top: 0px;
+  margin-left: 0px;
+}
+.aside a{
+  color: #0b639a;
+}
+
 
 .footer {
-  background-color: #0099cc;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  background-color:#127cc2;
   color: #ffffff;
   text-align: center;
   font-size: 12px;
