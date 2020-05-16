@@ -36,19 +36,20 @@ html {
 #Lisfoto{
   padding: 0;
 }
-#Telefono img{
-  margin-right: 7px;
+#Telefono .fa{
+  margin-right: 8px;
+  margin-left: 2px;
 }
 #Telefono{
   vertical-align: middle;
 }
-#Documento img{
+#Documento .fa{
   margin-right: 6px;
 }
 #Documento{
   background: #127cc2;
 }
-#Correo img{
+#Correo .fa{
   margin-right: 8px;
 }
 #Correo{
@@ -64,24 +65,33 @@ html {
   display: block;
 }
 .seccion1, .seccion2,.seccion3, .seccion4, .seccion5, 
-.seccion6, .seccion7, .seccion9,.seccion10,
-.seccion11,.seccion12,.seccion13,.seccion14,.seccion15,
-.seccion16,.seccion17,.seccion18{
+.seccion6, .seccion7,.seccion10{
   padding: 15px;
 }
 .seccion8,.seccion9,.seccion11,.seccion12,.seccion13 {
   width: auto;
 }
-.seccion8 .marcoLiso8,.seccion9 .marcoLiso,.seccion11 .marcoLiso,
-.seccion12 .marcoLiso,.seccion13 .marcoLiso,.seccion14 .marcoLiso,
-.seccion15 .marcoLiso,.seccion16 .marcoLiso,.seccion17 .marcoLiso,
-.seccion18 .marcoLiso{
+.seccion14 .panel-heading, .seccion14 .container{
+  padding: 0px;
+}
+.seccion8 .marcoLiso8,.seccion9 .marcoLiso8,.seccion11 .marcoLiso8,
+.seccion12 .marcoLiso8,.seccion13 .marcoLiso8,.seccion14 .marcoLiso8,
+.seccion15 .marcoLiso8,.seccion16 .marcoLiso8,.seccion17 .marcoLiso8,
+.seccion18 .marcoLiso8{
   text-align: center;
 }
 .row  .col-sm-4 h4{
   font-weight: bold;
 }
 .barra{
+  padding-left: 15px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  background-color: #e5e6e7;
+}
+#linkuni{
+  font-size: large;
+  font-weight: bold;
   padding-left: 15px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -135,7 +145,7 @@ html {
 }
 
 .menu li {
-  padding: 6px 6px 6px 6px;
+  padding: 10px 10px 10px 10px;
   background-color: #0b639a;
   color: #ffffff;
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
@@ -162,11 +172,27 @@ html {
   margin-left: 0px;
 }
 .aside p{
-  margin-top: 0px;
-  margin-left: 0px;
+  margin: 0px 0px 0px;
+  
 }
 .aside a{
   color: #0b639a;
+}
+.aside a:link, .aside a:visited {
+  
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.aside a:hover, .aside a:active {
+  color: #0b639a;
+}
+
+.aside .fa{
+  margin-right: 10px;
 }
 
 
@@ -179,6 +205,15 @@ html {
   text-align: center;
   font-size: 12px;
   padding: 15px;
+}
+.footer .fa{
+  margin-right: 5px;
+}
+.footer .der{
+  text-align: right;
+}
+.footer .izq{
+  text-align: left;
 }
 
 /* For mobile phones: */

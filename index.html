@@ -6,6 +6,8 @@
 
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!--<meta http-equiv="content-type" content="index.html; charset=UTF-8">-->
+
 <title>Rodrigo Fuentes</title>
 <!-- styles -->
 <link rel="stylesheet" href="estilos/font-awesome.min.css">
@@ -27,15 +29,15 @@
     <div class="smm">
       <div class="container">
         <div class="smm__container js-smm-container">
-          <h1 class="smm__logo-wrapper"><a href="#"><img src="imagenes/LogoRODRI.svg" alt="Logo" width="120" height="60"></a></h1>
+          <h1 class="smm__logo-wrapper"><a href="index.html"><img src="imagenes/LogoRODRI.svg" alt="Logo" width="120" height="60"></a></h1>
           <button class="btn btn-default smm__toggle js-smm-toggle visible-xs-block visible-sm-block"><i class="fa fa-bars"></i></button>
           <nav class="smm__collapse">
             <ul class="smm__primary-menu">
               <li><a href="#marcaprincipal" onclick="mostrarPrincipal();" id="linkprincipal"><i class="fa fa-home"></i>Inicio</a></li>
-              <li><a href="#marcauniversidad" onclick="mostrarUniversidad();" id="linkuniversidad"><i class="fa fa-group"></i>Universidad</a></li>
+              <li><a href="#marcauniversidad" onclick="mostrarUniversidad();" id="linkuniversidad"><i class="fa fa-graduation-cap"></i>Universidad</a></li>
               <li><a href="#marcaproyectos" onclick="mostrarProyectos();" id="linkproyecto"><i class="fa fa-suitcase"></i>Proyectos</a></li>
-              <li><a href="#marcadocumentos" onclick="mostrarDocumentos();" id="linkcontacto"><i class="fa fa-envelope"></i>Certificados</a></li>
-              <li><a href="#"><i class="fa fa-gears"></i>Descargar curriculúm PDF</a></li>
+              <li><a href="#marcadocumentos" onclick="mostrarDocumentos();" id="linkcontacto"><i class="fa fa-certificate"></i>Certificados</a></li>
+              <li><a href="#"><i class="fa fa-cloud-download"></i>Descargar curriculúm PDF</a></li>
             </ul>
             <ul class="smm__secondary-menu">
               <!--<li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>-->
@@ -59,9 +61,9 @@
         <div id="Columnaizda">
           <img id = "FotoPrincipal" src="imagenes/FotoP1.png" alt="José Rodrigo Fuentes Ramirez">
           <ul>
-            <li id="Telefono"><img id="home" src="imagenes/icono_telefono.png" width="27" height="28">638184398</li>
-            <li id="Documento"><img id="home2" src="imagenes/icono_dni.png" width="28" height="27">6481865</li>
-            <li id="Correo"><img id="home3" src="imagenes/icono_email.png" width="26" height="27"><a href="https://mail.google.com/" target="_blank" style="color: white;">rodry170389@gmail.com</a></li>
+            <li id="Telefono"><i class="fa fa-phone"></i>638184398</li>
+            <li id="Documento"><i class="fa fa-address-card"></i>6481865</li>
+            <li id="Correo"><a href="https://mail.google.com/" target="_blank" style="color: white;"><i class="fa fa-envelope"></i>rodry170389@gmail.com</a></li>
           </ul>
           <img id = "FotoAptitudes" src="imagenes/Barraizda.png" alt="Aptitudes">
           <a name="marcafinal"></a><!--Marca para navegación más cómoda-->
@@ -199,7 +201,9 @@
             <h2>UNIVERSIDAD CARLOS III DE MADRID</h2>
           </div><!--Fin barra-->
           <div class ="seccion5">
-            <a href="https://www.uc3m.es/Inicio" target="_blank">Universidad Carlos III de Madrid</a>
+            <div id ="linkuni">
+              <a href="https://www.uc3m.es/Inicio" target="_blank">Universidad Carlos III de Madrid</a>
+            </div>
             <div class="marcoLiso">
               <h3>Historia</h3>
               <p>La Universidad Carlos III de Madrid fue creada por Ley de las <a href="http://www.cortesgenerales.es/" target="_blank">Cortes Generales,</a> de 5 de mayo de 1989,&nbsp; en el marco de la Ley de Reforma Universitaria de 1983. Desde&nbsp;su&nbsp;nacimiento tuvo vocación de ser una universidad pública innovadora, de dimensiones reducidas, de calidad y con una orientación prioritaria hacia la investigación. Su primer Rector fue el profesor <a href="/conocenos/historia-mision/perfil-biografico-gregorio-peces-barba-martinez-rector-fundador-uc3m" target="_blank">D.&nbsp;Gregorio&nbsp;Peces-Barba.</a></p>
@@ -222,9 +226,6 @@
                 <p>El Grado en Ingeniería de Comunicaciones ahora renombrado a <a href="https://www.uc3m.es/grado/comunicaciones-moviles#presentacion" target="_blank">Grado en Ingeniería de Comunicaciones Móviles y Espaciales</a> tiene como objetivo formar profesionales especializados en el análisis y diseño de los futuros sistemas de comunicaciones, que es una especialidad dentro de la rama de la ingeniería de telecomunicación.</p>
                 <p>En este Grado el alumnado&nbsp;adquiere&nbsp;una sólida formación para abordar las tecnologías avanzadas de comunicaciones así como diferentes sistemas de vanguardia como redes para aplicaciones bio o seguridad, comunicaciones espaciales y vía satélite, comunicaciones vehiculares, comunicaciones para Internet de las cosas (IoT), comunicaciones tipo máquina para la industria 4.0, sistemas de comunicaciones con aplicaciones en salud, tratamiento de información y análisis de Big Data, etc, siendo capaces de adaptarse a un sector en continua evolución, con un gran impacto social.</p>
                 <p>Este Grado tiene una clara vocación internacional, con el reconocimiento de los mejores sellos de calidad, como EUR-ACE, y está avalado por el mercado con tasas de inserción laboral del 100%. Se imparte en modalidad bilingüe, cuenta con laboratorios específicos, destacando la formación práctica, y ofrece la posibilidad de realizar prácticas en las principales empresas del sector.</p>
-              </div>
-              <div class="marcoLiso">
-                <p>Pinchando sobre el link de cada asignatura tiene más información sobre lo que se ve en cada una de ellas</p>
               </div>
               <table>
                 <tr>
@@ -477,25 +478,31 @@
             <h3>PROGRAMACIÓN EN JAVASCRIPT, BOOTSTRAP, HTML5 Y CSS3</h3>
           </div>
           <div class ="seccion9">
-            <div class="marcoLiso">
-              <div class="imagenesproyedocu">
-                <img id="myImg2" src="imagenes/blogrodrigo.png" alt="Programación en Javascript, Bootstrap, html5 y css3" onclick="muestraimagen2();">
-                <!-- The Modal -->
-                <div id="myModal2" class="modala2">
-                  <span class="close2" onclick="cerrarimagen2();">&times;</span>
-                  <img class="modal-content2" id="img02">
-                  <div id="caption2"></div>
+            <div class="marcoLiso8">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <div class="imagenesproyedocu">
+                    <img id="myImg2" src="imagenes/blogrodrigo.png" alt="Programación en Javascript, Bootstrap, html5 y css3" onclick="muestraimagen2();">
+                    <!-- The Modal -->
+                    <div id="myModal2" class="modala2">
+                      <span class="close2" onclick="cerrarimagen2();">&times;</span>
+                      <img class="modal-content2" id="img02">
+                      <div id="caption2"></div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="infodocumentos">
-                <div class="marcoLiso">
-                  <h3>Resumen</h3>
-                  <p>Desarrollo y diseño de un blog personal o un curriculúm online para poder informar con mayor detalle los trabajos, estudios y prácticas realizadas durante mi vida laboral.</p>
-                  <p>Para poder desarrollar la página web hemos utilizado el framework Booststrap junto con los lenguajes de programación javascript, html5 y css3. Para el diseño hemos utilizado el programa Visual Studio Code, Github, Photoshop, Illustrator y algunas aplicaciones web que nos ayudaron a mejorar la eficiencia del desarrollo.</p>
+                <div class="panel-body">
+                  <div class="infodocumentos">
+                    <div class="marcoLiso8">
+                      <h3>Resumen</h3>
+                      <p>Desarrollo y diseño de un blog personal o un curriculúm online para poder informar con mayor detalle los trabajos, estudios y prácticas realizadas durante mi vida laboral.</p>
+                      <p>Para poder desarrollar la página web hemos utilizado el framework Booststrap junto con los lenguajes de programación javascript, html5 y css3. Para el diseño hemos utilizado el programa Visual Studio Code, Github, Photoshop, Illustrator y algunas aplicaciones web que nos ayudaron a mejorar la eficiencia del desarrollo.</p>
+                    </div>
+                  </div>
+                  <div class="botondescargar">
+                    <button class="button" style="vertical-align:middle"><span><a href="https://github.com/rodry170389/Blog-Rodrigo" target="_blank">Descargar </a></span></button>
+                  </div>
                 </div>
-              </div>
-              <div class="botondescargar">
-                <button class="button" style="vertical-align:middle"><span><a href="https://github.com/rodry170389/Blog-Rodrigo" target="_blank">Descargar </a></span></button>
               </div>
             </div>
           </div> 
@@ -503,51 +510,63 @@
             <h3>ANDROID - AGENDA PERSONAL CON SQlite</h3>
           </div>
           <div class ="seccion15">
-            <div class="marcoLiso">
-              <div class="imagenesproyedocu">
-                <img id="myImg6" src="imagenes/AgendaSQlite.png" alt="Programación de una agenda en Andorid" onclick="muestraimagen6();">
-                <!-- The Modal -->
-                <div id="myModal6" class="modala6">
-                  <span class="close6" onclick="cerrarimagen6();">&times;</span>
-                  <img class="modal-content6" id="img06">
-                  <div id="caption6"></div>
+            <div class="marcoLiso8">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <div class="imagenesproyedocu">
+                    <img id="myImg6" src="imagenes/AgendaSQlite.png" alt="Programación de una agenda en Andorid" onclick="muestraimagen6();">
+                    <!-- The Modal -->
+                    <div id="myModal6" class="modala6">
+                      <span class="close6" onclick="cerrarimagen6();">&times;</span>
+                      <img class="modal-content6" id="img06">
+                      <div id="caption6"></div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="infodocumentos">
-                <div class="marcoLiso">
-                  <h3>Resumen</h3>
-                  <p>Desarrollo y diseño de una agenda personal para el sistema operativo Android</p>
-                  <p>Para poder desarrollar la página web hemos utilizado el framework Booststrap junto con los lenguajes de programación javascript, html5 y css3. Para el diseño hemos utilizado el programa Visual Studio Code, Github, Photoshop, Illustrator y algunas aplicaciones web que nos ayudaron a mejorar la eficiencia del desarrollo.</p>
+                <div class="panel-body">
+                  <div class="infodocumentos">
+                    <div class="marcoLiso8">
+                      <h3>Resumen</h3>
+                      <p>Desarrollo y diseño de una agenda personal para el sistema operativo Android</p>
+                      <p>Para poder desarrollar la página web hemos utilizado el framework Booststrap junto con los lenguajes de programación javascript, html5 y css3. Para el diseño hemos utilizado el programa Visual Studio Code, Github, Photoshop, Illustrator y algunas aplicaciones web que nos ayudaron a mejorar la eficiencia del desarrollo.</p>
+                    </div>
+                  </div>
+                  <div class="botondescargar">
+                    <button class="button" style="vertical-align:middle"><span><a href="https://github.com/rodry170389/Android-AgendaPersonal-SQLite" target="_blank">Descargar </a></span></button>
+                  </div>
                 </div>
-              </div>
-              <div class="botondescargar">
-                <button class="button" style="vertical-align:middle"><span><a href="https://github.com/rodry170389/Android-AgendaPersonal-SQLite" target="_blank">Descargar </a></span></button>
-              </div>
+              </div> 
             </div>
           </div> 
           <div class ="barra">
             <h3>SIMULADOR GRÁFICO DE ONDAS PLANAS ELECTROMAGNÉTICAS - MATLAB</h3>
           </div>
           <div class ="seccion16">
-            <div class="marcoLiso">
-              <div class="imagenesproyedocu">
-                <img id="myImg7" src="imagenes/Ondas.jpg" alt="Simulador ondas planas electromagneticas" onclick="muestraimagen7();">
-                <!-- The Modal -->
-                <div id="myModal7" class="modala7">
-                  <span class="close7" onclick="cerrarimagen7();">&times;</span>
-                  <img class="modal-content7" id="img07">
-                  <div id="caption7"></div>
+            <div class="marcoLiso8">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <div class="imagenesproyedocu">
+                    <img id="myImg7" src="imagenes/Ondas.jpg" alt="Simulador ondas planas electromagneticas" onclick="muestraimagen7();">
+                    <!-- The Modal -->
+                    <div id="myModal7" class="modala7">
+                      <span class="close7" onclick="cerrarimagen7();">&times;</span>
+                      <img class="modal-content7" id="img07">
+                      <div id="caption7"></div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="infodocumentos">
-                <div class="marcoLiso">
-                  <h3>Resumen</h3>
-                  <p>Desarrollo y diseño de un blog personal o un curriculúm online para poder informar con mayor detalle los trabajos, estudios y prácticas realizadas durante mi vida laboral.</p>
-                  <p>Para poder desarrollar la página web hemos utilizado el framework Booststrap junto con los lenguajes de programación javascript, html5 y css3. Para el diseño hemos utilizado el programa Visual Studio Code, Github, Photoshop, Illustrator y algunas aplicaciones web que nos ayudaron a mejorar la eficiencia del desarrollo.</p>
+                <div class="panel-body">
+                  <div class="infodocumentos">
+                    <div class="marcoLiso8">
+                      <h3>Resumen</h3>
+                      <p>Desarrollo y diseño de una agenda personal para el sistema operativo Android</p>
+                      <p>Para poder desarrollar la página web hemos utilizado el framework Booststrap junto con los lenguajes de programación javascript, html5 y css3. Para el diseño hemos utilizado el programa Visual Studio Code, Github, Photoshop, Illustrator y algunas aplicaciones web que nos ayudaron a mejorar la eficiencia del desarrollo.</p>
+                    </div>
+                  </div>
+                  <div class="botondescargar">
+                    <button class="button" style="vertical-align:middle"><span><a href="https://github.com/rodry170389/Ondas-planas-Campos-Electromagneticos" target="_blank">Descargar </a></span></button>
+                  </div>
                 </div>
-              </div>
-              <div class="botondescargar">
-                <button class="button" style="vertical-align:middle"><span><a href="https://github.com/rodry170389/Ondas-planas-Campos-Electromagneticos" target="_blank">Descargar </a></span></button>
               </div>
             </div>
           </div> 
@@ -555,51 +574,63 @@
             <h3>PROGRAMACIÓN DE UNA IA ARTIFICIAL PARA EL SIMULADOR DE ROBOCODE</h3>
           </div>
           <div class ="seccion17">
-            <div class="marcoLiso">
-              <div class="imagenesproyedocu">
-                <img id="myImg8" src="imagenes/robocode.png" alt="Programación en Javascript, Bootstrap, html5 y css3" onclick="muestraimagen8();">
-                <!-- The Modal -->
-                <div id="myModal8" class="modala8">
-                  <span class="close8" onclick="cerrarimagen8();">&times;</span>
-                  <img class="modal-content8" id="img08">
-                  <div id="caption8"></div>
+            <div class="marcoLiso8">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <div class="imagenesproyedocu">
+                    <img id="myImg8" src="imagenes/robocode.png" alt="Programación en Javascript, Bootstrap, html5 y css3" onclick="muestraimagen8();">
+                    <!-- The Modal -->
+                    <div id="myModal8" class="modala8">
+                      <span class="close8" onclick="cerrarimagen8();">&times;</span>
+                      <img class="modal-content8" id="img08">
+                      <div id="caption8"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel-body">
+                  <div class="infodocumentos">
+                    <div class="marcoLiso8">
+                      <h3>Resumen</h3>
+                      <p>Desarrollo y diseño de una agenda personal para el sistema operativo Android</p>
+                      <p>Para poder desarrollar la página web hemos utilizado el framework Booststrap junto con los lenguajes de programación javascript, html5 y css3. Para el diseño hemos utilizado el programa Visual Studio Code, Github, Photoshop, Illustrator y algunas aplicaciones web que nos ayudaron a mejorar la eficiencia del desarrollo.</p>
+                    </div>
+                  </div>
+                  <div class="botondescargar">
+                    <button class="button" style="vertical-align:middle"><span><a href="https://github.com/rodry170389/Codigo-Robocode" target="_blank">Descargar </a></span></button>
+                  </div>
                 </div>
               </div>
-              <div class="infodocumentos">
-                <div class="marcoLiso">
-                  <h3>Resumen</h3>
-                  <p>Desarrollo y diseño de un blog personal o un curriculúm online para poder informar con mayor detalle los trabajos, estudios y prácticas realizadas durante mi vida laboral.</p>
-                  <p>Para poder desarrollar la página web hemos utilizado el framework Booststrap junto con los lenguajes de programación javascript, html5 y css3. Para el diseño hemos utilizado el programa Visual Studio Code, Github, Photoshop, Illustrator y algunas aplicaciones web que nos ayudaron a mejorar la eficiencia del desarrollo.</p>
-                </div>
-              </div>
-              <div class="botondescargar">
-                <button class="button" style="vertical-align:middle"><span><a href="https://github.com/rodry170389/Codigo-Robocode" target="_blank">Descargar </a></span></button>
-              </div>
-            </div>
+            </div>            
           </div> 
           <div class ="barra">
             <h3>PROGRAMACIÓN DEL VIDEOJUEGO LLAMADO SUDOKU EN JAVA</h3>
           </div>
           <div class ="seccion18">
-            <div class="marcoLiso">
-              <div class="imagenesproyedocu">
-                <img id="myImg9" src="imagenes/sudoku.png" alt="Programación en Javascript, Bootstrap, html5 y css3" onclick="muestraimagen9();">
-                <!-- The Modal -->
-                <div id="myModal9" class="modala9">
-                  <span class="close9" onclick="cerrarimagen9();">&times;</span>
-                  <img class="modal-content9" id="img09">
-                  <div id="caption9"></div>
+            <div class="marcoLiso8">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <div class="imagenesproyedocu">
+                    <img id="myImg9" src="imagenes/sudoku.png" alt="Programación en Javascript, Bootstrap, html5 y css3" onclick="muestraimagen9();">
+                    <!-- The Modal -->
+                    <div id="myModal9" class="modala9">
+                      <span class="close9" onclick="cerrarimagen9();">&times;</span>
+                      <img class="modal-content9" id="img09">
+                      <div id="caption9"></div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="infodocumentos">
-                <div class="marcoLiso">
-                  <h3>Resumen</h3>
-                  <p>Desarrollo y diseño de un blog personal o un curriculúm online para poder informar con mayor detalle los trabajos, estudios y prácticas realizadas durante mi vida laboral.</p>
-                  <p>Para poder desarrollar la página web hemos utilizado el framework Booststrap junto con los lenguajes de programación javascript, html5 y css3. Para el diseño hemos utilizado el programa Visual Studio Code, Github, Photoshop, Illustrator y algunas aplicaciones web que nos ayudaron a mejorar la eficiencia del desarrollo.</p>
+                <div class="panel-body">
+                  <div class="infodocumentos">
+                    <div class="marcoLiso8">
+                      <h3>Resumen</h3>
+                      <p>Desarrollo y diseño de una agenda personal para el sistema operativo Android</p>
+                      <p>Para poder desarrollar la página web hemos utilizado el framework Booststrap junto con los lenguajes de programación javascript, html5 y css3. Para el diseño hemos utilizado el programa Visual Studio Code, Github, Photoshop, Illustrator y algunas aplicaciones web que nos ayudaron a mejorar la eficiencia del desarrollo.</p>
+                    </div>
+                  </div>
+                  <div class="botondescargar">
+                    <button class="button" style="vertical-align:middle"><span><a href="https://github.com/rodry170389/Video-Juego-Sudoku" target="_blank">Descargar </a></span></button>
+                  </div>
                 </div>
-              </div>
-              <div class="botondescargar">
-                <button class="button" style="vertical-align:middle"><span><a href="https://github.com/rodry170389/Video-Juego-Sudoku" target="_blank">Descargar </a></span></button>
               </div>
             </div>
           </div> 
@@ -607,17 +638,23 @@
             <h3>EDICIÓN DE VÍDEO Y FOTOGRAFÍA</h3>
           </div>
           <div class ="seccion14">
-            <div class="marcoLiso">
-              <div class="container">
-                <div class="embed-responsive embed-responsive-16by9">
-                  <iframe id="videorodri" class="embed-responsive-item" src="https://www.youtube.com/embed/V6Se2U29Kik"></iframe>
+            <div class="marcoLiso8">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <div class="container">
+                    <div class="embed-responsive embed-responsive-16by9">
+                      <iframe id="videorodri" class="embed-responsive-item" src="https://www.youtube.com/embed/V6Se2U29Kik"></iframe>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="infodocumentos">
-                <div class="marcoLiso">
-                  <h3>Resumen</h3>
-                  <p>Desarrollo, diseño y edición de un vídeo de promoción para un grupo Folclorico de Bolivia</p>
-                  <p>Para el desarrollo utilizamos todo el paquete de adobe y muchos más recursos de internet. Este es uno de los muchos vídeos que hice.</p>
+                <div class="panel-body">
+                  <div class="infodocumentos">
+                    <div class="marcoLiso8">
+                      <h3>Resumen</h3>
+                      <p>Desarrollo y diseño de una agenda personal para el sistema operativo Android</p>
+                      <p>Para poder desarrollar la página web hemos utilizado el framework Booststrap junto con los lenguajes de programación javascript, html5 y css3. Para el diseño hemos utilizado el programa Visual Studio Code, Github, Photoshop, Illustrator y algunas aplicaciones web que nos ayudaron a mejorar la eficiencia del desarrollo.</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -627,51 +664,63 @@
         <div id="documentos">
           <a name="marcadocumentos"></a><!--Marca para navegación más cómoda-->
           <div class ="barradocu">
-            <h2>DOCUMENTACIÓN</h2>
+            <h2>CERTIFICADOS</h2>
           </div><!--Fin barra-->
           <div class ="seccion10">
             <p>En esta sección están algunos documentos que no expongan mucho mi privacidad, si necesita más documentos me los puede pedir por correo electrónico.</p>
           </div>
           <div class ="barra">
-            <h3>GRADO EN INGENIERÍA DE SISTEMAS DE COMUNICACIONES</h3>
-          </div>
-          <div class ="seccion11">
-            <div class="marcoLiso">
-              <div class="imagenesproyedocu">
-                <img id="myImg3" src="imagenes/expRodrigo.png" alt="Historial del mi carrera" onclick="muestraimagen3();">
-                <!-- The Modal -->
-                <div id="myModal3" class="modala3">
-                  <span class="close3" onclick="cerrarimagen3();">&times;</span>
-                  <img class="modal-content3" id="img03">
-                  <div id="caption3"></div>
-                </div>
-              </div>
-              <div class="infodocumentos">
-                <div class="marcoLiso">
-                  <h3>Resumen</h3>
-                  <p>Expediente Universitario de la carrera(La imagen es solo de muestra). Si lo necesitan pedirmelo por correo.</p>
-                </div>
-              </div>
-            </div>
-          </div> 
-          <div class ="barra">
             <h3>CORE NETWORKS S.L. - IFCT048PO-APLICACIONES CON ANDROID Y HTML5</h3>
           </div>
           <div class ="seccion12">
-            <div class="marcoLiso">
-              <div class="imagenesproyedocu">
-                <img id="myImg4" src="imagenes/coreNetworks.jpg" alt="Certificado Core Networks" onclick="muestraimagen4();">
-                <!-- The Modal -->
-                <div id="myModal4" class="modala4">
-                  <span class="close4" onclick="cerrarimagen4();">&times;</span>
-                  <img class="modal-content4" id="img04">
-                  <div id="caption4"></div>
+            <div class="marcoLiso8">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <div class="imagenesproyedocu">
+                    <img id="myImg4" src="imagenes/coreNetworks.jpg" alt="Certificado Core Networks" onclick="muestraimagen4();">
+                    <!-- The Modal -->
+                    <div id="myModal4" class="modala4">
+                      <span class="close4" onclick="cerrarimagen4();">&times;</span>
+                      <img class="modal-content4" id="img04">
+                      <div id="caption4"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel-body">
+                  <div class="infodocumentos">
+                    <div class="marcoLiso8">
+                      <h3>Resumen</h3>
+                      <p>Certificado del Curso de aplicaciones con Android y html5</p>
+                    </div>
+                  </div>
                 </div>
               </div>
-              <div class="infodocumentos">
-                <div class="marcoLiso">
-                  <h3>Resumen</h3>
-                  <p>Certificado del Curso de aplicaciones con Android y html5</p>
+            </div>
+          </div>
+          <div class ="barra">
+            <h3>GRADO EN INGENIERÍA DE SISTEMAS DE COMUNICACIONES</h3>
+          </div>
+          <div class ="seccion11">
+            <div class="marcoLiso8">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <div class="imagenesproyedocu">
+                    <img id="myImg3" src="imagenes/expRodrigo.png" alt="Historial del mi carrera" onclick="muestraimagen3();">
+                    <!-- The Modal -->
+                    <div id="myModal3" class="modala3">
+                      <span class="close3" onclick="cerrarimagen3();">&times;</span>
+                      <img class="modal-content3" id="img03">
+                      <div id="caption3"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel-body">
+                  <div class="infodocumentos">
+                    <div class="marcoLiso8">
+                      <h3>Resumen</h3>
+                      <p>Expediente Universitario de la carrera(La imagen es solo de muestra). Si lo necesitan pedirmelo por correo.</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -680,20 +729,26 @@
             <h3>CERTIFICADO DE KEYSIGHT TECHNOLOGIES - RETOS Y SOLUCIONES A MEDIDA EN DISPOSITIVOS IOT</h3>
           </div> 
           <div class ="seccion13">
-            <div class="marcoLiso">
-              <div class="imagenesproyedocu">
-                <img id="myImg5" src="imagenes/retosiot.jpg" alt="Certificado de KEYSIGHT TECHNOLOGIES" onclick="muestraimagen5();">
-                <!-- The Modal -->
-                <div id="myModal5" class="modala5">
-                  <span class="close5" onclick="cerrarimagen5();">&times;</span>
-                  <img class="modal-content4" id="img05">
-                  <div id="caption5"></div>
+            <div class="marcoLiso8">
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <div class="imagenesproyedocu">
+                    <img id="myImg5" src="imagenes/retosiot.jpg" alt="Certificado de KEYSIGHT TECHNOLOGIES" onclick="muestraimagen5();">
+                    <!-- The Modal -->
+                    <div id="myModal5" class="modala5">
+                      <span class="close5" onclick="cerrarimagen5();">&times;</span>
+                      <img class="modal-content4" id="img05">
+                      <div id="caption5"></div>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              <div class="infodocumentos">
-                <div class="marcoLiso">
-                  <h3>Resumen</h3>
-                  <p>Certificado del seminario retos y soluciones a medida en dispositivos IOT</p>
+                <div class="panel-body">
+                  <div class="infodocumentos">
+                    <div class="marcoLiso8">
+                      <h3>Resumen</h3>
+                      <p>Certificado del seminario retos y soluciones a medida en dispositivos IOT</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -701,27 +756,33 @@
         </div><!--Fin documentos-->
       </div><!--col-6 col-s-9-->
         
-        
-      
-    
       <div class="col-3 col-s-12">
         
       </div>
-
-      
-    </div>
+    </div><!--Fin fila-->
     <div class="aside">
-      <h2><a onclick="mostrarUniversidad();" id="linkasideuniversidad"><i class="fa fa-group"></i>Universidad</a></h2>
+      <h2><a onclick="mostrarUniversidad();" id="linkasideuniversidad"><i class="fa fa-graduation-cap"></i>Universidad</a></h2>
       <p>En este apartado pueden ver todo lo relacionado con mi universidad, la Carlos III de Madrid. También verán un resumen de todo lo que vi en la carrera</p>
       <h2><a onclick="mostrarProyectos();" id="linkabajoproyectos"><i class="fa fa-suitcase"></i>Proyectos</a></h2>
       <p>Aquí colgaré poco a poco todos los proyectos que hice y haré en un futuro</p>
-      <h2><a onclick="mostrarDocumentos();" id="linkasidecontacto"><i class="fa fa-envelope"></i>Certificados</a></h2>
+      <h2><a onclick="mostrarDocumentos();" id="linkasidecontacto"><i class="fa fa-certificate"></i>Certificados</a></h2>
       <p>En esta ventana enseñare algunos de mis certificados y diplomas que no contengan mucha información sensible</p>
+      <h2><a href="#"><i class="fa fa-cloud-download"></i>Descargar curriculúm PDF</a></h2>
     </div><!--Fin aside-->
     <div class="footer">
-      <p>Desarrollado y diseñado por José Rodrigo Fuentes Ramirez</p>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="izq">
+            <a href="index.html" style="color: white;"><i class="fa fa-cogs"></i>Desarrollado y diseñado por José Rodrigo Fuentes Ramirez</a>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class = "der">
+            <a href="https://mail.google.com/" target="_blank" style="color: white;"><i class="fa fa-envelope"></i>Contacto : rodry170389@gmail.com</a>
+          </div>
+        </div>
+      </div>
     </div>
   </main>
-
 </body>
 </html>
