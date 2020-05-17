@@ -25,13 +25,13 @@ window.addEventListener("resize", function(){
     /*document.getElementById('demo').innerHTML = window.innerWidth;*/
     w = window.innerWidth;
     if(w>600){
-        document.getElementById("linkuniversidad").href = "#marcaprincipal";
-        document.getElementById("linkproyecto").href = "#marcaprincipal";
-        document.getElementById("linkcontacto").href = "#marcaprincipal"; 
+        document.getElementById("linkuniversidad").href = "#";
+        document.getElementById("linkproyecto").href = "#";
+        document.getElementById("linkcontacto").href = "#"; 
 
-        document.getElementById("linkasideuniversidad").href = "#marcaprincipal";
-        document.getElementById("linkabajoproyectos").href = "#marcaprincipal";
-        document.getElementById("linkasidecontacto").href = "#marcaprincipal";
+        document.getElementById("linkasideuniversidad").href = "#";
+        document.getElementById("linkabajoproyectos").href = "#";
+        document.getElementById("linkasidecontacto").href = "#";
     }else{
         document.getElementById("linkuniversidad").href = "#marcafinal";
         document.getElementById("linkproyecto").href = "#marcafinal";

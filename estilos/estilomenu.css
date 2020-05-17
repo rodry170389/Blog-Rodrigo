@@ -80,6 +80,18 @@ html {
 .seccion18 .marcoLiso8{
   text-align: center;
 }
+.marcoLiso8{
+  padding-bottom: 10px;
+}
+.marcoLiso8 h3{
+  font-weight: bold;
+}
+.seccion8 .marcoLiso8 .panel-heading,.seccion9 .marcoLiso8 .panel-heading,.seccion11 .marcoLiso8 .panel-heading,
+.seccion12 .marcoLiso8 .panel-heading,.seccion13 .marcoLiso8 .panel-heading,.seccion14 .marcoLiso8 .panel-heading,
+.seccion15 .marcoLiso8 .panel-heading,.seccion16 .marcoLiso8 .panel-heading,.seccion17 .marcoLiso8 .panel-heading,
+.seccion18 .marcoLiso8 .panel-heading{
+  padding: 0px;
+}
 .row  .col-sm-4 h4{
   font-weight: bold;
 }
@@ -173,7 +185,7 @@ html {
 }
 .aside p{
   margin: 0px 0px 0px;
-  
+  text-align: center;
 }
 .aside a{
   color: #0b639a;
@@ -279,9 +291,8 @@ html {
 
 /*Imagenes proyecto y documentos*/
 
-
 #myImg, #myImg2, #myImg3, #myImg4,#myImg5, #myImg6,#myImg7,#myImg8,#myImg9 {
-  width: 50%;
+  width: 100%;
   height: auto;
   border-radius: 5px;
   cursor: pointer;
@@ -306,11 +317,10 @@ html {
 
 /* Modal Content (image) */
 .modal-content, .modal-content2,.modal-content3,.modal-content4,.modal-content5,.modal-content6,
-.modal-content7,.modal-content8,.modal-content9 {
+.modal-content7,.modal-content8,.modal-content9{
   margin: auto;
   display: block;
-  width: 80%;
-  max-width: 600px;
+  width: 60%; 
 }
 
 /* Caption of Modal Image */
@@ -345,7 +355,7 @@ html {
 }
 
 /* The Close Button */
-.close, .close2, .close3, .close4, .close5, .close6 , .close7, .close8, .close9{
+.close1, .close2, .close3, .close4, .close5, .close6 , .close7, .close8, .close9{
   position: absolute;
   top: 15px;
   right: 35px;
@@ -367,6 +377,9 @@ html {
 @media only screen and (max-width: 600px){
   .modal-content,.modal-content2,.modal-content3,.modal-content4,.modal-content5,.modal-content6,.modal-content7,.modal-content8,.modal-content9{
     width: 100%;
+  }
+  .footer .der {
+    text-align: left;
   }
 }
 
