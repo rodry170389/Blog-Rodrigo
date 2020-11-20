@@ -95,6 +95,9 @@ html {
 .row  .col-sm-4 h4{
   font-weight: bold;
 }
+#sidebar .col-sm-12 h4{
+  font-weight: bold;
+}
 .barra{
   padding-left: 15px;
   padding-top: 8px;
