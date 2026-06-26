@@ -1,1345 +1,961 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-<link rel="stylesheet" href="estilos/estilomenu.css">
-<link rel="icon" href="imagenes/favicon.png" sizes="32x32" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="José Rodrigo Fuentes Ramírez - Microsoft Power Platform Specialist certificado. Especializado en Power Apps, Power Automate y Power BI. Consultor en Telefónica con 15+ proyectos de automatización empresarial.">
+  <meta name="author" content="José Rodrigo Fuentes Ramírez">
+  <meta name="keywords" content="Power Platform, Power Apps, Power Automate, Power BI, Microsoft 365, SharePoint, Dataverse, Dynamics 365, Desarrollador Power Platform, Madrid">
 
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<!--<meta http-equiv="content-type" content="index.html; charset=UTF-8">-->
+  <!-- Open Graph -->
+  <meta property="og:title" content="José Rodrigo Fuentes - Microsoft Power Platform Specialist">
+  <meta property="og:description" content="Microsoft Certified Power Platform Specialist especializado en Power Apps, Power Automate y Power BI">
+  <meta property="og:type" content="website">
 
-<title>Rodrigo Fuentes</title>
-<!-- styles -->
-<link rel="stylesheet" href="estilos/font-awesome.min.css">
-<link rel="stylesheet" href="estilos/bootstrap.min.css">
-<link rel="stylesheet" href="estilos/simple-mobile-menu.css">
-<link rel="stylesheet" href="estilos/simple-mobile-menu-responsive.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700">
-<!-- scripts -->
-<script src="js/paginaprincipal.js"></script>
-<script src="js/jquery.min.js"></script>
-<!-- uncomment if you need some Bootstrap JS functionality -->
-<!-- <script src="js/bootstrap.min.js"></script> -->
-<script src="js/simple-mobile-menu.js"></script>
+  <title>José Rodrigo Fuentes - Microsoft Power Platform Specialist</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="imagenes/favicon.png" sizes="32x32" type="image/png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="estilos/estilomenu.css">
+  <link rel="stylesheet" href="estilos/font-awesome.min.css">
 </head>
 
-<body onload="datospantalla();" class="center-block">
-  <header>
-    <a name="#"></a><!--Marca para navegación más cómoda-->
-    <div class="smm">
+<body>
+  <!-- Skip to main content -->
+  <a href="#main-content" class="skip-link" data-i18n="a11y.skip_to_content">Saltar al contenido principal</a>
+
+  <!-- Navigation -->
+  <nav class="navbar" role="navigation" aria-label="Navegación principal">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo" aria-label="Inicio">
+        <span class="nav-logo-text">RF</span>
+      </a>
+
+      <!-- Language Toggle -->
+      <button class="lang-toggle" id="langToggle" aria-label="Change language">
+        <span class="lang-flag" id="currentLang">🇪🇸</span>
+      </button>
+
+      <button class="nav-toggle" aria-label="Abrir menú de navegación" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
+
+      <ul class="nav-menu" role="list">
+        <li><a href="#expertise" class="nav-link" data-i18n="nav.expertise">Especialización</a></li>
+        <li><a href="#about" class="nav-link" data-i18n="nav.about">Sobre mí</a></li>
+        <li><a href="#experience" class="nav-link" data-i18n="nav.experience">Experiencia</a></li>
+        <li><a href="#skills" class="nav-link" data-i18n="nav.skills">Skills</a></li>
+        <li><a href="#projects" class="nav-link" data-i18n="nav.projects">Proyectos</a></li>
+        <li><a href="#education" class="nav-link" data-i18n="nav.education">Educación</a></li>
+        <li><a href="#contact" class="nav-link nav-link-cta" data-i18n="nav.contact">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
       <div class="container">
-        <div class="smm__container js-smm-container">
-          <h1 class="smm__logo-wrapper"><a href="index.html"><img src="imagenes/LogoRODRI.svg" alt="Logo" width="120" height="60"></a></h1>
-          <button class="btn btn-default smm__toggle js-smm-toggle visible-xs-block visible-sm-block"><i class="fa fa-bars"></i></button>
-          <nav class="smm__collapse">
-            <ul class="smm__primary-menu">
-              <li><a href="#" onclick="mostrarPrincipal();" id="linkprincipal"><i class="fa fa-home"></i>Inicio</a></li>
-              <li><a href="#" onclick="mostrarUniversidad();" id="linkuniversidad"><i class="fa fa-graduation-cap"></i>Universidad</a></li>
-              <li><a href="#" onclick="mostrarProyectos();" id="linkproyecto"><i class="fa fa-suitcase"></i>Proyectos</a></li>
-              <li><a href="#" onclick="mostrarDocumentos();" id="linkcontacto"><i class="fa fa-certificate"></i>Certificados</a></li>
-              <li><a href="https://drive.google.com/file/d/1tdKp1yIcJDTlrkZS11q58ozz2o-2NqSc/view?usp=sharing" target="_blank"><i class="fa fa-cloud-download"></i>Descargar curriculúm (PDF)</a></li>
-            </ul>
-            <ul class="smm__secondary-menu">
-              <!--<li><a href="#" target="_blank"><i class="fa fa-facebook"></i></a></li>-->
-              <!--<li><a href="#" target="_blank"><i class="fa fa-instagram"></i></a></li>-->
-              <li><a href="https://twitter.com/rodry170389" target="_blank"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="https://www.linkedin.com/in/jose-rodrigo-fuentes-ramirez" target="_blank"><i class="fa fa-linkedin"></i></a></li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </header>
-  <main>
-    <div class="fila">
-      <div class="col-3 col-s-3 menu">
-        <div id="Columnaizda">
-          <img id = "FotoPrincipal" src="imagenes/FotoP2.png" alt="José Rodrigo Fuentes Ramirez">
-          <ul>
-            <li id="Telefono"><i class="fa fa-phone"></i>+34 638184398</li>
-            <li id="Documento"><i class="fa fa-linkedin-square" aria-hidden="true"></i><a href="https://www.linkedin.com/in/jose-rodrigo-fuentes-ramirez" target="_blank" style="color: white;">José Rodrigo Fuentes Ramírez</a></li>
-            <li id="Correo"><a href="https://mail.google.com/" target="_blank" style="color: white;"><i class="fa fa-envelope"></i>jrodrigofuentesr@gmail.com</a></li>
-          </ul>
-          <div id= "sidebar">
-            <div class="col-sm-12">
-              <h4>DATOS PERSONALES</h4>
-              <h5>Residencia: Madrid</h5>
-			        <!-- <h5>Certificado de discapacidad: 33%</h5> -->
-            </div>
-            <div class="col-sm-12">
-              <h4>HABILIDADES</h4>
-			  <div class ="espmedio">
-				<label for="trabajo">Trabajo</label>
-				<progress id="trabajo" max="100" value="95"> 95% </progress>
-			  </div>
-			  <div class ="espmedio">
-				<label for="creatividad">Creatividad</label>
-				<progress id="creatividad" max="100" value="90"> 90% </progress>
-			  </div>
-			  <div class ="espmedio">
-				<label for="trabajoequ">Trabajo en grupo</label>
-				<progress id="trabajoequ" max="100" value="100"> 100% </progress>
-			  </div>
-              <div class ="espmedio">
-				<label for="organizacion">Organización</label>
-				<progress id="organizacion" max="100" value="95"> 95% </progress>
-			  </div>
-			  <div class ="espmedio">
-				<label for="comunicacion">Comunicación</label>
-				<progress id="comunicacion" max="100" value="90"> 90% </progress>
-			  </div>
-      </div>
-        <div class="col-sm-12">
-          <h4>SOFTWARE</h4>
-        <div class ="espmedio">
-          <label for="Power apps">Power apps</label>
-          <progress id="Power apps" max="100" value="70"> 70% </progress>
-        </div>
-
-			  <div class ="espmedio">
-				<label for="java">Java</label>
-				<progress id="java" max="100" value="80"> 80% </progress>
-			  </div>
-            
-			  <div class ="espmedio">
-				<label for="cast">C#</label>
-				<progress id="cast" max="100" value="70"> 70% </progress>
-			  </div>
-              
-			  <div class ="espmedio">
-				<label for="Matlab">Matlab</label>
-				<progress id="Matlab" max="100" value="80"> 80% </progress>
-			  </div>
-              
-			  <div class ="espmedio">
-				<label for="Html">Html</label>
-				<progress id="Html" max="100" value="90"> 90% </progress>
-			  </div>
-              
-			  <div class ="espmedio">
-				<label for="CSS">CSS</label>
-				<progress id="CSS" max="100" value="90"> 90% </progress>
-			  </div>
-
-        <div class ="espmedio">
-        <label for="SCSS">SCSS</label>
-        <progress id="SCSS" max="100" value="90"> 90% </progress>
-        </div>
-
-        <div class ="espmedio">
-        <label for="Typescript">Typescript</label>
-        <progress id="Typescript" max="100" value="75"> 75% </progress>
-        </div>
-
-        <div class ="espmedio">
-        <label for="Git">Git</label>
-        <progress id="Git" max="100" value="80"> 80% </progress>
-        </div>
-
-        <div class ="espmedio">
-        <label for="Bitbucket">Bitbucket</label>
-        <progress id="Bitbucket" max="100" value="80"> 80% </progress>
-        </div>
-
-        <div class ="espmedio">
-        <label for="Jira">Jira</label>
-        <progress id="Jira" max="100" value="70"> 70% </progress>
-        </div>
-
-        <div class ="espmedio">
-        <label for="Github">Github</label>
-        <progress id="Github" max="100" value="80"> 80% </progress>
-        </div>
-			       
-			  <div class ="espmedio">
-				<label for="AndroidStudio">Android Studio</label>
-				<progress id="AndroidStudio" max="100" value="90"> 90% </progress>
-			  </div>
-              
-			  <div class ="espmedio">
-				<label for="Javascript">Javascript</label>
-				<progress id="Javascript" max="100" value="70"> 70% </progress>
-			  </div>
-              
-			  <div class ="espmedio">
-				<label for="Bootstrap">Bootstrap</label>
-				<progress id="Bootstrap" max="100" value="90"> 90% </progress>
-			  </div>
-              
-			  <div class ="espmedio">
-				<label for="Jquery">Jquery</label>
-				<progress id="Jquery" max="100" value="80"> 80% </progress>
-			  </div>
-              
-			  <div class ="espmedio">
-				<label for="Angular">Angular</label>
-				<progress id="Angular" max="100" value="60"> 60% </progress>
-			  </div>
-              
-			  <div class ="espmedio">
-				<label for="Phonegap">Phonegap</label>
-				<progress id="Phonegap" max="100" value="70"> 70% </progress>
-			  </div>
-              
-			  <div class ="espmedio">
-				<label for="Photoshop">Photoshop</label>
-				<progress id="Photoshop" max="100" value="90"> 90% </progress>
-			  </div>
-              
-			  <div class ="espmedio">
-				<label for="Illustrator">Illustrator</label>
-				<progress id="Illustrator" max="100" value="60"> 60% </progress>
-			  </div>
-              
-			  <div class ="espmedio">
-				<label for="Premiere">Premiere</label>
-				<progress id="Premiere" max="100" value="80"> 80% </progress>
-			  </div>
-              
-			  <div class ="espmedio">
-				<label for="SonyVegas">Sony Vegas</label>
-				<progress id="SonyVegas" max="100" value="80"> 80% </progress>
-			  </div>
-              
-			  <div class ="espmedio">
-				<label for="Aftereffects">After effects</label>
-				<progress id="Aftereffects" max="100" value="70"> 70% </progress>
-			  </div>
-              
-			  <div class ="espmedio">
-				<label for="Tajima">Tajima</label>
-				<progress id="Tajima" max="100" value="65"> 65% </progress>
-			  </div>
-              
-			  <div class ="espmedio">
-				<label for="Office">Office</label>
-				<progress id="Office" max="100" value="90"> 90% </progress>
-			  </div>
-              
-			  <div class ="espmedio">
-				<label for="Wampserver">Wampserver</label>
-				<progress id="Wampserver" max="100" value="85"> 85% </progress>
-			  </div>
-              
-			  <div class ="espmedio">
-				<label for="Xampp">Xampp</label>
-				<progress id="Xampp" max="100" value="85"> 85% </progress>
-			  </div>
-              
-			  <div class ="espmedio">
-				<label for="VisualStudioC">Visual Studio C.</label>
-				<progress id="VisualStudioC" max="100" value="90"> 90% </progress>
-			  </div>
-
-        <div class ="espmedio">
-        <label for="NodeJS">NodeJS</label>
-        <progress id="NodeJS" max="100" value="50"> 50% </progress>
-        </div>
-
-        <div class ="espmedio">
-        <label for="PHP">PHP</label>
-        <progress id="PHP" max="100" value="50"> 50% </progress>
-        </div>
-                
-        <div class ="espmedio">
-        <label for="Python">Python</label>
-        <progress id="Python" max="100" value="50"> 50% </progress>
-        </div>
-              
-            </div>
-            <div class="col-sm-12">
-              <h4>OTROS DATOS DE INTERÉS</h4>
-              <h5>INGLÉS B1: En continuo aprendizaje</h5>
-            </div>
-          </div>
-          
-       </div><!--Fin Columnaizda-->
-      </div>
-    
-      <div class="col-6 col-s-9">
-        <div id="principal">
-          
-          <div class ="seccion1">
-            <div class="nombre">
-              <h1>JOSÉ RODRIGO FUENTES RAMÍREZ</h1>
-            </div><!--Nombre-->
-            <h3>GRADO EN INGENIERÍA DE SISTEMAS DE COMUNICACIONES</h3>
-            <p>
-              Soy un ingeniero especializado en sistemas de comunicaciones, con una sólida base técnica y dos años de experiencia en consultoría en el campo de la programación. 
-              Además, cuento con proyectos personales desarrollados a lo largo de mi carrera universitaria, así como trabajos independientes para clientes autónomos. 
-              Me considero un hombre inquieto, con muchas ganas de seguir aprendiendo. Me gustaría seguir mejorando todos los conocimientos teóricos y prácticos que adquirí en la universidad. 
-              Cuento con una gran capacidad de autoaprendizaje, junto con el compromiso y la responsabilidad, puedo ser de gran ayuda para adquirir los objetivos de la empresa.
+        <div class="hero-content">
+          <div class="hero-text">
+            <p class="hero-label">
+              <span class="label-icon">⚡</span>
+              <span data-i18n="hero.label">Microsoft Power Platform Specialist</span>
+              <span class="certified-badge" data-i18n="hero.certified">Microsoft Certified</span>
             </p>
-            <p>
-              Mi perfil en Github es el siguiente: <a href="https://github.com/rodry170389" target="_blank" style="color:#0b639a;">https://github.com/rodry170389</a>
+            <h1 class="hero-title" data-i18n="hero.title" data-i18n-html>
+              José Rodrigo<br>Fuentes Ramírez
+            </h1>
+            <p class="hero-description" data-i18n="hero.description">
+              Full Stack Developer especializado en <strong>Power Apps</strong>, <strong>Power Automate</strong> y <strong>Power BI</strong>.
+              Transformo procesos empresariales en soluciones digitales escalables combinando low-code
+              Microsoft 365 con desarrollo custom en C# y Angular.
             </p>
-          </div><!--Fin Seccion1-->
-          <div class ="barra">
-            <h3>EXPERIENCIA LABORAL</h3>
-          </div><!--Fin barra-->
-          <div class ="seccion3"> 
-            <div class ="marcoLisoExperencia">
-              <div class="row">
-                <div class="col-sm-4">
-                  <h4>Telefónica</h4>
-                  <h5>2023 - Actualidad</h5>
-                </div>
-                <div class="col-sm-8">
-                  <h4>Software Developer Full Stack</h4>
-                  <p>Profesional con sólida experiencia en el desarrollo de aplicaciones completas utilizando una amplia variedad de tecnologías. 
-                    Actualmente trabajo en Telefónica, una empresa multinacional líder en telecomunicaciones de España. 
-                    Poseo habilidades avanzadas en desarrollo frontend y backend, con un enfoque en la creación de soluciones eficientes y escalables. Desarrollo y mantenimiento de aplicaciones empresariales utilizando Power Apps y Power Automate.
-                    Implementación de soluciones backend en C# y APIs para integrar servicios.
-                    Creación de interfaces de usuario dinámicas y responsivas con HTML y JavaScript.
-                     Colaboración con equipos multidisciplinarios para diseñar y mejorar funcionalidades. </p>
-                </div>
-               </div>
-              <div class="row">
-                <div class="col-sm-4">
-                  <h4>Perklam</h4>
-                  <h5>2023</h5>
-                </div>
-                <div class="col-sm-8">
-                  <h4>TÉCNICO INFORMÁTICO</h4>
-                  <p>Desarrollo de una página web, asistencia en tecnologías informáticas y de comunicaciones. </p>
-                </div>
-               </div>
-              <div class="row">
-                <div class="col-sm-4">
-                  <h4>Adesso</h4>
-                  <h5>2022-2023</h5>
-                </div>
-                <div class="col-sm-8">
-                  <h4>FRONT END DEVELOPER</h4>
-                  <p>Desarrollo de páginas web con Angular, Typescript, Html, SCSS, Jira, Bitbucket, git, nodejs, Microsoft Teams y Google Meet.</p>
-                </div>
-               </div>
-                <div class="row">
-                  <div class="col-sm-4">
-                    <h4>Desarrollo APP Android</h4>
-                    <h5>2021</h5>
-                  </div>
-                  <div class="col-sm-8">
-                    <h4>EPILEPSI CONTROL</h4>
-                    <p>Desarrollo de una aplicación móvil para Android.</p>
-                  </div>
-                </div> 
-              <div class="row">
-                <div class="col-sm-4">
-                  <h4>Asistente Técnico del OEP</h4>
-                  <h5>2020</h5>
-                </div>
-                <div class="col-sm-8">
-                  <h4>ÓRGANO ELECTORAL DEL ESTADO DE BOLIVIA</h4>
-                  <p>Asistencia en las tecnologías de comunicaciones, apoyo informático, gestión de base de datos, etc.</p>
-                </div>
-              </div> 
-              <div class="row">
-                <div class="col-sm-4">
-                  <h4>Programación en PHP, HTML5, JAVASCRPIT y CSS</h4>
-                  <h5>2020</h5>
-                </div>
-                <div class="col-sm-8">
-                  <h4>DISEÑO Y DESARROLLO DE UNA PÁGINAS WEB</h4>
-                  <p>Los recursos utilizados en el desarrollo son:
-                    Wampserver, Visual Studio Code, Github, CMS
-                    Wordpress, Bootstrap, javascript, php, html5, css,
-                    MariaDB, Cpanel, SEO, etc.</p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-4">
-                  <h4>Diseñador Gráfico</h4>
-                  <h5>2018 - 2020</h5>
-                </div>
-                <div class="col-sm-8">
-                  <h4>PERSONALIZACIONES KLAM</h4>
-                  <p>Diseñador de modelos gráficos para su posterior bordado o estampado en ropa. Programas utilizados: Tajima, Photoshop, Illustrator, etc.</p>
-                </div>
-              </div> 
-              <div class="row">
-                <div class="col-sm-4">
-                  <h4>Editor de Vídeo y Fotografía</h4>
-                  <h5>2010 - 2017</h5>
-                </div>
-                <div class="col-sm-8">
-                  <h4>PRODUCCIONES LANDY y PRODUCCIONES DISENG ARG</h4>
-                  <p>Editor de vídeo y fotografía a nivel profesional, trabajamos en todo tipo de proyectos en el campo de la fotografía y vídeo.</p>
-                </div>
-              </div>
-            </div> <!--Fin filainfo-->
-          </div><!--Fin Seccion3-->
-          <div class ="barra">
-            <h3>EDUCACIÓN</h3>
-          </div><!--Fin barra-->
-          <div class ="seccion2">
-            <div class ="marcoLisoEducacion">
-              <div class="row">
-                <div class="col-sm-4">
-                  <h4>Universidad Carlos III de Madrid</h4>
-                  <h5>2021</h5>
-                </div>
-                <div class="col-sm-8">
-                  <h4>GRADO EN INGENIERÍA DE SISTEMAS DE COMUNICACIONES</h4>
-                  <p>Graduado en Ingeniería de Sistemas de Comunicaciones en la Universidad Carlos III de Madrid.</p>
-                </div>
-              </div> 
-              <div class="row">
-                <div class="col-sm-4">
-                  <h4>Instituto Parque Aluche de Madrid</h4>
-                  <h5>2010</h5>
-                </div>
-                <div class="col-sm-8">
-                  <h4>BACHILLERATO EN MODALIDAD DE TECNOLOGÍA</h4>
-                  <p>Bachiller en la modalidad de tecnología en el instituto Parque Aluche de Madrid.</p>
-                </div>
-              </div>      
-            </div> <!--Fin filainfo-->
-          </div><!--Fin Seccion2-->
-          <div class ="barra">
-            <h3>FORMACIÓN COMPLEMENTARIA</h3>
-          </div><!--Fin barra-->
-          <div class ="seccion2">
-            <div class ="marcoLisoEducacion">
-              <div class="row">
-                <div class="col-sm-4">
-                  <h4>Fundación GoodJob</h4>
-                  <h5>2022</h5>
-                </div>
-                <div class="col-sm-8">
-                  <h4>CIBERSEGURIDAD</h4>
-                  <p>Programa IMPACT #include</p>
-                </div>
-              </div> 
-              <div class="row">
-                <div class="col-sm-4">
-                  <h4>San Gabriel</h4>
-                  <h5>2020</h5>
-                </div>
-                <div class="col-sm-8">
-                  <h4>DESARROLLO WEB PARA COMERCIO ELECTRÓNICO</h4>
-                  <p>Diseño y desarrollo de webs para comercio electrónico.</p>
-                </div>
-              </div> 
-              <div class="row">
-                <div class="col-sm-4">
-                  <h4>Femxa S.L.U</h4>
-                  <h5>2020</h5>
-                </div>
-                <div class="col-sm-8">
-                  <h4>PRESTASHOP</h4>
-                  <p>Desarrollo de tiendas virtuales.</p>
-                </div>
-              </div> 
-              <div class="row">
-                <div class="col-sm-4">
-                  <h4>Webempresa</h4>
-                  <h5>2020</h5>
-                </div>
-                <div class="col-sm-8">
-                  <h4>OPTIMIZACIÓN SEO EN WORDPRESS</h4>
-                  <p>Curso impartido por Webempresa.</p>
-                </div>
-              </div> 
-              <div class="row">
-                <div class="col-sm-4">
-                  <h4>Core Networks S.L.</h4>
-                  <h5>2020</h5>
-                </div>
-                <div class="col-sm-8">
-                  <h4>APLICACIONES CON ANDROID Y HTML5</h4>
-                  <p>Acción formativa en aplicaciones con Android y HTML5.</p>
-                </div>
-              </div> 
-              <div class="row">
-                <div class="col-sm-4">
-                  <h4>Keysight Technologies</h4>
-                  <h5>2017</h5>
-                </div>
-                <div class="col-sm-8">
-                  <h4>RETOS Y SOLUCIONES DE MEDIDA EN DISPOSITIVOS IOT</h4>
-                  <p>Seminario impartido por la empresa Keysight Technologies.</p>
-                </div>
-              </div>   
-            </div> <!--Fin filainfo-->
-          </div><!--Fin Seccion2-->
-          <div class ="barra">
-            <h3>IDIOMAS</h3>
-          </div><!--Fin barra-->
-          <div class ="seccion2">
-            <div class ="marcoLisoEducacion">
-              <div class="row">
-                <div class="col-sm-4">
-                  <h4>Inglés</h4>
-                </div>
-                <div class="col-sm-8">
-                  <h4>NIVEL B1</h4>
-                </div>
-              </div>      
-            </div> <!--Fin filainfo-->
-          </div><!--Fin Seccion2-->
-          
-          <div class ="barra">
-            <h3>HOBBIES</h3>
-          </div><!--Fin barra-->
-          <div class ="seccion4">
-            <div class="marcoLisohobbies">
-              <img id = "FotoAficiones" src="imagenes/aficiones.png" alt="Aficiones">
-            </div> 
-          </div><!--Fin Seccion4-->
-        </div><!--Fin Principal-->
-        
-        <div id="universidad">
-          
-          <div class ="barrauni">
-            <h2>UNIVERSIDAD CARLOS III DE MADRID</h2>
-          </div><!--Fin barra-->
-          <div class ="seccion5">
-            <div id ="linkuni">
-              <a href="https://www.uc3m.es/Inicio" target="_blank">Universidad Carlos III de Madrid</a>
+            <div class="hero-stats-inline" data-i18n-list="hero.stats">
+              <span>🏆 Microsoft Certified</span>
+              <span>•</span>
+              <span>2+ años Telefónica</span>
+              <span>•</span>
+              <span>15+ proyectos Power Platform</span>
+              <span>•</span>
+              <span>🤖 IA & Copilot</span>
             </div>
-          </div> <!--Fin barra-->
-          <div class ="barra">
-            <h3>Grado en Ingeniería de Sistemas de Comunicaciones</h3>
-          </div>
-          <div class ="seccion6">
-            <div id="tablaasignaturas">
-              <div class="marcoLiso">
-                <p>El Grado en Ingeniería de Comunicaciones ahora renombrado a <a href="https://www.uc3m.es/grado/comunicaciones-moviles#presentacion" target="_blank">Grado en Ingeniería de Comunicaciones Móviles y Espaciales</a> tiene como objetivo formar profesionales especializados en el análisis y diseño de los futuros sistemas de comunicaciones, que es una especialidad dentro de la rama de la ingeniería de telecomunicación.</p>
-                <p>En este Grado el alumnado&nbsp;adquiere&nbsp;una sólida formación para abordar las tecnologías avanzadas de comunicaciones así como diferentes sistemas de vanguardia como redes para aplicaciones bio o seguridad, comunicaciones espaciales y vía satélite, comunicaciones vehiculares, comunicaciones para Internet de las cosas (IoT), comunicaciones tipo máquina para la industria 4.0, sistemas de comunicaciones con aplicaciones en salud, tratamiento de información y análisis de Big Data, etc, siendo capaces de adaptarse a un sector en continua evolución, con un gran impacto social.</p>
-                <p>Este Grado tiene una clara vocación internacional, con el reconocimiento de los mejores sellos de calidad, como EUR-ACE, y está avalado por el mercado con tasas de inserción laboral del 100%. Se imparte en modalidad bilingüe, cuenta con laboratorios específicos, destacando la formación práctica, y ofrece la posibilidad de realizar prácticas en las principales empresas del sector.</p>
-              </div>
-              <div class ="barra">
-                <h3>Resumen del grado</h3>
-              </div>
-              <table>
-                <tr>
-                  <th><a onclick="mostrarProyectos();" id="linkasideproyecto">Estudio y aplicación del método Metropolis-Hastings para la inversión Bayesiana</a></th>
-                  <th>Proyecto de Fin de Grado</th>
-                </tr>
-              </table>
-
-              <table>
-                <tr>
-                  <th>Asignaturas</th>
-                  <th>Créditos</th>
-                </tr>
-                <tr>
-                  <td><a href="https://aplicaciones.uc3m.es/cpa/generaFicha?est=217&plan=442&asig=13488&idioma=1" target="_blank">Cálculo I (13488)</a></td>
-                  <td>6</td>
-                </tr>
-                <tr>
-                  <td><a href="https://aplicaciones.uc3m.es/cpa/generaFicha?est=217&plan=442&asig=13489&idioma=1" target="_blank">Física (13489)</a></td>
-                  <td>6</td>
-                </tr>
-                <tr>
-                  <td><a href="https://aplicaciones.uc3m.es/cpa/generaFicha?est=217&plan=442&asig=13490&idioma=1" target="_blank">Programación (13490)</a></td>
-                  <td>6</td>
-                </tr>
-                <tr>
-                  <td><a href="https://aplicaciones.uc3m.es/cpa/generaFicha?est=217&plan=442&asig=13492&idioma=1" target="_blank">Electrónica Digital (13492)</a></td>
-                  <td>6</td>
-                </tr>
-                <tr>
-                  <td><a href="https://aplicaciones.uc3m.es/cpa/generaFicha?anio=2017&est=217&asig=13487&idioma=1" target="_blank">Álgebra (13487)</a></td>
-                  <td>6</td>
-                </tr>
-                <tr>
-                  <td><a href="https://aplicaciones.uc3m.es/cpa/generaFicha?est=217&plan=442&asig=13491&idioma=1" target="_blank">Cálculo II (13491)</a></td>
-                  <td>6</td>
-                </tr>
-                <tr>
-                  <td><a href="https://aplicaciones.uc3m.es/cpa/generaFicha?est=217&plan=442&asig=13493&idioma=1" target="_blank">Sistemas y Circuitos (13493)</a></td>
-                  <td>6</td>
-                </tr>
-                <tr>
-                  <td><a href="https://aplicaciones.uc3m.es/cpa/generaFicha?est=217&plan=442&asig=13494&idioma=1" target="_blank">Programación de Sistemas (13494)</a></td>
-                  <td>6</td>
-                </tr>
-                <tr>
-                  <td><a href="https://aplicaciones.uc3m.es/cpa/generaFicha?est=217&plan=442&asig=13495&idioma=1" target="_blank">Estadística (13495)</a></td>
-                  <td>6</td>
-                </tr>
-                <tr>
-                  <td><a href="https://aplicaciones.uc3m.es/cpa/generaFicha?est=217&plan=442&asig=14360&idioma=1" target="_blank">Técnicas de expresión oral y escrita (14360)</a></td>
-                  <td>3</td>
-                </tr>
-                <tr>
-                  <td><a href="https://aplicaciones.uc3m.es/cpa/generaFicha?est=217&plan=442&asig=13496&idioma=1" target="_blank">Sistemas Lineales (13496)</a></td>
-                  <td>6</td>
-                </tr>
-                <tr>
-                  <td><a href="https://aplicaciones.uc3m.es/cpa/generaFicha?est=217&plan=442&asig=13498&idioma=1" target="_blank">Componentes y circuitos electrónicos (13498)</a></td>
-                  <td>6</td>
-                </tr>
-                <tr>
-                  <td><a href="https://aplicaciones.uc3m.es/cpa/generaFicha?est=217&plan=442&asig=13499&idioma=1" target="_blank">Arquitectura de redes de acceso y medio compartido (13499)</a></td>
-                  <td>6</td>
-                </tr>
-                <tr>
-                  <td><a href="https://aplicaciones.uc3m.es/cpa/generaFicha?est=217&plan=442&asig=13839&idioma=1" target="_blank">Arquitectura de Sistemas (13839)</a></td>
-                  <td>2</td>
-                </tr>
-                <tr>
-                  <td><a href="https://aplicaciones.uc3m.es/cpa/generaFicha?est=217&plan=442&asig=15937&idioma=1" target="_blank">Ampliación de Matemáticas (15937)</a></td>
-                  <td>6</td>
-                </tr>
-                <tr>
-                  <td><a href="https://aplicaciones.uc3m.es/cpa/generaFicha?est=217&plan=442&asig=13497&idioma=1" target="_blank">Teoría de la Comunicación (13497)</a></td>
-                  <td>6</td>
-                </tr>
-                <tr>
-                  <td><a href="https://aplicaciones.uc3m.es/cpa/generaFicha?est=217&plan=442&asig=13840&idioma=1" target="_blank">Campos Electromagnéticos (13840)</a></td>
-                  <td>6</td>
-                </tr>
-                <tr>
-                  <td><a href="https://aplicaciones.uc3m.es/cpa/generaFicha?est=217&plan=442&asig=13841&idioma=1" target="_blank">Análisis y diseño de circuitos (13841)</a></td>
-                  <td>6</td>
-                </tr>
-                <tr>
-                  <td><a href="https://aplicaciones.uc3m.es/cpa/generaFicha?est=217&plan=442&asig=13843&idioma=1" target="_blank">Sistemas digitales basados en microprocesadores (13843)</a></td>
-                  <td>6</td>
-                </tr>
-                <tr>
-                  <td><a href="https://aplicaciones.uc3m.es/cpa/generaFicha?est=217&plan=442&asig=13847&idioma=1" target="_blank">Redes y servicios de comunicaciones (13847)</a></td>
-                  <td>6</td>
-                </tr>
-                <tr>
-                  <td><a href="https://aplicaciones.uc3m.es/cpa/generaFicha?est=217&plan=442&asig=13842&idioma=1" target="_blank">Comunicaciones Digitales (13842)</a></td>
-                  <td>6</td>
-                </tr>
-                <tr>
-                  <td><a href="https://aplicaciones.uc3m.es/cpa/generaFicha?est=217&plan=442&asig=13851&idioma=1" target="_blank">Sistemas y canales de transmisión (13851)</a></td>
-                  <td>6</td>
-                </tr>
-                <tr>
-                  <td><a href="https://aplicaciones.uc3m.es/cpa/generaFicha?est=206&asig=14360&idioma=1" target="_blank">Técnicas de expresión oral y escrita (14360)</a></td>
-                  <td>6</td>
-                </tr>
-                <tr>
-                  <td><a href="https://aplicaciones.uc3m.es/cpa/generaFicha?est=217&plan=442&asig=14823&idioma=1" target="_blank">Sistemas Electrónicos (14823)</a></td>
-                  <td>6</td>
-                </tr>
-                <tr>
-                  <td><a href="https://aplicaciones.uc3m.es/cpa/generaFicha?est=217&plan=442&asig=15939&idioma=1" target="_blank">Teoría moderna de la detección y estimación (15939)</a></td>
-                  <td>6</td>
-                </tr>
-                <tr>
-                  <td><a href="https://aplicaciones.uc3m.es/cpa/generaFicha?est=217&plan=442&asig=13844&idioma=1" target="_blank">Tecnologías de alta frecuencia (13844)</a></td>
-                  <td>6</td>
-                </tr>
-                <tr>
-                  <td><a href="https://aplicaciones.uc3m.es/cpa/generaFicha?est=217&plan=442&asig=13850&idioma=1" target="_blank">Codificación de información multimedia para comunicaciones (13850)</a></td>
-                  <td>6</td>
-                </tr>
-                <tr>
-                  <td><a href="https://aplicaciones.uc3m.es/cpa/generaFicha?est=217&plan=442&asig=13853&idioma=1" target="_blank">Dispositivos y medios de transmisión ópticos (13853)</a></td>
-                  <td>6</td>
-                </tr>
-                <tr>
-                  <td><a href="https://aplicaciones.uc3m.es/cpa/generaFicha?est=217&plan=442&asig=15980&idioma=1" target="_blank">Conmutación (15980)</a></td>
-                  <td>6</td>
-                </tr>
-                <tr>
-                  <td><a href="https://aplicaciones.uc3m.es/cpa/generaFicha?est=217&plan=442&asig=13845&idioma=1" target="_blank">Sistemas de Telecomunicación (13845)</a></td>
-                  <td>6</td>
-                </tr>
-                <tr>
-                  <td><a href="https://aplicaciones.uc3m.es/cpa/generaFicha?est=217&plan=442&asig=13849&idioma=1" target="_blank">Propagación y transmisión inalámbrica (13849)</a></td>
-                  <td>6</td>
-                </tr>
-                <tr>
-                  <td><a href="https://aplicaciones.uc3m.es/cpa/generaFicha?est=217&plan=442&asig=13854&idioma=1" target="_blank">Proyectos, normativa y política de telecomunicaciones (13854)</a></td>
-                  <td>6</td>
-                </tr>
-                <tr>
-                  <td><a href="https://aplicaciones.uc3m.es/cpa/generaFicha?est=217&plan=442&asig=13855&idioma=1" target="_blank">Comunicaciones Móviles (13855)</a></td>
-                  <td>6</td>
-                </tr>
-                <tr>
-                  <td><a href="https://aplicaciones.uc3m.es/cpa/generaFicha?anio=2017&est=217&asig=13858&idioma=1" target="_blank">Fundamentos de gestión empresarial (13858)</a></td>
-                  <td>6</td>
-                </tr>
-                <tr>
-                  <td><a href="http://www3.uc3m.es/reina/Fichas/Idioma_1/217.10235.html" target="_blank">¿Entendemos las noticias? La prensa y la economía (10235)</a></td>
-                  <td>6</td>
-                </tr>
-                <tr>
-                  <td><a href="https://aplicaciones.uc3m.es/cpa/generaFicha?est=217&anio=2018&plan=254&asig=13856&idioma=1" target="_blank">Planificación de redes de comunicaciones inalámbricas (13856)</a></td>
-                  <td>6</td>
-                </tr>
-                <tr>
-                  <td><a href="https://aplicaciones.uc3m.es/cpa/generaFicha?est=217&anio=2017&plan=254&asig=13857&idioma=1" target="_blank">Tecnologías de acceso a red (13857)</a></td>
-                  <td>6</td>
-                </tr>
-                <tr>
-                  <td><a href="https://aplicaciones.uc3m.es/cpa/generaFicha?est=231&asig=14321&idioma=1" target="_blank">Créditos de Humanidades (14321)</a></td>
-                  <td>1</td>
-                </tr>
-                <tr>
-                  <td><a href="https://aplicaciones.uc3m.es/cpa/generaFicha?est=213&plan=407&asig=14359&idioma=1" target="_blank">Técnicas de búsqueda y uso de la información (14359)</a></td>
-                  <td>3</td>
-                </tr>
-                <tr>
-                  <td><a href="http://www3.uc3m.es/reina/Fichas/Idioma_1/223.15585.html" target="_blank">Conocimiento libre y aprendizaje en la web (15585)</a></td>
-                  <td>3</td>
-                </tr>
-                <tr>
-                  <td><a href="https://aplicaciones.uc3m.es/cpa/generaFicha?est=217&anio=2019&plan=254&asig=15942&idioma=1" target="_blank">Métodos estadísticos para las telecomunicaciones (15942)</a></td>
-                  <td>6</td>
-                </tr>
-              </table>
-            </div><!--Fin tabla Universidad-->
-          </div>
-        </div><!--Fin Universidad-->
-        
-        <div id="proyectos">
-          
-          <div class ="barraproy">
-            <h2>PROYECTOS</h2>
-          </div><!--Fin barra-->
-          <div class ="seccion7">
-              <p>En esta sección están algunos de los proyectos que hice durante todo mi período de estudio y mi período de trabajo.</p>
+            <div class="hero-cta">
+              <a href="#contact" class="btn btn-primary" data-i18n="hero.cta_primary">Hablemos</a>
+              <a href="#projects" class="btn btn-secondary" data-i18n="hero.cta_secondary">Ver proyectos</a>
             </div>
-
-            <div class ="barra">
-              <h3>DESARROLLO WEB DE UN CONCESIONARIO DE COCHES EN SEVILLA - ADESSO</h3>
-            </div>
-            <div class ="seccion8">
-              <div class="marcoLiso8">
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <div class="imagenesproyedocu">
-                      <img id="myImg" src="imagenes/driveris.png" alt="Desarrollo de una página web de venta de coches">
-                    </div>
-                  </div>
-                  <div class="panel-body">
-                    <div class="infodocumentos">
-                      <div class="marcoLiso8">
-                        <h3>Resumen</h3>
-                        <p>Desarrollo de páginas web con Angular, Typescript, Html, SCSS, Jira, Bitbucket, git, nodejs, Microsoft Teams y Google Meet.</p>
-                        <a href="https://www.driveris.es/" target="_blank">Link a la página web</a> 
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class ="barra">
-              <h3>DESARROLLO WEB PARA UNA STARTUP DE PERSONALIZACIONES</h3>
-            </div>
-            <div class ="seccion8">
-              <div class="marcoLiso8">
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <div class="imagenesproyedocu">
-                      <img id="myImg" src="imagenes/perklam.png" alt="Desarrollo de una página web de venta de coches">
-                    </div>
-                  </div>
-                  <div class="panel-body">
-                    <div class="infodocumentos">
-                      <div class="marcoLiso8">
-                        <h3>Resumen</h3>
-                        <p>Los recursos utilizados fueron el CMS llamado WordPress, html, css, javascript, github, php, Visual Studio Code, etc...
-
-                        </p>
-                        <a href="https://perklam.com/" target="_blank">Link a la página web</a> 
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class ="barra">
-              <h3>DISEÑO Y DESARROLLO DE UNA APLICACIÓN PARA ANDROID - EPILEPSI CONTROL</h3>
-            </div>
-            <div class ="seccion8">
-              <div class="marcoLiso8">
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <div class="imagenesproyedocu">
-                      <iframe width="100%" height="315" src="https://www.youtube.com/embed/Rd9fiiJRptY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                    </div>
-                  </div>
-                  <div class="panel-body">
-                    <div class="infodocumentos">
-                      <div class="marcoLiso8">
-                        <h3>Resumen</h3>
-                        <p>La aplicación, llamada Epilepsi Control, tiene como objetivo final servir de ayuda a aquellas personas que tienen epilepsia, los enfermos pueden llevar un control de todo aquello que esté relacionado con dicha enfermedad.</p> 
-                      </div>
-                      <div class="botondescargar">
-                        <button class="button" style="vertical-align:middle"><span><a href="https://drive.google.com/drive/folders/1h2mTj8_GfDM2Er_QWOBnOQ8MrwOZZQFM?usp=sharing" target="_blank">Descargar </a></span></button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class ="barra">
-              <h3>DISEÑO Y DESARROLLO DE UNA TIENDA VIRTUAL</h3>
-            </div>
-            <div class ="seccion8">
-              <div class="marcoLiso8">
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <div class="imagenesproyedocu">
-                      <img id="myImg" src="imagenes/proyectopresta.png" alt="Desarrollo de una página web de noticias">
-                    </div>
-                  </div>
-                  <div class="panel-body">
-                    <div class="infodocumentos">
-                      <div class="marcoLiso8">
-                        <h3>Resumen</h3>
-                        <p>Los recursos utilizados fueron el CMS llamado Prestashop, html, css, javascript, github, php, filezilla, etc... </p> 
-                      </div>
-                      <div class="botondescargar">
-                        <button class="button" style="vertical-align:middle"><span><a href="https://drive.google.com/file/d/1pnS1aWozSlky2NzbXN2Bt23ALlxYoYMT/view?usp=sharing" target="_blank">Descargar </a></span></button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          
-            <!-- <div class ="barra">
-              <h3>DISEÑO Y DESARROLLO DE UN PORTAL WEB DE NOTICIAS</h3>
-            </div>
-            <div class ="seccion8">
-              <div class="marcoLiso8">
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <div class="imagenesproyedocu">
-                      <img id="myImg" src="imagenes/bolivianoseneuropa.png" alt="Desarrollo de una página web de noticias">
-                    </div>
-                  </div>
-                  <div class="panel-body">
-                    <div class="infodocumentos">
-                      <div class="marcoLiso8">
-                        <h3>Resumen</h3>
-                        <p>Los recursos utilizados fueron el CMS llamado WordPress, html, css, javascript, github, php, filezilla, etc... </p>
-                        <a href="http://bolivianoseneuropa.com/" target="_blank">Link a la página web</a> 
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div> -->
-            
-          <div class ="barra">
-            <h3>ESTUDIO Y APLICACIÓN DEL MÉTODO METROPOLIS-HASTINGS PARA LA INVERSIÓN BAYESIANA</h3>
-          </div>
-          <div class ="seccion8">
-            <div class="marcoLiso8">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <div class="imagenesproyedocu">
-                    <img id="myImg" src="imagenes/metropolis.png" alt="Proyecto de Fin de Grado: Estudio y Aplicación del método METROPOLIS-HASTINGS para la inversión bayesiana">
-                  </div>
-                </div>
-                <div class="panel-body">
-                  <div class="infodocumentos">
-                    <div class="marcoLiso8">
-                      <h3>Resumen</h3>
-                      <p>Hoy el mundo está inmerso en la que probablemente sea la cuarta revolución industrial,
-                        todo esto es gracias a que vivimos en un mundo hiperinformado e hiperconectado, el
-                        progreso tecnológico avanza como nunca antes lo había hecho, el nacimiento de nuevas
-                        tecnologías que recopilan datos en masa o a pequeña escala es gracias en parte al big data,
-                        a la inteligencia artificial y al uso de algoritmos cada vez más eficientes para poder procesarlos,
-                        esto nos lleva a hacer de nuestro mundo un lugar mejor en donde vivir. Gracias a
-                        las nuevas tecnologías y a la inagotable necesidad de aprender de todo lo que le rodea al
-                        ser humano hizo que se originará la teledetección (Remote Sensing).</p>
-                      <p>El fenómeno físico de la radiación electromagnética es la base de la que parte la ciencia
-                        de la teledetección, esta disciplina se encarga de recolectar información a través de
-                        radiación electromagnética de cualquier fenómeno, cuerpo o superficie, y luego utilizar dichos
-                        datos para crear nuevas aplicaciones. El progreso de esta disciplina es tan grande que
-                        ahora podemos encontrar sensores remotos en los satélites espaciales que orbitan alrededor
-                        del planeta. Los datos recibidos de los satélites, a través de ondas electromagnéticas,
-                        exigen ser analizados y procesados para obtener algún beneficio y ampliar la sabiduría
-                        del ser humano. La información es tan grande que se crearon modelos de transferencia
-                        radiativa.</p>
-                      <p>El modelo Prosail es el que más fama tiene y es el que más se utiliza, este modelo deriva
-                        de otros dos modelos que son el Prospect y el Sail. El modelo más famoso y utilizado se
-                        originó y evolucionó con el propósito de llevar a cabo estudios sobre la reconstrucción de
-                        parámetros biológicos de la vegetación, este modelo analiza la reectancia originada por
-                        el dosel de la vegetación, por medio de una cadena de parámetros de entrada.</p>
-                      <p>Para conseguir generar un modelo matemático que se parezca lo mas fielmente posible
-                        a los datos reales, desarrollamos la inversión estadística de la solución y aplicamos el
-                        algoritmo llamado METROPOLIS-HASTINGS, de esta forma, mas adelante se podrían
-                        llevar a cabo simulaciones, fundamentadas en este módelo, creando nuevas aplicaciones
-                        que ayuden a mejorar la situación del planeta tierra, si estas aplicaciones se crean con
-                        éxito podemos evitar catástrofes medio ambientales a los que nos enfrentamos día a día.</p>
-                    </div>
-                  </div>
-                  <div class="botondescargar">
-                    <button class="button" style="vertical-align:middle"><span><a href="https://drive.google.com/file/d/1yFvo_MZ1WV6c55MiMvYCNE43OlwqKW2J/view?usp=sharing" target="_blank">Descargar </a></span></button>
-                  </div>
-                </div>
-              </div>
-            </div> 
-          </div> 
-          <div class ="barra">
-            <h3>PROGRAMACIÓN EN JAVASCRIPT, BOOTSTRAP, HTML5 Y CSS3 - BLOG PERSONAL RESPONSIVE</h3>
-          </div>
-          <div class ="seccion9">
-            <div class="marcoLiso8">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <div class="imagenesproyedocu">
-                    <img id="myImg" src="imagenes/blogrodrigo.png" alt="Programación en Javascript, Bootstrap, html5 y css3" >              
-                  </div>
-                </div>
-                <div class="panel-body">
-                  <div class="infodocumentos">
-                    <div class="marcoLiso8">
-                      <h3>Resumen</h3>
-                      <p>Desarrollo y diseño de un blog personal o un curriculúm online para poder informar con mayor detalle los trabajos, estudios y prácticas realizadas durante mi vida laboral y universitaria.</p>
-                      <p>Para poder desarrollar la página web hemos utilizado el framework llamado Booststrap junto con los lenguajes de programación javascript, html5 y css3. Para el diseño hemos utilizado los entornos virtuales Visual Studio Code, Github, Photoshop, Illustrator y muchos recursos que estan en internet que nos ayudaron a mejorar la eficiencia del desarrollo.</p>
-                    </div>
-                  </div>
-                  <div class="botondescargar">
-                    <button class="button" style="vertical-align:middle"><span><a href="https://github.com/rodry170389/Blog-Rodrigo" target="_blank">Descargar </a></span></button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> 
-          <div class ="barra">
-            <h3>ANDROID - AGENDA PERSONAL CON SQlite</h3>
-          </div>
-          <div class ="seccion15">
-            <div class="marcoLiso8">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <div class="imagenesproyedocu">
-                    <img id="myImg6" src="imagenes/AgendaSQlite.png" alt="ANDROID - AGENDA PERSONAL CON SQlite" >
-                  </div>
-                </div>
-                <div class="panel-body">
-                  <div class="infodocumentos">
-                    <div class="marcoLiso8">
-                      <h3>Resumen</h3>
-                      <p>Desarrollo y diseño de una agenda personal con SQlite para el sistema operativo Android</p>
-                      <p>Para poder desarrollar la aplicación utilizamos el entorno de desarrollo llamado Android Studio y el lenguaje de programación JAVA.</p>
-                    </div>
-                  </div>
-                  <div class="botondescargar">
-                    <button class="button" style="vertical-align:middle"><span><a href="https://github.com/rodry170389/Android-AgendaPersonal-SQLite" target="_blank">Descargar </a></span></button>
-                  </div>
-                </div>
-              </div> 
-            </div>
-          </div> 
-          <div class ="barra">
-            <h3>MATLAB - SIMULADOR GRÁFICO DE ONDAS PLANAS ELECTROMAGNÉTICAS EN 3D</h3>
-          </div>
-          <div class ="seccion16">
-            <div class="marcoLiso8">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <div class="imagenesproyedocu">
-                    <img id="myImg7" src="imagenes/Ondas.jpg" alt="Simulador ondas planas electromagneticas">
-                    
-                  </div>
-                </div>
-                <div class="panel-body">
-                  <div class="infodocumentos">
-                    <div class="marcoLiso8">
-                      <h3>Resumen</h3>
-                      <p>Planificación, estudio, implantación y desarrollo de un simulador de ondas planas electromagnéticas en 3D con incidencia normal, con incidencia oblicua cuando el ángulo incidente es menor que el ángulo crítico y cuando el ángulo incidente es mayor que el crítico. El simulador esta programado en MATLAB.</p>
-                      <p>Cabe destacar que este trabajo lo hice yo solo, el profesor de campos electromagnéticos nos dio vía libre para hacer lo que quisiéramos, el código es de mi propiedad.</p>
-                    </div>
-                  </div>
-                  <div class="botondescargar">
-                    <button class="button" style="vertical-align:middle"><span><a href="https://github.com/rodry170389/Ondas-planas-Campos-Electromagneticos" target="_blank">Descargar </a></span></button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> 
-          <div class ="barra">
-            <h3>JAVA - PROGRAMACIÓN DE UNA INTELIGENCIA ARTIFICIAL PARA EL SIMULADOR DE ROBOCODE</h3>
-          </div>
-          <div class ="seccion17">
-            <div class="marcoLiso8">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <div class="imagenesproyedocu">
-                    <img id="myImg8" src="imagenes/robocode.png" alt="JAVA - PROGRAMACIÓN DE UNA IA ARTIFICIAL PARA EL SIMULADOR DE ROBOCODE" >
-                    
-                  </div>
-                </div>
-                <div class="panel-body">
-                  <div class="infodocumentos">
-                    <div class="marcoLiso8">
-                      <h3>Resumen</h3>
-                      <p>Planificación, estudio, implantación y desarrollo de una pequeña IA para el simulador de batallas de robots llamado Robocode.</p>
-                      <p>Para poder desarrollar la aplicación utilizamos el entorno de desarrollo llamado Eclipse y el lenguaje de programación JAVA.</p>
-                    </div>
-                  </div>
-                  <div class="botondescargar">
-                    <button class="button" style="vertical-align:middle"><span><a href="https://github.com/rodry170389/Codigo-Robocode" target="_blank">Descargar </a></span></button>
-                  </div>
-                </div>
-              </div>
-            </div>            
-          </div> 
-          <div class ="barra">
-            <h3>JAVA - PROGRAMACIÓN VIDEOJUEGO SUDOKU</h3>
-          </div>
-          <div class ="seccion18">
-            <div class="marcoLiso8">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <div class="imagenesproyedocu">
-                    <img id="myImg9" src="imagenes/sudoku.png" alt="JAVA - PROGRAMACIÓN DEL FAMOSO VIDEOJUEGO LLAMADO SUDOKU" >
-                    
-                  </div>
-                </div>
-                <div class="panel-body">
-                  <div class="infodocumentos">
-                    <div class="marcoLiso8">
-                      <h3>Resumen</h3>
-                      <p>Planificación, estudio, implantación y desarrollo del código encargado de generar el videojuego llamado Sudoku.</p>
-                      <p>Para poder desarrollar el programa utilizamos el entorno de desarrollo llamado Eclipse y el lenguaje de programación JAVA.</p>
-                    </div>
-                  </div>
-                  <div class="botondescargar">
-                    <button class="button" style="vertical-align:middle"><span><a href="https://github.com/rodry170389/Video-Juego-Sudoku" target="_blank">Descargar </a></span></button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> 
-        </div><!--Fin Proyectos-->
-
-        <div id="documentos">
-          
-          <div class ="barradocu">
-            <h2>CERTIFICADOS</h2>
-          </div><!--Fin barra-->
-          <div class ="seccion10">
-            <p>En esta sección están algunos documentos, si necesita más documentos me pueden escribir al correo electrónico.</p>
-          </div>
-		  
-		  <div class ="barra">
-            <h3>SUPLEMENTO EUROPEO AL TÍTULO DEL GRADO EN INGENIERÍA DE SISTEMAS DE COMUNICACIONES</h3>
-          </div>
-          <div class ="seccion11">
-            <div class="marcoLiso8">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <div class="imagenesproyedocu">
-                    <img id="myImg3" src="imagenes/teu1.jpg" alt="Historial del mi carrera" >
-                    
-                  </div>
-                </div>
-                <div class="panel-body">
-                  <div class="infodocumentos">
-                    <div class="marcoLiso8">
-                      <h3>Resumen</h3>
-                      <p>Este suplemento al título se ajusta al modelo elaborado por la Comisión Europea, el consejo de europa y UNESCO/CEPES.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> 
-
-          <div class ="barra">
-            <h3>GRADO EN INGENIERÍA DE SISTEMAS DE COMUNICACIONES</h3>
-          </div>
-          <div class ="seccion11">
-            <div class="marcoLiso8">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <div class="imagenesproyedocu">
-                    <img id="myImg3" src="imagenes/tes.jpg" alt="Historial del mi carrera" >
-                    
-                  </div>
-                </div>
-                <div class="panel-body">
-                  <div class="infodocumentos">
-                    <div class="marcoLiso8">
-                      <h3>Resumen</h3>
-                      <p>Título universitario oficial de graduado en Ingeniería de Sistemas de Comunicaciones</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div> 
-
-          <div class ="barra">
-            <h3>INGLÉS B1.2 - IMPULSO06</h3>
-          </div>
-          <div class ="seccion16">
-            <div class="marcoLiso8">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <div class="imagenesproyedocu">
-                    <img id="myImg5" src="imagenes/Impulso1_1.png" alt="Certificado OEP" >
-                    <img id="myImg5" src="imagenes/Impulso1_2.png" alt="Certificado OEP" >
-                    
-                  </div>
-                </div>
-                <div class="panel-body">
-                  <div class="infodocumentos">
-                    <div class="marcoLiso8">
-                      <h3>Resumen</h3>
-                      <p>Certificado de inglés - B1</p> 
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="hero-links">
+              <a href="https://learn.microsoft.com/es-es/users/[TU-USERNAME]/" target="_blank" rel="noopener noreferrer" aria-label="Microsoft Learn" class="hero-link-microsoft" title="Microsoft Learn Profile">
+                <svg width="20" height="20" viewBox="0 0 23 23" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                  <rect width="11" height="11" fill="#F25022"/>
+                  <rect x="12" width="11" height="11" fill="#7FBA00"/>
+                  <rect y="12" width="11" height="11" fill="#00A4EF"/>
+                  <rect x="12" y="12" width="11" height="11" fill="#FFB900"/>
+                </svg>
+              </a>
+              <a href="https://www.linkedin.com/in/jose-rodrigo-fuentes-ramirez" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="https://github.com/rodry170389" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <i class="fa fa-github" aria-hidden="true"></i>
+              </a>
+              <a href="https://twitter.com/rodry170389" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+              <a href="mailto:jrodrigofuentesr@gmail.com" aria-label="Email">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+              </a>
             </div>
           </div>
-
-          <div class ="barra">
-            <h3>DIPLOMA FUNDACIÓN GOODJOB</h3>
-          </div>
-          <div class ="seccion16">
-            <div class="marcoLiso8">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <div class="imagenesproyedocu">
-                    <img id="myImg5" src="imagenes/goodjob.jfif" alt="Certificado OEP" >
-                    
-                  </div>
-                </div>
-                <div class="panel-body">
-                  <div class="infodocumentos">
-                    <div class="marcoLiso8">
-                      <h3>Resumen</h3>
-                      <p>La Fundación GoodJob desarrolla el Programa IMPACT#include con el objetivo de formar en seguridad informática a personas con discapacidad.</p> 
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class ="barra">
-            <h3>CERTIFICADO DE TRABAJO - OEP DEL ESTADO DE BOLIVIA</h3>
-          </div>
-          <div class ="seccion16">
-            <div class="marcoLiso8">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <div class="imagenesproyedocu">
-                    <img id="myImg5" src="imagenes/guillermo.jpg" alt="Certificado OEP" >
-                    
-                  </div>
-                </div>
-                <div class="panel-body">
-                  <div class="infodocumentos">
-                    <div class="marcoLiso8">
-                      <h3>Resumen</h3>
-                      <p>Asistencia técnica en el desarrollo de las elecciones del estado de Bolivia en el exterior el año 2020</p> 
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class ="barra">
-            <h3>CERTIFICADO DE INGLÉS - B1</h3>
-          </div>
-          <div class ="seccion17">
-            <div class="marcoLiso8">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <div class="imagenesproyedocu">
-                    <img id="myImg5" src="imagenes/cert-ingles.png" alt="Certificado Inglés - B1" >
-                  </div>
-                </div>
-                <div class="panel-body">
-                  <div class="infodocumentos">
-                    <div class="marcoLiso8">
-                      <h3>Resumen</h3>
-                      <p>Certificado de inglés - B1</p> 
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class ="barra">
-            <h3>CERTIFICADO SAN GABRIEL - DESARROLLO WEB PARA COMERCIO ELECTRÓNICO</h3>
-          </div>
-          <div class ="seccion16">
-            <div class="marcoLiso8">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <div class="imagenesproyedocu">
-                    <img id="myImg5" src="imagenes/desarrolloweb1.png" alt="Certificado Prestashop" >
-                    <img id="myImg5" src="imagenes/desarrolloweb2.png" alt="Certificado Prestashop" >
-                  </div>
-                </div>
-                <div class="panel-body">
-                  <div class="infodocumentos">
-                    <div class="marcoLiso8">
-                      <h3>Resumen</h3>
-                      <p>Desarrollo web para comercio electrónico</p> 
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class ="barra">
-            <h3>CERTIFICADO FEMXA - PRESTASHOP</h3>
-          </div>
-          <div class ="seccion16">
-            <div class="marcoLiso8">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <div class="imagenesproyedocu">
-                    <img id="myImg5" src="imagenes/fexma-prestashop.png" alt="Certificado Prestashop" >
-                    
-                  </div>
-                </div>
-                <div class="panel-body">
-                  <div class="infodocumentos">
-                    <div class="marcoLiso8">
-                      <h3>Resumen</h3>
-                      <p>Diseño y desarrollo de una tienda virtual en Prestashop</p> 
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class ="barra">
-            <h3>CORE NETWORKS S.L. - IFCT048PO-APLICACIONES CON ANDROID Y HTML5</h3>
-          </div>
-          <div class ="seccion12">
-            <div class="marcoLiso8">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <div class="imagenesproyedocu">
-                    <img id="myImg4" src="imagenes/coreNetworks.jpg" alt="Certificado Core Networks" >
-                    
-                  </div>
-                </div>
-                <div class="panel-body">
-                  <div class="infodocumentos">
-                    <div class="marcoLiso8">
-                      <h3>Resumen</h3>
-                      <p>Certificado de la acción formativa de aplicaciones con Android y html5 realizado en la empresa CORE NETWORKS S.L.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class ="barra">
-            <h3>CERTIFICADO DE KEYSIGHT TECHNOLOGIES - RETOS Y SOLUCIONES A MEDIDA EN DISPOSITIVOS IOT</h3>
-          </div> 
-          <div class ="seccion13">
-            <div class="marcoLiso8">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <div class="imagenesproyedocu">
-                    <img id="myImg5" src="imagenes/retosiot.jpg" alt="Certificado de KEYSIGHT TECHNOLOGIES" >
-                    
-                  </div>
-                </div>
-                <div class="panel-body">
-                  <div class="infodocumentos">
-                    <div class="marcoLiso8">
-                      <h3>Resumen</h3>
-                      <p>Certificado del seminario retos y soluciones a medida en dispositivos IOT relealizado por KEYSIGHT TECHNOLOGIES</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class ="barra">
-            <h3>CERTIFICADO DE WEBEMPRESA - OPTIMIZACIÓN SEO EN WORDPRESS</h3>
-          </div>
-          <div class ="seccion13">
-            <div class="marcoLiso8">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <div class="imagenesproyedocu">
-                    <img id="myImg5" src="imagenes/OptSEO.png" alt="Optimización SEO wordpress" >
-                    
-                  </div>
-                </div>
-                <div class="panel-body">
-                  <div class="infodocumentos">
-                    <div class="marcoLiso8">
-                      <h3>Resumen</h3>
-                      <p>Certificado del curso de OPTIMIZACIÓN SEO en Wordpress realizado por WEBEMPRESA</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class ="barra">
-            <h3>CERTIFICADO DE WEBEMPRESA - YOAST SEO EN WORDPRESS</h3>
-          </div>
-          <div class ="seccion13">
-            <div class="marcoLiso8">
-              <div class="panel panel-default">
-                <div class="panel-heading">
-                  <div class="imagenesproyedocu">
-                    <img id="myImg5" src="imagenes/YoastSEO.png" alt="Optimización SEO wordpress" >
-                    
-                  </div>
-                </div>
-                <div class="panel-body">
-                  <div class="infodocumentos">
-                    <div class="marcoLiso8">
-                      <h3>Resumen</h3>
-                      <p>Certificado del curso de Yoast SEO en Wordpress realizado por WEBEMPRESA</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div><!--Fin documentos-->
-      </div><!--col-6 col-s-9-->
-        
-      <div class="col-3 col-s-12">
-        
-      </div>
-    </div><!--Fin fila-->
-    <div class="aside">
-      <h2><a href="#" onclick="mostrarUniversidad();" id="linkasideuniversidad"><i class="fa fa-graduation-cap"></i>Universidad</a></h2>
-      <p>En esta sección pueden ver un resumen de todo lo que vi en el grado de Ingeniería de Sistemas de Comunicaciones en la Universidad Carlos III de Madrid</p>
-      <h2><a href="#" onclick="mostrarProyectos();" id="linkabajoproyectos"><i class="fa fa-suitcase"></i>Proyectos</a></h2>
-      <p>En esta sección pueden observar algunos de los proyectos que realice</p>
-      <h2><a href="#" onclick="mostrarDocumentos();" id="linkasidecontacto"><i class="fa fa-certificate"></i>Certificados</a></h2>
-      <p>En esta sección enseño algunos de mis certificados</p>
-      <h2><a href="https://drive.google.com/file/d/1tdKp1yIcJDTlrkZS11q58ozz2o-2NqSc/view?usp=sharing" target="_blank"><i class="fa fa-cloud-download"></i>Descargar curriculúm (PDF)</a></h2>
-      <p>Si desean pueden descargar mi curriculúm en un archivo PDF</p>
-    </div><!--Fin aside-->
-    <div class="footer">
-      <div class="row">
-        <div class="col-sm-6">
-          <div class="izq">
-            <a href="https://github.com/rodry170389" target="_blank" style="color: white;"><i class="fa fa-cogs"></i>Desarrollado y diseñado por José Rodrigo Fuentes Ramírez</a>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class = "der">
-            <a href="https://mail.google.com/" target="_blank" style="color: white;"><i class="fa fa-envelope"></i>Contacto : jrodrigofuentesr@gmail.com</a>
+          <div class="hero-image">
+            <img src="imagenes/FotoP3.jpeg" alt="José Rodrigo Fuentes Ramírez" loading="eager">
           </div>
         </div>
       </div>
-    </div>
+    </section>
+
+    <!-- Expertise Section - Power Platform -->
+    <section id="expertise" class="section section-expertise">
+      <div class="container">
+        <h2 class="section-title" data-i18n="expertise.title">Especialización Power Platform</h2>
+        <p class="section-subtitle" data-i18n="expertise.subtitle">
+          Diseño y desarrollo soluciones low-code/no-code que automatizan procesos
+          y mejoran la productividad empresarial
+        </p>
+
+        <div class="expertise-grid">
+          <!-- Power Apps -->
+          <article class="expertise-card card-powerapps">
+            <div class="expertise-icon icon-powerapps">
+              <i class="fa fa-mobile" aria-hidden="true"></i>
+            </div>
+            <h3 data-i18n="expertise.powerapps_title">Power Apps</h3>
+            <p data-i18n="expertise.powerapps_desc">
+              Canvas apps y Model-driven apps conectadas a Dataverse, SharePoint y APIs custom.
+            </p>
+            <ul class="expertise-highlights" data-i18n-list="expertise.powerapps_highlights">
+              <li>Aplicaciones empresariales multiplataforma</li>
+              <li>Integración con Dynamics 365</li>
+              <li>Conectores personalizados C#</li>
+            </ul>
+          </article>
+
+          <!-- Power Automate -->
+          <article class="expertise-card card-powerautomate">
+            <div class="expertise-icon icon-powerautomate">
+              <i class="fa fa-bolt" aria-hidden="true"></i>
+            </div>
+            <h3 data-i18n="expertise.powerautomate_title">Power Automate</h3>
+            <p data-i18n="expertise.powerautomate_desc">
+              Workflows complejos que integran sistemas y automatizan tareas repetitivas.
+            </p>
+            <ul class="expertise-highlights" data-i18n-list="expertise.powerautomate_highlights">
+              <li>Automatización de procesos (RPA)</li>
+              <li>Integraciones multiservicio</li>
+              <li>Notificaciones y aprobaciones</li>
+            </ul>
+          </article>
+
+          <!-- Power BI -->
+          <article class="expertise-card card-powerbi">
+            <div class="expertise-icon icon-powerbi">
+              <i class="fa fa-bar-chart" aria-hidden="true"></i>
+            </div>
+            <h3 data-i18n="expertise.powerbi_title">Power BI</h3>
+            <p data-i18n="expertise.powerbi_desc">
+              Dashboards interactivos que transforman datos en insights accionables.
+            </p>
+            <ul class="expertise-highlights" data-i18n-list="expertise.powerbi_highlights">
+              <li>Reportes ejecutivos en tiempo real</li>
+              <li>DAX y Power Query avanzado</li>
+              <li>Integración con Dataverse</li>
+            </ul>
+          </article>
+
+          <!-- Microsoft 365 / SharePoint -->
+          <article class="expertise-card card-m365">
+            <div class="expertise-icon icon-m365">
+              <i class="fa fa-cloud" aria-hidden="true"></i>
+            </div>
+            <h3 data-i18n="expertise.m365_title">SharePoint & Microsoft 365</h3>
+            <p data-i18n="expertise.m365_desc">
+              Intranets modernas, gestión documental y colaboración empresarial.
+            </p>
+            <ul class="expertise-highlights" data-i18n-list="expertise.m365_highlights">
+              <li>SharePoint Online (SPFx)</li>
+              <li>Microsoft Teams integrations</li>
+              <li>OneDrive y gestión de permisos</li>
+            </ul>
+          </article>
+
+          <!-- AI & Copilot - NUEVA CARD -->
+          <article class="expertise-card card-ai">
+            <div class="expertise-icon icon-ai">
+              <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+            </div>
+            <h3 data-i18n="expertise.ai_title">IA & Microsoft Copilot</h3>
+            <p data-i18n="expertise.ai_desc">
+              Integración de inteligencia artificial en Power Platform con AI Builder y Copilot.
+            </p>
+            <ul class="expertise-highlights" data-i18n-list="expertise.ai_highlights">
+              <li>AI Builder (OCR, Document Processing)</li>
+              <li>Microsoft Copilot for Power Apps</li>
+              <li>Prompt engineering y automatización IA</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section section-about">
+      <div class="container">
+        <h2 class="section-title" data-i18n="about.title">Sobre mí</h2>
+        <div class="about-content">
+          <div class="about-text">
+            <p class="lead" data-i18n="about.lead">
+              Soy un ingeniero de telecomunicaciones con más de 2 años de experiencia en consultoría
+              y desarrollo de software, actualmente trabajando en Telefónica como Full Stack Developer.
+            </p>
+            <p data-i18n="about.p1">
+              Mi enfoque se centra en crear soluciones tecnológicas que generen impacto real.
+              He trabajado con equipos multidisciplinarios desarrollando aplicaciones empresariales
+              con Power Apps, backends en C# y frontends modernos con Angular y TypeScript.
+            </p>
+            <p data-i18n="about.p2">
+              Me apasiona el aprendizaje continuo y la mejora de procesos. Combino sólidos conocimientos
+              técnicos con habilidades de comunicación y trabajo en equipo para entregar proyectos de calidad.
+            </p>
+          </div>
+          <div class="about-stats">
+            <div class="stat-card">
+              <div class="stat-number" data-i18n="about.stat1_number">2+</div>
+              <div class="stat-label" data-i18n="about.stat1_label">Años de experiencia</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number" data-i18n="about.stat2_number">10+</div>
+              <div class="stat-label" data-i18n="about.stat2_label">Proyectos completados</div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number" data-i18n="about.stat3_number">3</div>
+              <div class="stat-label" data-i18n="about.stat3_label">Empresas tecnológicas</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section section-experience">
+      <div class="container">
+        <h2 class="section-title" data-i18n="experience.title">Experiencia profesional</h2>
+        <div class="timeline">
+
+          <article class="timeline-item timeline-item-featured">
+            <div class="timeline-marker timeline-marker-current"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-title" data-i18n="experience.tel_title">Power Platform Developer</h3>
+                  <p class="timeline-company" data-i18n="experience.tel_company">Telefónica</p>
+                </div>
+                <div>
+                  <span class="timeline-period" data-i18n="experience.tel_period">2023 - Actualidad</span>
+                  <span class="timeline-badge" data-i18n="experience.current">Posición actual</span>
+                </div>
+              </div>
+              <ul class="timeline-description" data-i18n-list="experience.tel_desc">
+                <li>Desarrollo de <strong>12+ aplicaciones empresariales</strong> con Power Apps (Canvas y Model-driven) para departamentos de HR, Finance y Operations</li>
+                <li>Automatización de <strong>18+ procesos críticos</strong> con Power Automate, reduciendo tiempo de gestión en 45%</li>
+                <li>Implementación de conectores personalizados en <strong>C#</strong> para integración con sistemas legacy y APIs externas</li>
+                <li>Creación de <strong>8 dashboards interactivos</strong> con Power BI para análisis de KPIs departamentales en tiempo real</li>
+                <li>Integración de <strong>AI Builder y Microsoft Copilot</strong> para procesamiento inteligente de documentos y asistencia en desarrollo</li>
+                <li>Uso de <strong>IA generativa (Claude, ChatGPT)</strong> para optimización de código, debugging y documentación técnica</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag tag-primary">Power Apps</span>
+                <span class="tag tag-primary">Power Automate</span>
+                <span class="tag tag-primary">Power BI</span>
+                <span class="tag">C#</span>
+                <span class="tag">Dataverse</span>
+                <span class="tag">SharePoint</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-title" data-i18n="experience.per_title">Técnico Informático</h3>
+                  <p class="timeline-company" data-i18n="experience.per_company">Perklam</p>
+                </div>
+                <span class="timeline-period" data-i18n="experience.per_period">2023</span>
+              </div>
+              <ul class="timeline-description" data-i18n-list="experience.per_desc">
+                <li>Desarrollo de página web corporativa</li>
+                <li>Asistencia en tecnologías informáticas y de comunicaciones</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">WordPress</span>
+                <span class="tag">Web Development</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-title" data-i18n="experience.ade_title">Frontend Developer</h3>
+                  <p class="timeline-company" data-i18n="experience.ade_company">Adesso</p>
+                </div>
+                <span class="timeline-period" data-i18n="experience.ade_period">2022 - 2023</span>
+              </div>
+              <ul class="timeline-description" data-i18n-list="experience.ade_desc">
+                <li>Desarrollo de aplicaciones web con Angular y TypeScript</li>
+                <li>Implementación de interfaces responsivas con HTML5 y SCSS</li>
+                <li>Uso de metodologías ágiles con Jira y Bitbucket</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">Angular</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">SCSS</span>
+                <span class="tag">Git</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-title" data-i18n="experience.free_title">Desarrollo de Aplicación Android</h3>
+                  <p class="timeline-company" data-i18n="experience.free_company">Freelance</p>
+                </div>
+                <span class="timeline-period" data-i18n="experience.free_period">2021</span>
+              </div>
+              <ul class="timeline-description" data-i18n-list="experience.free_desc">
+                <li>Desarrollo de aplicación móvil "Epilepsi Control" para Android</li>
+                <li>Gestión completa del proyecto desde diseño hasta implementación</li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">Android</span>
+                <span class="tag">Java</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section section-skills">
+      <div class="container">
+        <h2 class="section-title" data-i18n="skills.title">Stack Tecnológico</h2>
+
+        <!-- PRIMARY: Microsoft Power Platform (Featured) -->
+        <div class="skills-grid-primary">
+          <div class="skill-category skill-category-featured">
+            <div class="category-header">
+              <h3 class="skill-category-title">
+                <span class="category-icon">⚡</span>
+                <span data-i18n="skills.powerplatform">Microsoft Power Platform</span>
+              </h3>
+              <span class="category-badge" data-i18n="skills.specialization">Especialización</span>
+            </div>
+            <div class="skill-items">
+              <div class="skill-item skill-item-expert">
+                <span class="skill-name">Power Apps</span>
+                <span class="skill-badge">Expert</span>
+              </div>
+              <div class="skill-item skill-item-expert">
+                <span class="skill-name">Power Automate</span>
+                <span class="skill-badge">Expert</span>
+              </div>
+              <div class="skill-item skill-item-advanced">
+                <span class="skill-name">Power BI</span>
+                <span class="skill-badge">Advanced</span>
+              </div>
+              <div class="skill-item skill-item-advanced">
+                <span class="skill-name">Dataverse</span>
+                <span class="skill-badge">Advanced</span>
+              </div>
+              <div class="skill-item skill-item-intermediate">
+                <span class="skill-name">Power Pages</span>
+                <span class="skill-badge">Intermediate</span>
+              </div>
+              <div class="skill-item skill-item-advanced">
+                <span class="skill-name">AI Builder</span>
+                <span class="skill-badge">Advanced</span>
+              </div>
+              <div class="skill-item skill-item-intermediate">
+                <span class="skill-name">Microsoft Copilot</span>
+                <span class="skill-badge">Intermediate</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECONDARY: Other Skills -->
+        <div class="skills-grid-secondary">
+          <div class="skill-category">
+            <h3 class="skill-category-title" data-i18n="skills.m365">Ecosistema Microsoft 365</h3>
+            <div class="skill-items">
+              <div class="skill-item"><span class="skill-name">SharePoint Online</span></div>
+              <div class="skill-item"><span class="skill-name">Microsoft Teams</span></div>
+              <div class="skill-item"><span class="skill-name">Dynamics 365</span></div>
+              <div class="skill-item"><span class="skill-name">Azure Active Directory</span></div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="skill-category-title" data-i18n="skills.backend">Desarrollo Backend</h3>
+            <div class="skill-items">
+              <div class="skill-item"><span class="skill-name">C# / .NET</span></div>
+              <div class="skill-item"><span class="skill-name">Azure Functions</span></div>
+              <div class="skill-item"><span class="skill-name">SQL Server</span></div>
+              <div class="skill-item"><span class="skill-name">REST APIs</span></div>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="skill-category-title" data-i18n="skills.frontend">Desarrollo Web</h3>
+            <div class="skill-items">
+              <div class="skill-item"><span class="skill-name">TypeScript</span></div>
+              <div class="skill-item"><span class="skill-name">Angular</span></div>
+              <div class="skill-item"><span class="skill-name">SPFx (SharePoint)</span></div>
+              <div class="skill-item"><span class="skill-name">HTML/CSS</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section section-projects">
+      <div class="container">
+        <h2 class="section-title" data-i18n="projects.title">Proyectos destacados</h2>
+
+        <!-- Project Filters -->
+        <div class="projects-filter">
+          <button class="filter-btn active" data-filter="all">
+            <span data-i18n="projects.filter_all">Todos</span>
+          </button>
+          <button class="filter-btn" data-filter="power-platform">
+            <span class="filter-icon">⚡</span>
+            <span data-i18n="projects.filter_powerplatform">Power Platform</span>
+          </button>
+          <button class="filter-btn" data-filter="web-dev">
+            <span class="filter-icon">🌐</span>
+            <span data-i18n="projects.filter_webdev">Desarrollo Web</span>
+          </button>
+          <button class="filter-btn" data-filter="academic">
+            <span class="filter-icon">🎓</span>
+            <span data-i18n="projects.filter_academic">Académico</span>
+          </button>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- POWER PLATFORM PROJECT 1 -->
+          <article class="project-card" data-category="power-platform">
+            <div class="project-badge badge-powerplatform">⚡ Power Platform</div>
+            <div class="project-image">
+              <img src="https://via.placeholder.com/400x250/0078D4/FFFFFF?text=HR+Management+System" alt="Sistema de Gestión HR" loading="lazy">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Sistema de Gestión de Recursos Humanos</h3>
+              <p class="project-description">
+                Plataforma completa para gestión de vacaciones, ausencias y evaluaciones de desempeño.
+                Implementada con Power Apps (Model-driven) conectada a Dataverse con workflows automatizados.
+                <strong>Reducción del 65% en tiempo de procesamiento de solicitudes.</strong>
+              </p>
+              <div class="project-metrics">
+                <span class="metric-item">
+                  <span class="metric-icon">👥</span>
+                  250+ usuarios activos
+                </span>
+                <span class="metric-divider">•</span>
+                <span class="metric-item">
+                  <span class="metric-icon">⚡</span>
+                  12 workflows automatizados
+                </span>
+                <span class="metric-divider">•</span>
+                <span class="metric-item">
+                  <span class="metric-icon">📊</span>
+                  5 reportes Power BI
+                </span>
+              </div>
+              <div class="project-tags">
+                <span class="tag tag-primary">Power Apps</span>
+                <span class="tag tag-primary">Power Automate</span>
+                <span class="tag">Dataverse</span>
+                <span class="tag">SharePoint</span>
+                <span class="tag">Power BI</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- POWER PLATFORM PROJECT 2 -->
+          <article class="project-card" data-category="power-platform">
+            <div class="project-badge badge-powerplatform">⚡ Power Platform</div>
+            <div class="project-image">
+              <img src="https://via.placeholder.com/400x250/742774/FFFFFF?text=Sales+Dashboard" alt="Dashboard de Ventas" loading="lazy">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Dashboard Interactivo de Ventas</h3>
+              <p class="project-description">
+                Dashboard ejecutivo en tiempo real con Power BI conectado a múltiples fuentes de datos.
+                Implementación de DAX avanzado y Power Query para transformación de datos complejos.
+                <strong>Mejora del 80% en visibilidad de KPIs comerciales.</strong>
+              </p>
+              <div class="project-metrics">
+                <span class="metric-item">
+                  <span class="metric-icon">👥</span>
+                  85 usuarios ejecutivos
+                </span>
+                <span class="metric-divider">•</span>
+                <span class="metric-item">
+                  <span class="metric-icon">📊</span>
+                  15 reportes interactivos
+                </span>
+                <span class="metric-divider">•</span>
+                <span class="metric-item">
+                  <span class="metric-icon">🔄</span>
+                  Actualización cada 15min
+                </span>
+              </div>
+              <div class="project-tags">
+                <span class="tag tag-primary">Power BI</span>
+                <span class="tag">DAX</span>
+                <span class="tag">Power Query</span>
+                <span class="tag">SQL Server</span>
+                <span class="tag">Dataverse</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- POWER PLATFORM PROJECT 3 -->
+          <article class="project-card" data-category="power-platform">
+            <div class="project-badge badge-powerplatform">⚡ Power Platform</div>
+            <div class="project-image">
+              <img src="https://via.placeholder.com/400x250/0066FF/FFFFFF?text=Invoice+Automation" alt="Automatización de Facturas" loading="lazy">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Automatización de Procesamiento de Facturas</h3>
+              <p class="project-description">
+                Sistema RPA con Power Automate Desktop que procesa facturas automáticamente, extrae datos con AI Builder
+                y actualiza sistemas ERP. Conectores personalizados en C# para integración con SAP.
+                <strong>Ahorro de 120 horas/mes en tareas manuales.</strong>
+              </p>
+              <div class="project-metrics">
+                <span class="metric-item">
+                  <span class="metric-icon">📄</span>
+                  1,500+ facturas/mes
+                </span>
+                <span class="metric-divider">•</span>
+                <span class="metric-item">
+                  <span class="metric-icon">⚡</span>
+                  8 flujos automatizados
+                </span>
+                <span class="metric-divider">•</span>
+                <span class="metric-item">
+                  <span class="metric-icon">🤖</span>
+                  AI Builder OCR
+                </span>
+              </div>
+              <div class="project-tags">
+                <span class="tag tag-primary">Power Automate</span>
+                <span class="tag">AI Builder</span>
+                <span class="tag">C#</span>
+                <span class="tag">SAP Connector</span>
+                <span class="tag">RPA</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- WEB DEV PROJECTS (EXISTING) -->
+          <article class="project-card" data-category="web-dev">
+            <div class="project-badge" style="background: #10b981; color: white;">🌐 Web Dev</div>
+            <div class="project-image">
+              <img src="imagenes/driveris.png" alt="Proyecto Driveris" loading="lazy">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title" data-i18n="projects.driveris_title">Concesionario de Coches - Driveris</h3>
+              <p class="project-description" data-i18n="projects.driveris_desc">
+                Desarrollo de plataforma web completa para concesionario de vehículos en Sevilla.
+                Implementación con Angular, TypeScript y metodologías ágiles.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Angular</span>
+                <span class="tag">TypeScript</span>
+                <span class="tag">SCSS</span>
+              </div>
+              <div class="project-links">
+                <a href="https://www.driveris.es/" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <span data-i18n="projects.driveris_link">Ver proyecto</span> <i class="fa fa-external-link" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="web-dev">
+            <div class="project-badge" style="background: #10b981; color: white;">🌐 Web Dev</div>
+            <div class="project-image">
+              <img src="imagenes/perklam.png" alt="Proyecto Perklam" loading="lazy">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title" data-i18n="projects.perklam_title">Startup de Personalizaciones - Perklam</h3>
+              <p class="project-description" data-i18n="projects.perklam_desc">
+                Diseño y desarrollo de e-commerce para startup de personalización de productos.
+                Implementado con WordPress y optimizaciones SEO.
+              </p>
+              <div class="project-tags">
+                <span class="tag">WordPress</span>
+                <span class="tag">PHP</span>
+                <span class="tag">JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="https://perklam.com/" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <span data-i18n="projects.perklam_link">Ver proyecto</span> <i class="fa fa-external-link" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="academic">
+            <div class="project-badge" style="background: #f59e0b; color: white;">🎓 Académico</div>
+            <div class="project-image">
+              <img src="imagenes/metropolis.png" alt="Proyecto de Fin de Grado" loading="lazy">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title" data-i18n="projects.metropolis_title">Método Metropolis-Hastings</h3>
+              <p class="project-description" data-i18n="projects.metropolis_desc">
+                Proyecto de Fin de Grado: Estudio y aplicación del método Metropolis-Hastings
+                para inversión Bayesiana en teledetección y análisis de vegetación.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Matlab</span>
+                <span class="tag">Machine Learning</span>
+                <span class="tag">Research</span>
+              </div>
+              <div class="project-links">
+                <a href="https://drive.google.com/file/d/1yFvo_MZ1WV6c55MiMvYCNE43OlwqKW2J/view?usp=sharing" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <span data-i18n="projects.metropolis_link">Ver documento</span> <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="web-dev">
+            <div class="project-badge" style="background: #10b981; color: white;">🌐 Web Dev</div>
+            <div class="project-image">
+              <img src="imagenes/AgendaSQlite.png" alt="Agenda Android" loading="lazy">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title" data-i18n="projects.epilepsi_title">Epilepsi Control</h3>
+              <p class="project-description" data-i18n="projects.epilepsi_desc">
+                Aplicación móvil para Android que permite a personas con epilepsia llevar un control
+                completo de su enfermedad, medicación y crisis.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Android</span>
+                <span class="tag">Java</span>
+                <span class="tag">SQLite</span>
+              </div>
+              <div class="project-links">
+                <a href="https://drive.google.com/drive/folders/1h2mTj8_GfDM2Er_QWOBnOQ8MrwOZZQFM?usp=sharing" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <span data-i18n="projects.epilepsi_link">Descargar</span> <i class="fa fa-download" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="web-dev">
+            <div class="project-badge" style="background: #10b981; color: white;">🌐 Web Dev</div>
+            <div class="project-image">
+              <img src="imagenes/blogrodrigo.png" alt="Portfolio Personal" loading="lazy">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title" data-i18n="projects.portfolio_title">Portfolio Personal</h3>
+              <p class="project-description" data-i18n="projects.portfolio_desc">
+                Desarrollo de portfolio responsive con Bootstrap, JavaScript y CSS3 para
+                mostrar proyectos y experiencia profesional.
+              </p>
+              <div class="project-tags">
+                <span class="tag">HTML5</span>
+                <span class="tag">CSS3</span>
+                <span class="tag">Bootstrap</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/rodry170389/Blog-Rodrigo" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <span data-i18n="projects.portfolio_link">Ver código</span> <i class="fa fa-github" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card" data-category="academic">
+            <div class="project-badge" style="background: #f59e0b; color: white;">🎓 Académico</div>
+            <div class="project-image">
+              <img src="imagenes/Ondas.jpg" alt="Simulador de Ondas" loading="lazy">
+            </div>
+            <div class="project-content">
+              <h3 class="project-title" data-i18n="projects.ondas_title">Simulador de Ondas Electromagnéticas</h3>
+              <p class="project-description" data-i18n="projects.ondas_desc">
+                Simulador gráfico 3D de ondas planas electromagnéticas con incidencia normal
+                y oblicua desarrollado en Matlab.
+              </p>
+              <div class="project-tags">
+                <span class="tag">Matlab</span>
+                <span class="tag">Física</span>
+                <span class="tag">3D Graphics</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/rodry170389/Ondas-planas-Campos-Electromagneticos" target="_blank" rel="noopener noreferrer" class="project-link">
+                  <span data-i18n="projects.ondas_link">Ver código</span> <i class="fa fa-github" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section section-education">
+      <div class="container">
+        <h2 class="section-title" data-i18n="education.title">Educación y certificaciones</h2>
+
+        <!-- Microsoft Certifications -->
+        <div class="certifications-microsoft">
+          <div class="certs-header">
+            <h3 class="subsection-title">
+              <span class="microsoft-icon">🏅</span>
+              <span data-i18n="education.certs_title">Certificaciones Microsoft</span>
+            </h3>
+            <a href="https://learn.microsoft.com/es-es/users/[TU-USERNAME]/" target="_blank" rel="noopener noreferrer" class="btn-microsoft-learn">
+              <svg class="microsoft-logo" width="20" height="20" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="11" height="11" fill="#F25022"/>
+                <rect x="12" width="11" height="11" fill="#7FBA00"/>
+                <rect y="12" width="11" height="11" fill="#00A4EF"/>
+                <rect x="12" y="12" width="11" height="11" fill="#FFB900"/>
+              </svg>
+              <span data-i18n="education.view_profile">Ver perfil en Microsoft Learn</span>
+              <i class="fa fa-external-link" aria-hidden="true"></i>
+            </a>
+          </div>
+          <div class="certs-microsoft-grid">
+            <!-- Certification 1 -->
+            <article class="cert-microsoft-card">
+              <img src="https://via.placeholder.com/120x120/0078D4/FFFFFF?text=PL-100" alt="Microsoft Badge PL-100" class="cert-badge">
+              <h4>Microsoft Certified: Power Platform App Maker Associate</h4>
+              <p class="cert-code">PL-100</p>
+              <p class="cert-date">2024</p>
+              <a href="#" class="cert-verify" target="_blank" rel="noopener noreferrer">
+                Verificar credencial →
+              </a>
+            </article>
+
+            <!-- Certification 2 -->
+            <article class="cert-microsoft-card">
+              <img src="https://via.placeholder.com/120x120/742774/FFFFFF?text=PL-200" alt="Microsoft Badge PL-200" class="cert-badge">
+              <h4>Microsoft Certified: Power Platform Functional Consultant Associate</h4>
+              <p class="cert-code">PL-200</p>
+              <p class="cert-date">2025</p>
+              <a href="#" class="cert-verify" target="_blank" rel="noopener noreferrer">
+                Verificar credencial →
+              </a>
+            </article>
+
+            <!-- Certification 3 -->
+            <article class="cert-microsoft-card">
+              <img src="https://via.placeholder.com/120x120/F2C811/333333?text=PL-300" alt="Microsoft Badge PL-300" class="cert-badge">
+              <h4>Microsoft Certified: Power BI Data Analyst Associate</h4>
+              <p class="cert-code">PL-300</p>
+              <p class="cert-date">2025</p>
+              <a href="#" class="cert-verify" target="_blank" rel="noopener noreferrer">
+                Verificar credencial →
+              </a>
+            </article>
+
+            <!-- Certification 4 - Copilot (REAL) -->
+            <article class="cert-microsoft-card">
+              <img src="https://via.placeholder.com/120x120/FFB900/333333?text=AI+Copilot" alt="Microsoft Copilot Certificate" class="cert-badge">
+              <h4>Introducción a la IA Generativa con Microsoft Copilot</h4>
+              <p class="cert-code">Microsoft Learn</p>
+              <p class="cert-date">2024</p>
+              <a href="#" class="cert-verify" target="_blank" rel="noopener noreferrer">
+                Ver certificado →
+              </a>
+            </article>
+          </div>
+        </div>
+
+        <div class="education-content">
+          <div class="education-main">
+            <article class="education-card education-card-featured">
+              <div class="education-icon">
+                <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+              </div>
+              <div class="education-info">
+                <h3 class="education-title" data-i18n="education.uc3m_title">Grado en Ingeniería de Sistemas de Comunicaciones</h3>
+                <p class="education-institution" data-i18n="education.uc3m_institution">Universidad Carlos III de Madrid</p>
+                <p class="education-period" data-i18n="education.uc3m_period">2021</p>
+                <p class="education-description" data-i18n="education.uc3m_desc">
+                  Especialización en análisis y diseño de sistemas de comunicaciones avanzadas,
+                  redes móviles, comunicaciones espaciales y tratamiento de información.
+                </p>
+              </div>
+            </article>
+
+            <article class="education-card">
+              <div class="education-icon">
+                <i class="fa fa-certificate" aria-hidden="true"></i>
+              </div>
+              <div class="education-info">
+                <h3 class="education-title" data-i18n="education.goodjob_title">Ciberseguridad - Programa IMPACT #include</h3>
+                <p class="education-institution" data-i18n="education.goodjob_institution">Fundación GoodJob</p>
+                <p class="education-period" data-i18n="education.goodjob_period">2022</p>
+              </div>
+            </article>
+
+            <article class="education-card">
+              <div class="education-icon">
+                <i class="fa fa-language" aria-hidden="true"></i>
+              </div>
+              <div class="education-info">
+                <h3 class="education-title" data-i18n="education.english_title">Inglés B1.2</h3>
+                <p class="education-institution" data-i18n="education.english_institution">Impulso06</p>
+                <p class="education-period" data-i18n="education.english_period">2020</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="certifications-grid">
+            <div class="cert-item">
+              <i class="fa fa-check-circle" aria-hidden="true"></i>
+              <span data-i18n="education.cert1">Desarrollo Web para Comercio Electrónico</span>
+            </div>
+            <div class="cert-item">
+              <i class="fa fa-check-circle" aria-hidden="true"></i>
+              <span data-i18n="education.cert2">PrestaShop</span>
+            </div>
+            <div class="cert-item">
+              <i class="fa fa-check-circle" aria-hidden="true"></i>
+              <span data-i18n="education.cert3">Optimización SEO en WordPress</span>
+            </div>
+            <div class="cert-item">
+              <i class="fa fa-check-circle" aria-hidden="true"></i>
+              <span data-i18n="education.cert4">Aplicaciones con Android y HTML5</span>
+            </div>
+            <div class="cert-item">
+              <i class="fa fa-check-circle" aria-hidden="true"></i>
+              <span data-i18n="education.cert5">Retos y Soluciones IoT</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-contact">
+      <div class="container">
+        <div class="contact-content">
+          <h2 class="section-title" data-i18n="contact.title">Hablemos</h2>
+          <p class="contact-subtitle" data-i18n="contact.subtitle">
+            ¿Tienes un proyecto en mente o quieres colaborar?
+            Estoy siempre abierto a nuevas oportunidades.
+          </p>
+
+          <div class="contact-grid">
+            <a href="mailto:jrodrigofuentesr@gmail.com" class="contact-card">
+              <div class="contact-icon">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+              </div>
+              <div class="contact-info">
+                <h3 data-i18n="contact.email">Email</h3>
+                <p>jrodrigofuentesr@gmail.com</p>
+              </div>
+            </a>
+
+            <a href="tel:+34638184398" class="contact-card">
+              <div class="contact-icon">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+              </div>
+              <div class="contact-info">
+                <h3 data-i18n="contact.phone">Teléfono</h3>
+                <p>+34 638 184 398</p>
+              </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/jose-rodrigo-fuentes-ramirez" target="_blank" rel="noopener noreferrer" class="contact-card">
+              <div class="contact-icon">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+              </div>
+              <div class="contact-info">
+                <h3>LinkedIn</h3>
+                <p>josé-rodrigo-fuentes-ramirez</p>
+              </div>
+            </a>
+
+            <a href="https://github.com/rodry170389" target="_blank" rel="noopener noreferrer" class="contact-card">
+              <div class="contact-icon">
+                <i class="fa fa-github" aria-hidden="true"></i>
+              </div>
+              <div class="contact-info">
+                <h3>GitHub</h3>
+                <p>rodry170389</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="contact-cta">
+            <a href="imagenes/CV_Rodrigo_Fuentes.pdf" download class="btn btn-primary btn-download">
+              <i class="fa fa-download" aria-hidden="true"></i>
+              <span data-i18n="contact.download_cv">Descargar CV</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p data-i18n="footer.rights">&copy; 2026 José Rodrigo Fuentes Ramírez. Todos los derechos reservados.</p>
+        <div class="footer-links">
+          <a href="https://github.com/rodry170389" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <i class="fa fa-github" aria-hidden="true"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/jose-rodrigo-fuentes-ramirez" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+          <a href="https://twitter.com/rodry170389" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/translations.js"></script>
+  <script src="js/paginaprincipal.js"></script>
 </body>
 </html>
