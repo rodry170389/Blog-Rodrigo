@@ -1,11 +1,29 @@
 /**
- * Translations System
- * Easy to maintain - Just add/edit text in this file
+ * Sistema de Traducciones (Internacionalización i18n)
+ *
+ * Este archivo contiene todas las traducciones del portfolio en español e inglés.
+ * Para agregar o editar traducciones, simplemente modifica los textos en este archivo.
+ *
+ * Estructura:
+ * - translations.es: Textos en español
+ * - translations.en: Textos en inglés
+ *
+ * Uso en HTML:
+ * - <element data-i18n="section.key">Texto por defecto</element>
+ * - <element data-i18n-list="section.key_list"> para listas
+ *
+ * Las traducciones se actualizan automáticamente al cambiar de idioma.
+ *
+ * Autor: José Rodrigo Fuentes Ramírez
+ * Año: 2026
  */
 
 const translations = {
+  // ===================================
+  // ESPAÑOL (ES)
+  // ===================================
   es: {
-    // Navigation
+    // Navegación principal
     nav: {
       expertise: 'Especialización',
       about: 'Sobre mí',
@@ -16,7 +34,7 @@ const translations = {
       contact: 'Contacto'
     },
 
-    // Hero Section
+    // Sección Hero (portada principal)
     hero: {
       label: 'Microsoft Power Platform Specialist',
       certified: 'Microsoft Certified',
@@ -27,7 +45,7 @@ const translations = {
       cta_secondary: 'Ver proyectos'
     },
 
-    // Expertise Section
+    // Sección de Especialización (Power Platform)
     expertise: {
       title: 'Especialización Power Platform',
       subtitle: 'Diseño y desarrollo soluciones low-code/no-code que automatizan procesos y mejoran la productividad empresarial',
@@ -225,8 +243,11 @@ const translations = {
     }
   },
 
+  // ===================================
+  // INGLÉS (EN)
+  // ===================================
   en: {
-    // Navigation
+    // Navegación principal
     nav: {
       expertise: 'Expertise',
       about: 'About',
@@ -237,7 +258,7 @@ const translations = {
       contact: 'Contact'
     },
 
-    // Hero Section
+    // Sección Hero (portada principal)
     hero: {
       label: 'Microsoft Power Platform Specialist',
       certified: 'Microsoft Certified',
@@ -248,7 +269,7 @@ const translations = {
       cta_secondary: 'View projects'
     },
 
-    // Expertise Section
+    // Sección de Especialización (Power Platform)
     expertise: {
       title: 'Power Platform Expertise',
       subtitle: 'I design and develop low-code/no-code solutions that automate processes and improve business productivity',
@@ -447,7 +468,13 @@ const translations = {
   }
 };
 
-// Export for use in main script
+// ===================================
+// EXPORTAR PARA USO EN OTROS ARCHIVOS
+// ===================================
+// Compatibilidad con módulos CommonJS (Node.js)
 if (typeof module !== 'undefined' && module.exports) {
   module.exports = translations;
 }
+
+// Las traducciones están disponibles globalmente como 'translations'
+// y son utilizadas automáticamente por paginaprincipal.js
