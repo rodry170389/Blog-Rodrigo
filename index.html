@@ -33,31 +33,31 @@
 
   <!-- Navigation -->
   <nav class="navbar" role="navigation" aria-label="Navegación principal">
-    <div class="nav-container">
-      <a href="#hero" class="nav-logo" aria-label="Inicio">
-        <span class="nav-logo-text">RF</span>
-      </a>
+  <div class="nav-container">
+    <a href="#hero" class="nav-logo" aria-label="Inicio">
+      <span class="nav-logo-text">RF</span>
+    </a>
 
-      <!-- Language Toggle -->
+    <ul class="nav-menu" role="list">
+      <li><a href="#expertise" class="nav-link" data-i18n="nav.expertise">Especialización</a></li>
+      <li><a href="#about" class="nav-link" data-i18n="nav.about">Sobre mí</a></li>
+      <li><a href="#experience" class="nav-link" data-i18n="nav.experience">Experiencia</a></li>
+      <li><a href="#skills" class="nav-link" data-i18n="nav.skills">Skills</a></li>
+      <li><a href="#projects" class="nav-link" data-i18n="nav.projects">Proyectos</a></li>
+      <li><a href="#education" class="nav-link" data-i18n="nav.education">Educación</a></li>
+      <li><a href="#contact" class="nav-link nav-link-cta" data-i18n="nav.contact">Contacto</a></li>
+    </ul>
+
+    <div class="nav-right">
       <button class="lang-toggle" id="langToggle" aria-label="Change language">
         <span class="lang-flag" id="currentLang">🇪🇸</span>
       </button>
-
       <button class="nav-toggle" aria-label="Abrir menú de navegación" aria-expanded="false">
         <span class="hamburger"></span>
       </button>
-
-      <ul class="nav-menu" role="list">
-        <li><a href="#expertise" class="nav-link" data-i18n="nav.expertise">Especialización</a></li>
-        <li><a href="#about" class="nav-link" data-i18n="nav.about">Sobre mí</a></li>
-        <li><a href="#experience" class="nav-link" data-i18n="nav.experience">Experiencia</a></li>
-        <li><a href="#skills" class="nav-link" data-i18n="nav.skills">Skills</a></li>
-        <li><a href="#projects" class="nav-link" data-i18n="nav.projects">Proyectos</a></li>
-        <li><a href="#education" class="nav-link" data-i18n="nav.education">Educación</a></li>
-        <li><a href="#contact" class="nav-link nav-link-cta" data-i18n="nav.contact">Contacto</a></li>
-      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
 
   <main id="main-content">
     <!-- Hero Section -->
@@ -78,21 +78,30 @@
               Transformo procesos empresariales en soluciones digitales escalables combinando low-code
               Microsoft 365 con desarrollo custom en C# y Angular.
             </p>
-            <div class="hero-stats-inline" data-i18n-list="hero.stats">
-              <span>🏆 Microsoft Certified</span>
-              <span>•</span>
-              <span>2+ años Telefónica</span>
-              <span>•</span>
-              <span>15+ proyectos Power Platform</span>
-              <span>•</span>
-              <span>🤖 IA & Copilot</span>
+            <div class="hero-stats-inline">
+              <div class="hero-stat">
+                <i class="ti ti-rosette-discount-check" aria-hidden="true"></i>
+                <span>Microsoft Certified</span>
+              </div>
+              <div class="hero-stat">
+                <i class="ti ti-building" aria-hidden="true"></i>
+                <span>2+ años Telefónica</span>
+              </div>
+              <div class="hero-stat">
+                <i class="ti ti-layout-grid" aria-hidden="true"></i>
+                <span>15+ proyectos Power Platform</span>
+              </div>
+              <div class="hero-stat">
+                <i class="ti ti-cpu" aria-hidden="true"></i>
+                <span>IA & Copilot</span>
+              </div>
             </div>
             <div class="hero-cta">
               <a href="#contact" class="btn btn-primary" data-i18n="hero.cta_primary">Hablemos</a>
               <a href="#projects" class="btn btn-secondary" data-i18n="hero.cta_secondary">Ver proyectos</a>
             </div>
             <div class="hero-links">
-              <a href="https://learn.microsoft.com/es-es/users/[TU-USERNAME]/" target="_blank" rel="noopener noreferrer" aria-label="Microsoft Learn" class="hero-link-microsoft" title="Microsoft Learn Profile">
+              <a href="https://learn.microsoft.com/es-es/users/JOSERODRIGOFUENTESRAMIREZ-1812/" target="_blank" rel="noopener noreferrer" aria-label="Microsoft Learn" class="hero-link-microsoft" title="Microsoft Learn Profile">
                 <svg width="20" height="20" viewBox="0 0 23 23" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
                   <rect width="11" height="11" fill="#F25022"/>
                   <rect x="12" width="11" height="11" fill="#7FBA00"/>
@@ -221,7 +230,7 @@
         <div class="about-content">
           <div class="about-text">
             <p class="lead" data-i18n="about.lead">
-              Soy un ingeniero de telecomunicaciones con más de 2 años de experiencia en consultoría
+              Soy un ingeniero de telecomunicaciones con más de 4 años de experiencia en consultoría
               y desarrollo de software, actualmente trabajando en Telefónica como Full Stack Developer.
             </p>
             <p data-i18n="about.p1">
@@ -747,7 +756,7 @@
               <span class="microsoft-icon">🏅</span>
               <span data-i18n="education.certs_title">Certificaciones Microsoft</span>
             </h3>
-            <a href="https://learn.microsoft.com/es-es/users/[TU-USERNAME]/" target="_blank" rel="noopener noreferrer" class="btn-microsoft-learn">
+            <a href="https://learn.microsoft.com/es-es/users/JOSERODRIGOFUENTESRAMIREZ-1812/" target="_blank" rel="noopener noreferrer" class="btn-microsoft-learn">
               <svg class="microsoft-logo" width="20" height="20" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect width="11" height="11" fill="#F25022"/>
                 <rect x="12" width="11" height="11" fill="#7FBA00"/>

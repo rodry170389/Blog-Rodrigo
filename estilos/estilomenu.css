@@ -257,6 +257,16 @@ button {
   transform: translateY(-1px);
 }
 
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.lang-toggle {
+  margin-right: 0;
+}
+
 .lang-flag {
   font-size: var(--font-size-xl);
   line-height: 1;
@@ -442,6 +452,30 @@ button {
   box-shadow: var(--shadow-xl);
   object-fit: cover;
   aspect-ratio: 1;
+}
+.hero-stats-inline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm, 8px);
+  margin-bottom: var(--space-2xl);
+}
+
+.hero-stat {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  background: var(--color-primary-light);
+  color: var(--color-primary);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-medium);
+  border-radius: var(--radius-full);
+  white-space: nowrap;
+}
+
+.hero-stat i {
+  font-size: 15px;
+  flex-shrink: 0;
 }
 
 /* ===================================
