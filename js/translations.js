@@ -36,11 +36,11 @@ const translations = {
 
     // Sección Hero (portada principal)
     hero: {
-      label: 'Microsoft Power Platform Specialist',
-      certified: 'Microsoft Certified',
+      label: 'Power Platform Solutions Developer',
+      certified: 'Professional Training',
       title: 'José Rodrigo<br>Fuentes Ramírez',
-      description: 'Full Stack Developer especializado en Power Apps, Power Automate y Power BI. Transformo procesos empresariales en soluciones digitales escalables combinando low-code Microsoft 365 con desarrollo custom en C# y Angular.',
-      stats: ['🏆 Microsoft Certified', '•', '2+ años Telefónica', '•', '15+ proyectos Power Platform', '•', '🤖 IA & Copilot'],
+      description: 'Full Stack Developer especializado en Power Platform (Power Apps, Power Automate y Power BI). Diseño soluciones empresariales escalables que combinan el desarrollo Low-Code de Microsoft 365 con arquitecturas de datos robustas en SQL Server, optimizando procesos, automatizando tareas y convirtiendo los datos en información de valor para el negocio.',
+      //stats: ['🏆 Advanced Training', '•', '2+ años Telefónica', '•', '5+ proyectos Power Platform', '•', '🤖 IA & Copilot'],
       cta_primary: 'Hablemos',
       cta_secondary: 'Ver proyectos'
     },
@@ -71,7 +71,7 @@ const translations = {
       powerbi_highlights: [
         'Reportes ejecutivos en tiempo real',
         'DAX y Power Query avanzado',
-        'Integración con Dataverse'
+        'SQL Server y Dataverse integration'
       ],
 
       m365_title: 'SharePoint & Microsoft 365',
@@ -94,12 +94,12 @@ const translations = {
     // About Section
     about: {
       title: 'Sobre mí',
-      lead: 'Soy un ingeniero de telecomunicaciones con más de 2 años de experiencia en consultoría y desarrollo de software, actualmente trabajando en Telefónica como Full Stack Developer.',
+      lead: 'Soy un ingeniero de telecomunicaciones con más de 4 años de experiencia en consultoría y desarrollo de software, actualmente trabajando en Telefónica como Full Stack Developer.',
       p1: 'Mi enfoque se centra en crear soluciones tecnológicas que generen impacto real. He trabajado con equipos multidisciplinarios desarrollando aplicaciones empresariales con Power Apps, backends en C# y frontends modernos con Angular y TypeScript.',
       p2: 'Me apasiona el aprendizaje continuo y la mejora de procesos. Combino sólidos conocimientos técnicos con habilidades de comunicación y trabajo en equipo para entregar proyectos de calidad.',
-      stat1_number: '2+',
+      stat1_number: '4+',
       stat1_label: 'Años de experiencia',
-      stat2_number: '10+',
+      stat2_number: '5+',
       stat2_label: 'Proyectos completados',
       stat3_number: '3',
       stat3_label: 'Empresas tecnológicas'
@@ -115,10 +115,9 @@ const translations = {
       tel_period: '2023 - Actualidad',
       current: 'Posición actual',
       tel_desc: [
-        'Desarrollo de 12+ aplicaciones empresariales con Power Apps (Canvas y Model-driven) para departamentos de HR, Finance y Operations',
-        'Automatización de 18+ procesos críticos con Power Automate, reduciendo tiempo de gestión en 45%',
-        'Implementación de conectores personalizados en C# para integración con sistemas legacy y APIs externas',
-        'Creación de 8 dashboards interactivos con Power BI para análisis de KPIs departamentales en tiempo real',
+        'Desarrollo de 5+ aplicaciones empresariales con Power Apps (Canvas y Model-driven) para dirección de Preventa, producto y provisión en B2B',
+        'Automatización de 2+ procesos críticos con Power Automate, reduciendo tiempo de gestión en 80%',
+        'Creación de 2 dashboards interactivos con Power BI para análisis de KPIs departamentales en tiempo real',
         'Integración de AI Builder y Microsoft Copilot para procesamiento inteligente de documentos y asistencia en desarrollo',
         'Uso de IA generativa (Claude, ChatGPT) para optimización de código, debugging y documentación técnica'
       ],
@@ -198,7 +197,7 @@ const translations = {
     // Education Section
     education: {
       title: 'Educación y certificaciones',
-      certs_title: 'Certificaciones Microsoft',
+      certs_title: 'Formación en Microsoft Power Platform',
       view_profile: 'Ver perfil en Microsoft Learn',
 
       uc3m_title: 'Grado en Ingeniería de Sistemas de Comunicaciones',
