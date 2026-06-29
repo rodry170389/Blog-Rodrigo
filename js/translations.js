@@ -51,11 +51,11 @@ const translations = {
       subtitle: 'Diseño y desarrollo soluciones low-code/no-code que automatizan procesos y mejoran la productividad empresarial',
 
       powerapps_title: 'Power Apps',
-      powerapps_desc: 'Canvas apps y Model-driven apps conectadas a Dataverse, SharePoint y APIs custom.',
+      powerapps_desc: 'Desarrollo de Canvas Apps y Model-driven Apps sobre Microsoft Power Platform.',
       powerapps_highlights: [
-        'Aplicaciones empresariales multiplataforma',
-        'Integración con Dynamics 365',
-        'Conectores personalizados C#'
+        'Análisis, diseño y modelado de datos',
+        'Integración con SharePoint y Dynamics 365',
+        'Integración de aplicaciones mediante conectores de Microsoft 365, Power Platform y servicios externos'
       ],
 
       powerautomate_title: 'Power Automate',
@@ -71,7 +71,7 @@ const translations = {
       powerbi_highlights: [
         'Reportes ejecutivos en tiempo real',
         'DAX y Power Query avanzado',
-        'SQL Server y Dataverse integration'
+        'SQL Server integration'
       ],
 
       m365_title: 'SharePoint & Microsoft 365',
@@ -99,7 +99,7 @@ const translations = {
       p2: 'Me apasiona el aprendizaje continuo y la mejora de procesos. Combino sólidos conocimientos técnicos con habilidades de comunicación y trabajo en equipo para entregar proyectos de calidad.',
       stat1_number: '4+',
       stat1_label: 'Años de experiencia',
-      stat2_number: '5+',
+      stat2_number: '10+',
       stat2_label: 'Proyectos completados',
       stat3_number: '3',
       stat3_label: 'Empresas tecnológicas'
@@ -115,39 +115,44 @@ const translations = {
       tel_period: '2023 - Actualidad',
       current: 'Posición actual',
       tel_desc: [
-        'Desarrollo de 5+ aplicaciones empresariales con Power Apps (Canvas y Model-driven) para dirección de Preventa, producto y provisión en B2B',
-        'Automatización de 2+ procesos críticos con Power Automate, reduciendo tiempo de gestión en 80%',
-        'Creación de 2 dashboards interactivos con Power BI para análisis de KPIs departamentales en tiempo real',
+        
+        'Desarrollo de 5+ aplicaciones empresariales con Microsoft Power Platform para producto, preventa y provisión en B2B.',
+        'Automatización de procesos críticos con Power Automate, reduciendo el tiempo de gestión en un 80%',
+        'Integración de aplicaciones mediante conectores de Microsoft 365, Power Platform y servicios externos',
+        'Creación de 2 dashboards interactivos con Power BI para análisis de KPIs departamentales',
         'Integración de AI Builder y Microsoft Copilot para procesamiento inteligente de documentos y asistencia en desarrollo',
-        'Uso de IA generativa (Claude, ChatGPT) para optimización de código, debugging y documentación técnica'
+        'Uso de IA generativa (Copilot, Claude, ChatGPT, Gemini, Perplexity) para optimización de código, debugging y documentación técnica'
       ],
 
       // Perklam
-      per_title: 'Técnico Informático',
+      per_title: 'Digital Solutions Developer (Web)',
       per_company: 'Perklam',
       per_period: '2023',
       per_desc: [
-        'Desarrollo de página web corporativa',
-        'Asistencia en tecnologías informáticas y de comunicaciones'
+        'Desarrollo e implantación de la página web corporativa con WordPress.',
+        'Gestión integral del proyecto web: contratación y configuración del hosting, dominio, DNS, instalación y personalización del tema, y puesta en producción.',
+        'Administración y mantenimiento de la infraestructura web, garantizando su disponibilidad y correcto funcionamiento.',
+        'Soporte técnico en sistemas informáticos y comunicaciones, resolviendo incidencias y proporcionando asistencia a usuarios.'
       ],
 
       // Adesso
-      ade_title: 'Frontend Developer',
+      ade_title: 'Web Developer',
       ade_company: 'Adesso',
       ade_period: '2022 - 2023',
       ade_desc: [
-        'Desarrollo de aplicaciones web con Angular y TypeScript',
-        'Implementación de interfaces responsivas con HTML5 y SCSS',
-        'Uso de metodologías ágiles con Jira y Bitbucket'
+        'Desarrollo de aplicaciones web utilizando Angular, TypeScript y Node.js en entornos frontend y backend.',
+        'Implementación de interfaces de usuario responsivas y optimizadas con HTML5, SCSS y buenas prácticas de UX/UI.',
+        'Integración de servicios y consumo de APIs REST en arquitecturas modernas de aplicaciones web.',
+        'Participación en equipos de desarrollo bajo metodologías ágiles, utilizando Jira para la gestión de tareas y Bitbucket para control de versiones.'
       ],
 
       // Freelance
-      free_title: 'Desarrollo de Aplicación Android',
+      free_title: 'Desarrollador de Aplicaciones Android',
       free_company: 'Freelance',
       free_period: '2021',
       free_desc: [
-        'Desarrollo de aplicación móvil "Epilepsi Control" para Android',
-        'Gestión completa del proyecto desde diseño hasta implementación'
+        'Desarrollo de aplicación móvil para Android ("Epilepsi Control"), orientada al registro y seguimiento de información clínica.',
+        'Gestión completa del ciclo de vida del proyecto: análisis, diseño, desarrollo, pruebas e implementación.'
       ]
     },
 
@@ -170,7 +175,7 @@ const translations = {
       filter_academic: 'Académico',
 
       driveris_title: 'Concesionario de Coches - Driveris',
-      driveris_desc: 'Desarrollo de plataforma web completa para concesionario de vehículos en Sevilla. Implementación con Angular, TypeScript y metodologías ágiles.',
+      driveris_desc: 'Desarrollo de plataforma web completa para la gestión y visualización del catálogo de vehículos de un concesionario en Sevilla, orientada a la consulta de stock, características y disponibilidad de vehículos. Implementación de la interfaz de usuario con Angular y TypeScript, asegurando una experiencia fluida, modular y escalable.Trabajo bajo metodologías ágiles, participando en la planificación, desarrollo iterativo y entrega continua de funcionalidades.',
       driveris_link: 'Ver proyecto',
 
       perklam_title: 'Startup de Personalizaciones - Perklam',
@@ -186,7 +191,7 @@ const translations = {
       epilepsi_link: 'Descargar',
 
       portfolio_title: 'Portfolio Personal',
-      portfolio_desc: 'Desarrollo de portfolio responsive con Bootstrap, JavaScript y CSS3 para mostrar proyectos y experiencia profesional.',
+      portfolio_desc: 'Desarrollo de portfolio responsive con Html, JavaScript y CSS3 para mostrar proyectos y experiencia profesional.',
       portfolio_link: 'Ver código',
 
       ondas_title: 'Simulador de Ondas Electromagnéticas',
@@ -196,7 +201,7 @@ const translations = {
 
     // Education Section
     education: {
-      title: 'Educación y certificaciones',
+      title: 'Formación y desarrollo profesional',
       certs_title: 'Formación en Microsoft Power Platform',
       view_profile: 'Ver perfil en Microsoft Learn',
 
