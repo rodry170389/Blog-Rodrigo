@@ -190,7 +190,7 @@ const translations = {
       correosautomaticos_desc: 'Diseño e implementación de flujos automatizados para la generación y envío de comunicaciones a proveedores desde la plataforma Power Automate Online. Integración con fuentes de datos corporativas para la parametrización dinámica de destinatarios, contenido y condiciones de envío, garantizando consistencia y reducción de tareas manuales. Optimización del proceso de comunicación con proveedores y reducción de carga operativa mediante automatización de envíos masivos y recurrentes.',
 
       driveris_title: 'Concesionario de Coches - Driveris',
-      driveris_desc: 'Desarrollo de plataforma web completa para la gestión y visualización del catálogo de vehículos de un concesionario en Sevilla, orientada a la consulta de stock, características y disponibilidad de vehículos. Implementación de la interfaz de usuario con Angular y TypeScript, asegurando una experiencia fluida, modular y escalable.Trabajo bajo metodologías ágiles, participando en la planificación, desarrollo iterativo y entrega continua de funcionalidades.',
+      driveris_desc: 'Desarrollo de una plataforma web para la gestión y visualización del catálogo de vehículos de un concesionario en Sevilla, orientada a la consulta de stock, características y disponibilidad de vehículos. Implementación de la interfaz de usuario con Angular y TypeScript, asegurando una experiencia fluida, modular y escalable.Trabajo bajo metodologías ágiles, participando en la planificación, desarrollo iterativo y entrega continua de funcionalidades.',
       driveris_link: 'Ver proyecto',
 
       perklam_title: 'Startup de Personalizaciones - Perklam',
@@ -433,7 +433,7 @@ const translations = {
       correosautomaticos_desc: 'Design and implementation of automated workflows for generating and sending communications to suppliers from the Power Automate Online platform. Integration with corporate data sources for the dynamic parameterization of recipients, content, and delivery conditions, guaranteeing consistency and a reduction in manual tasks. Optimization of the supplier communication process and reduction of operational workload through the automation of bulk and recurring mailings.',
 
       driveris_title: 'Car Dealership - Driveris',
-      driveris_desc: 'Development of a complete web platform for managing and displaying the vehicle catalog of a dealership in Seville, focused on browsing stock, specifications, and vehicle availability. User interface implemented with Angular and TypeScript, ensuring a smooth, modular, and scalable experience. Worked under agile methodologies, participating in planning, iterative development, and continuous delivery of features.',
+      driveris_desc: 'Development of a web platform for managing and displaying the vehicle catalog of a dealership in Seville, focused on browsing stock, specifications, and vehicle availability. User interface implemented with Angular and TypeScript, ensuring a smooth, modular, and scalable experience. Worked under agile methodologies, participating in planning, iterative development, and continuous delivery of features.',
       driveris_link: 'View project',
 
       perklam_title: 'Customization Startup - Perklam',
