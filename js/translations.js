@@ -251,10 +251,10 @@ const translations = {
   // INGLÉS (EN)
   // ===================================
   en: {
-    // Navegación principal
+    // Main navigation
     nav: {
       expertise: 'Expertise',
-      about: 'About',
+      about: 'About Me',
       experience: 'Experience',
       skills: 'Skills',
       projects: 'Projects',
@@ -262,28 +262,28 @@ const translations = {
       contact: 'Contact'
     },
 
-    // Sección Hero (portada principal)
+    // Hero Section (main landing)
     hero: {
-      label: 'Microsoft Power Platform Specialist',
-      certified: 'Microsoft Certified',
+      label: 'Power Platform Solutions Developer',
+      certified: 'Professional Training',
       title: 'José Rodrigo<br>Fuentes Ramírez',
-      description: 'Full Stack Developer specialized in Power Apps, Power Automate and Power BI. I transform business processes into scalable digital solutions combining low-code Microsoft 365 with custom development in C# and Angular.',
-      stats: ['🏆 Microsoft Certified', '•', '2+ years Telefónica', '•', '15+ Power Platform projects', '•', '🤖 AI & Copilot'],
+      description: 'Full Stack Developer specialized in Power Platform (Power Apps, Power Automate, and Power BI). I design scalable enterprise solutions that combine Microsoft 365 Low-Code development with robust data architectures in SQL Server, optimizing processes, automating tasks, and turning data into valuable business insights.',
+      //stats: ['🏆 Advanced Training', '•', '2+ years at Telefónica', '•', '5+ Power Platform projects', '•', '🤖 AI & Copilot'],
       cta_primary: "Let's talk",
       cta_secondary: 'View projects'
     },
 
-    // Sección de Especialización (Power Platform)
+    // Expertise Section (Power Platform)
     expertise: {
       title: 'Power Platform Expertise',
       subtitle: 'I design and develop low-code/no-code solutions that automate processes and improve business productivity',
 
       powerapps_title: 'Power Apps',
-      powerapps_desc: 'Canvas and Model-driven apps connected to Dataverse, SharePoint and custom APIs.',
+      powerapps_desc: 'Development of Canvas Apps and Model-driven Apps on Microsoft Power Platform.',
       powerapps_highlights: [
-        'Cross-platform enterprise applications',
-        'Dynamics 365 integration',
-        'Custom C# connectors'
+        'Data analysis, design, and modeling',
+        'Integration with SharePoint and Dynamics 365',
+        'Application integration through Microsoft 365, Power Platform, and external service connectors'
       ],
 
       powerautomate_title: 'Power Automate',
@@ -295,15 +295,15 @@ const translations = {
       ],
 
       powerbi_title: 'Power BI',
-      powerbi_desc: 'Interactive dashboards that transform data into actionable insights.',
+      powerbi_desc: 'Interactive dashboards that turn data into actionable insights.',
       powerbi_highlights: [
         'Real-time executive reports',
         'Advanced DAX and Power Query',
-        'Dataverse integration'
+        'SQL Server integration'
       ],
 
       m365_title: 'SharePoint & Microsoft 365',
-      m365_desc: 'Modern intranets, document management and enterprise collaboration.',
+      m365_desc: 'Modern intranets, document management, and enterprise collaboration.',
       m365_highlights: [
         'SharePoint Online (SPFx)',
         'Microsoft Teams integrations',
@@ -311,7 +311,7 @@ const translations = {
       ],
 
       ai_title: 'AI & Microsoft Copilot',
-      ai_desc: 'Artificial intelligence integration in Power Platform with AI Builder and Copilot.',
+      ai_desc: 'Integration of artificial intelligence into Power Platform with AI Builder and Copilot.',
       ai_highlights: [
         'AI Builder (OCR, Document Processing)',
         'Microsoft Copilot for Power Apps',
@@ -321,11 +321,11 @@ const translations = {
 
     // About Section
     about: {
-      title: 'About me',
-      lead: 'I am a telecommunications engineer with over 2 years of experience in consulting and software development, currently working at Telefónica as a Full Stack Developer.',
-      p1: 'My focus is on creating technological solutions that generate real impact. I have worked with multidisciplinary teams developing enterprise applications with Power Apps, backends in C# and modern frontends with Angular and TypeScript.',
-      p2: 'I am passionate about continuous learning and process improvement. I combine solid technical knowledge with communication and teamwork skills to deliver quality projects.',
-      stat1_number: '2+',
+      title: 'About Me',
+      lead: "I'm a telecommunications engineer with over 4 years of experience in consulting and software development, currently working at Telefónica as a Full Stack Developer.",
+      p1: 'My focus is on creating technological solutions that generate real impact. I have worked with multidisciplinary teams developing enterprise applications with Power Apps, backends in C#, and modern frontends with Angular and TypeScript.',
+      p2: "I'm passionate about continuous learning and process improvement. I combine solid technical knowledge with communication and teamwork skills to deliver quality projects.",
+      stat1_number: '4+',
       stat1_label: 'Years of experience',
       stat2_number: '10+',
       stat2_label: 'Completed projects',
@@ -335,7 +335,7 @@ const translations = {
 
     // Experience Section
     experience: {
-      title: 'Professional experience',
+      title: 'Professional Experience',
 
       // Telefónica
       tel_title: 'Power Platform Developer',
@@ -343,40 +343,44 @@ const translations = {
       tel_period: '2023 - Present',
       current: 'Current position',
       tel_desc: [
-        'Development of 12+ enterprise applications with Power Apps (Canvas and Model-driven) for HR, Finance and Operations departments',
-        'Automation of 18+ critical processes with Power Automate, reducing management time by 45%',
-        'Implementation of custom connectors in C# for integration with legacy systems and external APIs',
-        'Creation of 8 interactive dashboards with Power BI for real-time departmental KPI analysis',
+        
+        'Development of 5+ enterprise applications with Microsoft Power Platform for product, presales, and provisioning in B2B.',
+        'Automation of critical processes with Power Automate, reducing management time by 80%',
+        'Application integration through Microsoft 365, Power Platform, and external service connectors',
+        'Creation of 2 interactive dashboards with Power BI for departmental KPI analysis',
         'Integration of AI Builder and Microsoft Copilot for intelligent document processing and development assistance',
-        'Use of generative AI (Claude, ChatGPT) for code optimization, debugging and technical documentation'
+        'Use of generative AI (Copilot, Claude, ChatGPT, Gemini, Perplexity) for code optimization, debugging, and technical documentation'
       ],
 
       // Perklam
-      per_title: 'IT Technician',
+      per_title: 'Digital Solutions Developer (Web)',
       per_company: 'Perklam',
       per_period: '2023',
       per_desc: [
-        'Corporate website development',
-        'Assistance in IT and communications technologies'
+        'Development and deployment of the corporate website with WordPress.',
+        'Full project management: hosting and domain setup, DNS configuration, theme installation and customization, and production deployment.',
+        'Administration and maintenance of the web infrastructure, ensuring its availability and proper operation.',
+        'Technical support for computer systems and communications, resolving issues and providing user assistance.'
       ],
 
       // Adesso
-      ade_title: 'Frontend Developer',
+      ade_title: 'Web Developer',
       ade_company: 'Adesso',
       ade_period: '2022 - 2023',
       ade_desc: [
-        'Web application development with Angular and TypeScript',
-        'Implementation of responsive interfaces with HTML5 and SCSS',
-        'Use of agile methodologies with Jira and Bitbucket'
+        'Development of web applications using Angular, TypeScript, and Node.js in frontend and backend environments.',
+        'Implementation of responsive, optimized user interfaces with HTML5, SCSS, and UX/UI best practices.',
+        'Service integration and REST API consumption in modern web application architectures.',
+        'Participation in development teams under agile methodologies, using Jira for task management and Bitbucket for version control.'
       ],
 
       // Freelance
-      free_title: 'Android Application Development',
+      free_title: 'Android Application Developer',
       free_company: 'Freelance',
       free_period: '2021',
       free_desc: [
-        'Development of "Epilepsi Control" mobile application for Android',
-        'Complete project management from design to implementation'
+        'Development of a mobile Android application ("Epilepsi Control") for recording and tracking clinical information.',
+        'Full management of the project lifecycle: analysis, design, development, testing, and deployment.'
       ]
     },
 
@@ -392,47 +396,47 @@ const translations = {
 
     // Projects Section
     projects: {
-      title: 'Featured projects',
+      title: 'Featured Projects',
       filter_all: 'All',
       filter_powerplatform: 'Power Platform',
-      filter_webdev: 'Web Dev',
+      filter_webdev: 'Web Development',
       filter_academic: 'Academic',
 
       driveris_title: 'Car Dealership - Driveris',
-      driveris_desc: 'Development of complete web platform for vehicle dealership in Seville. Implementation with Angular, TypeScript and agile methodologies.',
+      driveris_desc: 'Development of a complete web platform for managing and displaying the vehicle catalog of a dealership in Seville, focused on browsing stock, specifications, and vehicle availability. User interface implemented with Angular and TypeScript, ensuring a smooth, modular, and scalable experience. Worked under agile methodologies, participating in planning, iterative development, and continuous delivery of features.',
       driveris_link: 'View project',
 
       perklam_title: 'Customization Startup - Perklam',
-      perklam_desc: 'Design and development of e-commerce for product customization startup. Implemented with WordPress and SEO optimizations.',
+      perklam_desc: 'Design and development of an e-commerce site for a product customization startup. Built with WordPress and SEO optimizations.',
       perklam_link: 'View project',
 
       metropolis_title: 'Metropolis-Hastings Method',
-      metropolis_desc: 'Bachelor\'s Thesis: Study and application of the Metropolis-Hastings method for Bayesian inversion in remote sensing and vegetation analysis.',
+      metropolis_desc: "Bachelor's Thesis: Study and application of the Metropolis-Hastings method for Bayesian inversion in remote sensing and vegetation analysis.",
       metropolis_link: 'View document',
 
       epilepsi_title: 'Epilepsi Control',
-      epilepsi_desc: 'Mobile application for Android that allows people with epilepsy to keep complete track of their disease, medication and seizures.',
+      epilepsi_desc: 'Android mobile application that allows people with epilepsy to fully track their condition, medication, and seizures.',
       epilepsi_link: 'Download',
 
       portfolio_title: 'Personal Portfolio',
-      portfolio_desc: 'Development of responsive portfolio with Bootstrap, JavaScript and CSS3 to showcase projects and professional experience.',
+      portfolio_desc: 'Development of a responsive portfolio with HTML, JavaScript, and CSS3 to showcase projects and professional experience.',
       portfolio_link: 'View code',
 
-      ondas_title: 'Electromagnetic Waves Simulator',
-      ondas_desc: '3D graphical simulator of electromagnetic plane waves with normal and oblique incidence developed in Matlab.',
+      ondas_title: 'Electromagnetic Wave Simulator',
+      ondas_desc: '3D graphical simulator of plane electromagnetic waves with normal and oblique incidence, developed in Matlab.',
       ondas_link: 'View code'
     },
 
     // Education Section
     education: {
-      title: 'Education and certifications',
-      certs_title: 'Microsoft Certifications',
-      view_profile: 'View Microsoft Learn Profile',
+      title: 'Education and Professional Development',
+      certs_title: 'Microsoft Power Platform Training',
+      view_profile: 'View profile on Microsoft Learn',
 
-      uc3m_title: 'Bachelor\'s Degree in Communication Systems Engineering',
+      uc3m_title: 'Degree in Communication Systems Engineering',
       uc3m_institution: 'Carlos III University of Madrid',
       uc3m_period: '2021',
-      uc3m_desc: 'Specialization in analysis and design of advanced communication systems, mobile networks, space communications and information processing.',
+      uc3m_desc: 'Specialization in the analysis and design of advanced communication systems, mobile networks, space communications, and information processing.',
 
       goodjob_title: 'Cybersecurity - IMPACT #include Program',
       goodjob_institution: 'GoodJob Foundation',
@@ -442,17 +446,17 @@ const translations = {
       english_institution: 'Impulso06',
       english_period: '2020',
 
-      cert1: 'Web Development for E-commerce',
+      cert1: 'Web Development for E-Commerce',
       cert2: 'PrestaShop',
-      cert3: 'SEO Optimization in WordPress',
-      cert4: 'Applications with Android and HTML5',
+      cert3: 'SEO Optimization on WordPress',
+      cert4: 'Android and HTML5 Applications',
       cert5: 'IoT Challenges and Solutions'
     },
 
     // Contact Section
     contact: {
-      title: "Let's talk",
-      subtitle: 'Do you have a project in mind or want to collaborate? I am always open to new opportunities.',
+      title: "Let's Talk",
+      subtitle: 'Have a project in mind or want to collaborate? I am always open to new opportunities.',
       email: 'Email',
       phone: 'Phone',
       download_cv: 'Download CV'
