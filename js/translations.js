@@ -174,6 +174,21 @@ const translations = {
       filter_webdev: 'Desarrollo Web',
       filter_academic: 'Académico',
 
+      sherpabi_title: 'Dashboard de análisis interactivo para la aplicación web Sherpa',
+      sherpabi_desc: 'Plataforma de visualización en Power BI para el seguimiento de la actividad y el rendimiento de los procesos gestionados en la aplicación web Sherpa. Centraliza información operativa procedente de distintos flujos B2B y permite a los usuarios ejecutivos tomar decisiones basadas en datos en tiempo real. Permitiendo el análisis del estado de las solicitudes, tiempos de resolución y volumen de operaciones. Diseñado a partir de un modelo de datos estructurado para garantizar consistencia y trazabilidad de la información.',
+
+      comite_urgencia_title: 'Sistema de Gestión de un Comité de Urgencia para la dirección de producto, preventa y provisión en B2B',
+      comite_urgencia_desc: 'Plataforma de gestión de comité de urgencias para la coordinación y seguimiento de casos críticos. Diseñada para centralizar la recepción, clasificación y resolución de incidencias, facilitando la toma de decisiones entre los miembros del comité. Implementada con arquitectura orientada a datos y flujos de trabajo para la trazabilidad completa de cada caso. Optimización de los tiempos de gestión y mejora en la trazabilidad de decisiones en situaciones de alta prioridad.',
+
+      rpa_doc_title: 'Automatización del procesamiento de generación de documentación',
+      rpa_doc_desc: 'Sistema RPA con Power Automate Desktop que procesa la generación de documentación automáticamente, es una solución de automatización orientada a la creación, transformación y estructuración de documentación de procesos. Implementación de flujos automatizados para reducir tareas manuales en la elaboración de documentos, asegurando consistencia, estandarización y trazabilidad de la información generada.Reducción del esfuerzo manual y mejora en la eficiencia y estandarización del proceso de generación de documentación.',
+
+      rpa_compression_title: 'Automatización del proceso de compresión y gestión de archivos en SharePoint',
+      rpa_compression_desc: 'Sistema RPA con Power Automate Desktop que procesa la compresión de archivos, es una solución de automatización orientada a la optimización del almacenamiento documental en SharePoint mediante la compresión automática de archivos. Implementación de flujos que permiten reducir el tamaño de los ficheros, mejorar la organización del repositorio y optimizar el uso de espacio y rendimiento del sistema. Integración con procesos existentes para asegurar la ejecución automática y transparente para el usuario final.',
+
+      correosautomaticos_title: 'Automatización de envio de correos electrónicos a proveedores desde power automate online',
+      correosautomaticos_desc: 'Diseño e implementación de flujos automatizados para la generación y envío de comunicaciones a proveedores desde la plataforma Power Automate Online. Integración con fuentes de datos corporativas para la parametrización dinámica de destinatarios, contenido y condiciones de envío, garantizando consistencia y reducción de tareas manuales. Optimización del proceso de comunicación con proveedores y reducción de carga operativa mediante automatización de envíos masivos y recurrentes.',
+
       driveris_title: 'Concesionario de Coches - Driveris',
       driveris_desc: 'Desarrollo de plataforma web completa para la gestión y visualización del catálogo de vehículos de un concesionario en Sevilla, orientada a la consulta de stock, características y disponibilidad de vehículos. Implementación de la interfaz de usuario con Angular y TypeScript, asegurando una experiencia fluida, modular y escalable.Trabajo bajo metodologías ágiles, participando en la planificación, desarrollo iterativo y entrega continua de funcionalidades.',
       driveris_link: 'Ver proyecto',
@@ -401,6 +416,21 @@ const translations = {
       filter_powerplatform: 'Power Platform',
       filter_webdev: 'Web Development',
       filter_academic: 'Academic',
+
+      sherpabi_title: 'Interactive analysis dashboard for the Sherpa web application',
+      sherpabi_desc: 'Power BI visualization platform for tracking activity and performance of processes managed within the Sherpa web application. It centralizes operational information from different B2B flows and enables executive users to make data-driven decisions in real time, allowing for the analysis of request statuses, resolution times, and transaction volumes. Designed based on a structured data model to guarantee information consistency and traceability.',
+
+      comite_urgencia_title: 'Emergency Committee Management System for product management, pre-sales, and provisioning in B2B',
+      comite_urgencia_desc: 'Emergency committee management platform for the coordination and tracking of critical cases. Designed to centralize the reception, classification, and resolution of incidents, facilitating decision-making among committee members. Implemented with a data-oriented architecture and workflows for full traceability of each case. Optimization of management times and improvement in decision traceability for high-priority situations.',
+
+      rpa_doc_title: 'Automation of the documentation generation process',
+      rpa_doc_desc: 'RPA system using Power Automate Desktop that automatically processes documentation generation, providing an automation solution focused on creating, transforming, and structuring process documentation. Implementation of automated workflows to reduce manual tasks in document preparation, ensuring consistency, standardization, and traceability of the generated information. Reduction of manual effort and improvement in the efficiency and standardization of the documentation generation process.',
+
+      rpa_compression_title: 'Automation of file compression and management process in SharePoint',
+      rpa_compression_desc: 'RPA system using Power Automate Desktop that processes file compression, offering an automation solution aimed at optimizing document storage in SharePoint through automatic file compression. Implementation of workflows that reduce file sizes, improve repository organization, and optimize space usage and system performance. Integration with existing processes to ensure automatic and seamless execution for the end user.',
+
+      correosautomaticos_title: 'Automation of email dispatch to suppliers via Power Automate Online',
+      correosautomaticos_desc: 'Design and implementation of automated workflows for generating and sending communications to suppliers from the Power Automate Online platform. Integration with corporate data sources for the dynamic parameterization of recipients, content, and delivery conditions, guaranteeing consistency and a reduction in manual tasks. Optimization of the supplier communication process and reduction of operational workload through the automation of bulk and recurring mailings.',
 
       driveris_title: 'Car Dealership - Driveris',
       driveris_desc: 'Development of a complete web platform for managing and displaying the vehicle catalog of a dealership in Seville, focused on browsing stock, specifications, and vehicle availability. User interface implemented with Angular and TypeScript, ensuring a smooth, modular, and scalable experience. Worked under agile methodologies, participating in planning, iterative development, and continuous delivery of features.',
